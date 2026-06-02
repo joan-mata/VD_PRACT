@@ -203,6 +203,9 @@ def main():
     
     # Patrones específicos refinados para estadios/equipos conflictivos o muy comunes
     patterns = {
+        r'HORTA DE SANT JOAN|HORTA DE ST\. JOAN|HORTA SAN JUAN': ('MUN', 'Horta de Sant Joan'),
+        r'SANT ROC OLOT': ('MUN', 'Olot'),
+        r'JUVENTUS-LLORET|JUVENTUS.*LLORET': ('MUN', 'Lloret de Mar'),
         r'LA MINA|MINA': ('AC', 'Sant Adrià de Besòs 4 (la Mina - la Catalana)'),
         r'SANT ROC|ST\. ROC': ('AC', 'Badalona 7 (Sant Roc Sud-est - la Mora - el Remei)'),
         r'LLEFIA|LLEFIÀ': ('AC', 'Badalona 13 (Sant Antoni de Llefià)'),
@@ -251,7 +254,7 @@ def main():
         r'CAN FATJO|CAN FATJÓ': ('AC', 'Cornellà de Llobregat 2 (Fontsanta - Fatjó)'),
         r'CAMP-REDO|CAMP-REDÓ|CAMPREDO': ('MUN', 'Tortosa'),
         r'FONTAJAU|SANT PONÇ|GERMANS SABAT|GIRONES-SABAT|CAN GIBERT|GEIEG': ('MUN', 'Girona'),
-        r'RECASENS|AEM': ('MUN', 'Figueres'),
+        r'RECASENS|AEM': ('MUN', 'Lleida'),
         
         # Mapeos adicionales
         r'CAN VIDALET': ('AC', 'Esplugues de Llobregat 2 (Can Vidalet)'),
@@ -266,13 +269,12 @@ def main():
         r'FATIMA|FÀTIMA': ('MUN', 'Igualada'),
         r'BARCELONETA': ('AC', 'Barcelona 10 (Sant Miquel del Port)'),
         r'JUVENTUS': ('AC', 'Mataró 10 (la Llàntia)'),
-        r'PADUA': ('AC', 'Barcelona 80 (Sant Gervasi de Cassoles)'),
         r'LLANTIA|LA LLÀNTIA': ('AC', 'Mataró 10 (la Llàntia)'),
         r'BARCINO': ('AC', 'Barcelona 13 (Sant Pere)'),
         r'VILA OLIMPICA|VILA OLÍMPICA': ('AC', 'Barcelona 172 (la Vila Olímpica i el Bogatell)'),
         r'COLLBLANC-TORRASSA|TORRASSA': ('AC', 'Hospitalet de Llobregat 18 (la Torrassa - Plaça dels Pirineus), l\''),
         r'HOSPITALENSE': ('AC', 'Hospitalet de Llobregat 3 (Centre - la Farga), l\''),
-        r'EUROPA': ('AC', 'Barcelona 103 (Joanic)'),
+        r'CE EUROPA|C\.E\. EUROPA|NOU SARDENYA|L\'ÀLIGA|L\'ALIGA': ('AC', 'Barcelona 103 (Joanic)'),
         r'LES FONTS': ('AC', 'Terrassa 10 (Can Parellada - les Fonts)'),
         r'LES ROQUETES': ('MUN', 'Sant Pere de Ribes'),
         r'LES GARRIGUES': ('MUN', 'Borges Blanques, les'),
@@ -303,7 +305,7 @@ def main():
         r'LA FARGA': ('MUN', 'Sant Cugat del Vallès'),
         r'GRAMA': ('MUN', 'Santa Coloma de Gramenet'),
         r'MION|PUIGBERENGUER|PIRINAICA': ('AC', 'Manresa 5 (el Poble Nou - Mion, Puigberenguer i Miralpeix)'),
-        r'ESPIRALL|MARC BARTRA': ('MUN', 'Vilafranca del Penedès'),
+        r'ESPIRALL': ('MUN', 'Vilafranca del Penedès'),
         r'SAN MAURO': ('MUN', 'Santa Margarida de Montbui'),
         r'BALCONADA|PARE IGNASI PUIG': ('AC', 'Manresa 9 (les Escodines - la Balconada - Cal Gravat - Sant Pau)'),
         r'BOSC DE TOSCA': ('MUN', 'les Preses'),
