@@ -98,12 +98,16 @@ def get_ciudad_y_barrio(id_territorio):
 def main():
     print("🚀 Iniciando preparación de datos optimizada para la PRACT2...")
     
-    # Rutas
-    base_dir = "/Users/joanmataparraga/Library/Mobile Documents/com~apple~CloudDocs/UOC-Master/Segundo Semestre/VD - Visualització de les dades/PRACT1"
-    partidos_path = os.path.join(base_dir, "data/fcf_analytics_2526.csv")
-    arbitros_path = os.path.join(base_dir, "data/Arbitros.csv")
-    ist_ac_path = os.path.join(base_dir, "data/ist14034ac.csv")
-    ist_mun_path = os.path.join(base_dir, "data/ist14034mun.csv")
+    # Rutas detectadas dinámicamente
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    parent_dir = os.path.dirname(base_dir)
+    # Si estamos dentro de la subcarpeta de git VD_PRACT, los archivos raw están en el padre
+    raw_dir = parent_dir if os.path.exists(os.path.join(parent_dir, "data/fcf_analytics_2526.csv")) else base_dir
+    
+    partidos_path = os.path.join(raw_dir, "data/fcf_analytics_2526.csv")
+    arbitros_path = os.path.join(raw_dir, "data/Arbitros.csv")
+    ist_ac_path = os.path.join(raw_dir, "data/ist14034ac.csv")
+    ist_mun_path = os.path.join(raw_dir, "data/ist14034mun.csv")
     
     # 1. Cargar datasets IST
     print("1. Cargando y limpiando datasets IST (Agrupaciones Censales y Municipios)...")
@@ -317,8 +321,8 @@ def main():
         estadio = normalize_text(row['estadio'])
         equipo = normalize_text(row['equipo_local'])
         
-        # Detectar si el estadio es genérico o desconocido
-        is_unknown = any(x in estadio for x in ['DESCONOCIDO', 'NO ESPECIFICADO', 'DESCONEGUT', '']) or len(estadio.strip()) <= 3
+        # Detectar si el estadio es genérico o desconocido (eliminamos el '' de la lista para evitar falsos positivos)
+        is_unknown = any(x in estadio for x in ['DESCONOCIDO', 'NO ESPECIFICADO', 'DESCONEGUT']) or len(estadio.strip()) <= 3 or not estadio.strip()
         
         # 1. Patrones manuales prioritarios (se aplican siempre, sobre estadio o equipo)
         for pat, (tipo, val) in patterns.items():
@@ -334,9 +338,11 @@ def main():
                             continue
                         pattern = r'\b' + re.escape(kw) + r'\b' if len(kw) <= 4 else re.escape(kw)
                         if re.search(pattern, estadio) or re.search(pattern, equipo):
-                            ac_list = df_ac[df_ac['municipio_ist'] == muni]['agrupació censal'].unique()
-                            if len(ac_list) > 0:
-                                return 'AC', ac_list[0]
+                            # Si no se ha detectado el barrio específico mediante patrones en el paso 1,
+                            # NO debemos asignar arbitrariamente el primer barrio de la lista (ac_list[0]),
+                            # ya que esto colocaría erróneamente todos los partidos de la ciudad en ese barrio.
+                            # Dejamos que pase al paso 3 para asignarlo a nivel de Municipio (MUN).
+                            pass
                             
         # 3. Fallback a municipios pequeños (MUN) (se permite para estadios conocidos o desconocidos)
         for muni, kws in muni_keywords_all.items():

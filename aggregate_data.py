@@ -72,8 +72,8 @@ def get_deterministic_jitter(name, scale=0.007):
 def main():
     print("🚀 Iniciando agregación a nivel de TERRITORIOS (Barrios/Agrupaciones Censales y Municipios)...")
     
-    # Rutas
-    base_dir = "/Users/joanmataparraga/Library/Mobile Documents/com~apple~CloudDocs/UOC-Master/Segundo Semestre/VD - Visualització de les dades/PRACT1"
+    # Rutas detectadas dinámicamente
+    base_dir = os.path.dirname(os.path.abspath(__file__))
     partidos_path = os.path.join(base_dir, "data/clean_partidos.csv")
     arbitros_path = os.path.join(base_dir, "data/clean_arbitros.csv")
     dim_territorio_path = os.path.join(base_dir, "data/dim_territorio.csv")
@@ -151,6 +151,96 @@ def main():
     
     matched_coords_count = 0
     
+    # Coordenadas exactas para Agrupaciones Censales (barrios de grandes ciudades) para evitar la superposición en el centro
+    ac_coordinates = {
+        # Barcelona
+        "Barcelona 79 (la Bonanova, la Torre Vilana i l'Avinguda del Tibidabo)": (41.405, 2.128),
+        "Barcelona 179 (el Besòs)": (41.417, 2.218),
+        "Barcelona 130 (Can Dragó)": (41.434, 2.180),
+        "Barcelona 15 (el Fort Pienc)": (41.398, 2.181),
+        "Barcelona 180 (el Maresme i el Maresme Vell)": (41.412, 2.207),
+        "Barcelona 35 (l'Escola Industrial)": (41.387, 2.148),
+        "Barcelona 51 (la Mare de Déu de Port, Can Clos i el Polvorí)": (41.356, 2.135),
+        "Barcelona 48 (Santa Madrona, la Satàlia i Montjuïc)": (41.370, 2.158),
+        "Barcelona 124 (Sant Joan d'Horta)": (41.430, 2.160),
+        "Barcelona 103 (Joanic)": (41.405, 2.162),
+        "Barcelona 62 (Santa Maria de Sants)": (41.377, 2.137),
+        "Barcelona 133 (el Turó de la Peira i Can Peguera)": (41.432, 2.168),
+        "Barcelona 172 (la Vila Olímpica i el Bogatell)": (41.391, 2.195),
+        "Barcelona 120 (Sant Genís dels Agudells)": (41.424, 2.140),
+        "Barcelona 135 (la Guineueta)": (41.439, 2.170),
+        "Barcelona 118 (el Baix Carmel)": (41.421, 2.155),
+        "Barcelona 147 (la Trinitat Vella)": (41.448, 2.191),
+        "Barcelona 73 (Pedralbes, la Mercè i el Palau Reial)": (41.396, 2.112),
+        "Barcelona 142 (Santa Engràcia)": (41.444, 2.179),
+        "Barcelona 13 (Sant Pere)": (41.388, 2.180),
+        "Barcelona 10 (Sant Miquel del Port)": (41.378, 2.190),
+        "Barcelona 80 (Sant Gervasi de Cassoles)": (41.401, 2.140),
+        "Barcelona 146 (Torre Baró, Ciutat Meridiana i Vallbona)": (41.460, 2.179),
+        "Barcelona 149 (el Bon Pastor)": (41.437, 2.206),
+        # Sabadell
+        "Sabadell 12 (la Roureda - Sant Julià)": (41.579, 2.096),
+        "Sabadell 14 (Can Rull Nord - Via Alexandra)": (41.554, 2.088),
+        "Sabadell 22 (Torre-romeu - Can Roqueta - el Poblenou)": (41.555, 2.131),
+        "Sabadell 10 (Ca n'Oriac - Torreguitart - Torrent del Capellà)": (41.569, 2.095),
+        "Sabadell 18 (Gràcia)": (41.542, 2.102),
+        # Badalona
+        "Badalona 25 (Bufalà Oest - sector Can Barriga)": (41.460, 2.241),
+        "Badalona 29 (Canyet - Mas Ram - Pomar de Dalt - Pomar)": (41.482, 2.235),
+        "Badalona 18 (Sistrells)": (41.444, 2.231),
+        "Badalona 22 (Lloreda)": (41.448, 2.222),
+        "Badalona 13 (Sant Antoni de Llefià)": (41.437, 2.219),
+        "Badalona 7 (Sant Roc Sud-est - la Mora - el Remei)": (41.431, 2.229),
+        "Badalona 16 (la Salut Centre)": (41.441, 2.225),
+        # L'Hospitalet de Llobregat
+        "Hospitalet de Llobregat 15 (Collblanc - Centre - Vallparda), l'": (41.368, 2.102),
+        "Hospitalet de Llobregat 3 (Centre - la Farga), l'": (41.360, 2.099),
+        "Hospitalet de Llobregat 29 (Bellvitge - Estació), l'": (41.350, 2.113),
+        "Hospitalet de Llobregat 26 (Santa Eulàlia - Centre Sud - Ciutat de la Justícia), l'": (41.363, 2.125),
+        "Hospitalet de Llobregat 16 (Collblanc - Cementiri - Carretera), l'": (41.370, 2.095),
+        "Hospitalet de Llobregat 28 (el Gornal), l'": (41.352, 2.122),
+        "Hospitalet de Llobregat 10 (la Florida - Plaça de la Llibertat), l'": (41.369, 2.108),
+        "Hospitalet de Llobregat 18 (la Torrassa - Plaça dels Pirineus), l'": (41.368, 2.115),
+        # Terrassa
+        "Terrassa 9 (Can Jofresa - Can Palet II - Guadalhorce - Xúquer)": (41.551, 2.019),
+        "Terrassa 6 (Ca n'Anglada)": (41.564, 2.030),
+        "Terrassa 10 (Can Parellada - les Fonts)": (41.529, 2.040),
+        "Terrassa 17 (Can Boada)": (41.567, 1.999),
+        "Terrassa 15 (la Maurina)": (41.559, 2.000),
+        "Terrassa 22 (les Arenes - la Grípia - Can Montllor)": (41.571, 2.039),
+        # Cornellà de Llobregat
+        "Cornellà de Llobregat 2 (Fontsanta - Fatjó)": (41.361, 2.067),
+        "Cornellà de Llobregat 9 (Almeda)": (41.354, 2.083),
+        "Cornellà de Llobregat 6 (Sant Ildefons Oest)": (41.363, 2.053),
+        # Sant Cugat
+        "Sant Cugat del Vallès 9 (Can Sant Joan - Sant Mamet - Vullpalleres - Can Barata - Sector Nord - Can Graells)": (41.488, 2.062),
+        "Sant Cugat del Vallès 6 (Mirasol - Mas Gener - Can Cabassa - Can Fontanals - les Casetes de Can Ravella)": (41.464, 2.061),
+        # Castelldefels
+        "Castelldefels 2 (Vista Alegre - el Castell)": (41.282, 1.979),
+        # Ripollet
+        "Ripollet 1 (Centre - Maragall)": (41.498, 2.153),
+        # Mataró
+        "Mataró 10 (la Llàntia)": (41.547, 2.430),
+        "Mataró 7 (Rocafonda)": (41.546, 2.454),
+        "Mataró 9 (Cirera)": (41.549, 2.441),
+        # Santa Coloma de Gramenet
+        "Santa Coloma de Gramenet 7 (Singuerlin - Can Zam)": (41.461, 2.211),
+        # Esplugues
+        "Esplugues de Llobregat 2 (Can Vidalet)": (41.369, 2.091),
+        # Sant Boi de Llobregat
+        "Sant Boi de Llobregat 11 (Ciutat Cooperativa)": (41.352, 2.021),
+        # Manresa
+        "Manresa 9 (les Escodines - la Balconada - Cal Gravat - Sant Pau)": (41.721, 1.832),
+        "Manresa 5 (el Poble Nou - Mion, Puigberenguer i Miralpeix)": (41.733, 1.815),
+        # Rubí
+        "Rubí 7 (Districte 5 Nord-est)": (41.499, 2.029),
+        # Lleida
+        "Lleida 1 (Balàfia)": (41.629, 0.622),
+        "Lleida 9 (Pardinyes)": (41.627, 0.635),
+        # Granollers
+        "Granollers 6 (Congost - Can Gili)": (41.614, 2.274),
+    }
+    
     for idx, terr in enumerate(unique_territories):
         # Obtener datos de la dimensión
         terr_row = df_dim[df_dim['id_territorio'] == terr].iloc[0]
@@ -160,32 +250,36 @@ def main():
         
         # Buscar coordenadas
         lat, lng = None, None
-        if core_muni_norm in coords_map:
-            lat, lng = coords_map[core_muni_norm]
+        if terr in ac_coordinates:
+            lat, lng = ac_coordinates[terr]
             matched_coords_count += 1
         else:
-            # Búsqueda parcial difusa
-            for key, val in coords_map.items():
-                if key in core_muni_norm or core_muni_norm in key:
-                    lat, lng = val
-                    matched_coords_count += 1
-                    break
-            if lat is None:
-                lat, lng = 41.7286, 1.8222 # Por defecto en el centro de Cataluña
-        
-        # Aplicar un desfase determinista si el municipio tiene múltiples agrupaciones censales (barrios)
-        # Esto previene que se solapen totalmente en Barcelona, Badalona, Hospitalet, etc.
-        if muni_counts.get(muni_raw, 0) > 1:
-            lat_jitter, lng_jitter = get_deterministic_jitter(terr)
-            lat += lat_jitter
-            lng += lng_jitter
+            if core_muni_norm in coords_map:
+                lat, lng = coords_map[core_muni_norm]
+                matched_coords_count += 1
+            else:
+                # Búsqueda parcial difusa
+                for key, val in coords_map.items():
+                    if key in core_muni_norm or core_muni_norm in key:
+                        lat, lng = val
+                        matched_coords_count += 1
+                        break
+                if lat is None:
+                    lat, lng = 41.7286, 1.8222 # Por defecto en el centro de Cataluña
+            
+            # Aplicar un desfase determinista si el municipio tiene múltiples agrupaciones censales (barrios)
+            # Esto previene que se solapen totalmente en Barcelona, Badalona, Hospitalet, etc.
+            if muni_counts.get(muni_raw, 0) > 1:
+                lat_jitter, lng_jitter = get_deterministic_jitter(terr)
+                lat += lat_jitter
+                lng += lng_jitter
             
         # Recopilar estadios de este territorio específico
         df_sub = df_part_terr[df_part_terr['id_territorio'] == terr]
         stadiums_list = []
         for stad, df_stad in df_sub.groupby('estadio'):
             stad_str = str(stad).upper()
-            if any(x in stad_str for x in ['DESCONOCIDO', 'NO ESPECIFICADO', 'DESCONEGUT', '']) or len(stad_str.strip()) <= 3:
+            if any(x in stad_str for x in ['DESCONOCIDO', 'NO ESPECIFICADO', 'DESCONEGUT']) or len(stad_str.strip()) <= 3 or not stad_str.strip():
                 continue
             stadiums_list.append({
                 'name': str(stad),

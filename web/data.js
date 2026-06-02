@@ -24,7 +24,13 @@ export const TERRITORIES = [
     "lat": 42.16144193,
     "lng": 1.09247165,
     "ist": 94.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VILABELLA",
+        "partidos": 12,
+        "avg_tarjetas": 4.08
+      }
+    ]
   },
   {
     "id_territorio": "Abrera",
@@ -35,7 +41,18 @@ export const TERRITORIES = [
     "lat": 41.51617119,
     "lng": 1.902601581,
     "ist": 110.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D'ABRERA",
+        "partidos": 98,
+        "avg_tarjetas": 3.53
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LA TORRE DE CLARAMUNT",
+        "partidos": 15,
+        "avg_tarjetas": 3.73
+      }
+    ]
   },
   {
     "id_territorio": "Agramunt",
@@ -46,7 +63,13 @@ export const TERRITORIES = [
     "lat": 41.78723928,
     "lng": 1.098859253,
     "ist": 93.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D'AGRAMUNT ESCOLA GERARD GATELL",
+        "partidos": 44,
+        "avg_tarjetas": 4.41
+      }
+    ]
   },
   {
     "id_territorio": "Agullana",
@@ -57,7 +80,13 @@ export const TERRITORIES = [
     "lat": 42.3938047,
     "lng": 2.846670142,
     "ist": 107.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM D´AGULLANA",
+        "partidos": 13,
+        "avg_tarjetas": 4.54
+      }
+    ]
   },
   {
     "id_territorio": "Aiguafreda",
@@ -68,7 +97,13 @@ export const TERRITORIES = [
     "lat": 41.76798617,
     "lng": 2.250544628,
     "ist": 109.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D'AIGUAFREDA",
+        "partidos": 28,
+        "avg_tarjetas": 4.46
+      }
+    ]
   },
   {
     "id_territorio": "Albagés, l'",
@@ -79,7 +114,13 @@ export const TERRITORIES = [
     "lat": 41.44911403,
     "lng": 0.739023176,
     "ist": 103.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE L´ALBAGÉS",
+        "partidos": 15,
+        "avg_tarjetas": 5.8
+      }
+    ]
   },
   {
     "id_territorio": "Albesa",
@@ -90,7 +131,18 @@ export const TERRITORIES = [
     "lat": 41.75136441,
     "lng": 0.660407593,
     "ist": 85.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D'ALBESA",
+        "partidos": 13,
+        "avg_tarjetas": 4.46
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE TÉRMENS",
+        "partidos": 2,
+        "avg_tarjetas": 6.0
+      }
+    ]
   },
   {
     "id_territorio": "Albi, l'",
@@ -101,7 +153,13 @@ export const TERRITORIES = [
     "lat": 41.42289588,
     "lng": 0.936579849,
     "ist": 100.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM DE L´ALBI",
+        "partidos": 15,
+        "avg_tarjetas": 4.27
+      }
+    ]
   },
   {
     "id_territorio": "Albons",
@@ -112,7 +170,13 @@ export const TERRITORIES = [
     "lat": 42.10439847,
     "lng": 3.085288573,
     "ist": 100.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D'ALBONS",
+        "partidos": 12,
+        "avg_tarjetas": 5.0
+      }
+    ]
   },
   {
     "id_territorio": "Alcanar",
@@ -123,7 +187,13 @@ export const TERRITORIES = [
     "lat": 40.5432439,
     "lng": 0.480770667,
     "ist": 82.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM LA FANECADA",
+        "partidos": 20,
+        "avg_tarjetas": 7.0
+      }
+    ]
   },
   {
     "id_territorio": "Alcarràs",
@@ -134,7 +204,13 @@ export const TERRITORIES = [
     "lat": 41.56312844,
     "lng": 0.525200819,
     "ist": 78.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. EL XOPERAL",
+        "partidos": 30,
+        "avg_tarjetas": 6.73
+      }
+    ]
   },
   {
     "id_territorio": "Alcoletge",
@@ -145,7 +221,13 @@ export const TERRITORIES = [
     "lat": 41.64730417,
     "lng": 0.694161884,
     "ist": 97.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D'ALCOLETGE",
+        "partidos": 45,
+        "avg_tarjetas": 4.44
+      }
+    ]
   },
   {
     "id_territorio": "Alcover",
@@ -178,7 +260,18 @@ export const TERRITORIES = [
     "lat": 40.87990045,
     "lng": 0.500058469,
     "ist": 90.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LO XOPERAL",
+        "partidos": 7,
+        "avg_tarjetas": 6.0
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BÍTEM",
+        "partidos": 1,
+        "avg_tarjetas": 3.0
+      }
+    ]
   },
   {
     "id_territorio": "Alella",
@@ -189,7 +282,23 @@ export const TERRITORIES = [
     "lat": 41.49373217,
     "lng": 2.294956934,
     "ist": 120.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM TOMÀS CLARAMUNT (Abans la Muntanyeta)",
+        "partidos": 107,
+        "avg_tarjetas": 3.53
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. D'ALELLA",
+        "partidos": 45,
+        "avg_tarjetas": 6.02
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MAR",
+        "partidos": 2,
+        "avg_tarjetas": 1.0
+      }
+    ]
   },
   {
     "id_territorio": "Alguaire",
@@ -200,7 +309,13 @@ export const TERRITORIES = [
     "lat": 41.73635395,
     "lng": 0.583830422,
     "ist": 87.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´ALGUAIRE",
+        "partidos": 16,
+        "avg_tarjetas": 5.62
+      }
+    ]
   },
   {
     "id_territorio": "Almacelles",
@@ -211,7 +326,13 @@ export const TERRITORIES = [
     "lat": 41.73174426,
     "lng": 0.437094544,
     "ist": 75.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´ALMACELLES",
+        "partidos": 75,
+        "avg_tarjetas": 3.75
+      }
+    ]
   },
   {
     "id_territorio": "Alpicat",
@@ -222,7 +343,18 @@ export const TERRITORIES = [
     "lat": 41.66663438,
     "lng": 0.555198295,
     "ist": 114.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´ALPICAT",
+        "partidos": 88,
+        "avg_tarjetas": 4.53
+      },
+      {
+        "name": "CAMP DE FUTBOL COL·LEGI TERRAFERMA",
+        "partidos": 2,
+        "avg_tarjetas": 6.0
+      }
+    ]
   },
   {
     "id_territorio": "Alt Àneu",
@@ -233,7 +365,13 @@ export const TERRITORIES = [
     "lat": 42.63316189,
     "lng": 1.109954836,
     "ist": 118.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE GUARDIOLA DE BERGUEDÀ",
+        "partidos": 44,
+        "avg_tarjetas": 4.23
+      }
+    ]
   },
   {
     "id_territorio": "Altafulla",
@@ -255,7 +393,13 @@ export const TERRITORIES = [
     "lat": 42.35140371,
     "lng": 1.508278479,
     "ist": 98.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D'ALÀS I CERC",
+        "partidos": 6,
+        "avg_tarjetas": 3.17
+      }
+    ]
   },
   {
     "id_territorio": "Amer",
@@ -266,7 +410,13 @@ export const TERRITORIES = [
     "lat": 42.00924462,
     "lng": 2.603018891,
     "ist": 98.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´AMER",
+        "partidos": 46,
+        "avg_tarjetas": 3.3
+      }
+    ]
   },
   {
     "id_territorio": "Ametlla de Mar, l'",
@@ -277,7 +427,13 @@ export const TERRITORIES = [
     "lat": 40.88395787,
     "lng": 0.803165906,
     "ist": 87.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOSEP COSTA",
+        "partidos": 65,
+        "avg_tarjetas": 4.11
+      }
+    ]
   },
   {
     "id_territorio": "Ampolla, l'",
@@ -288,7 +444,13 @@ export const TERRITORIES = [
     "lat": 40.81225126,
     "lng": 0.710140873,
     "ist": 90.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE L´AMPOLLA",
+        "partidos": 15,
+        "avg_tarjetas": 4.93
+      }
+    ]
   },
   {
     "id_territorio": "Amposta",
@@ -310,7 +472,18 @@ export const TERRITORIES = [
     "lat": 41.95744641,
     "lng": 2.640058649,
     "ist": 85.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´ANGLÈS",
+        "partidos": 42,
+        "avg_tarjetas": 2.86
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´ANGLESOLA",
+        "partidos": 15,
+        "avg_tarjetas": 4.0
+      }
+    ]
   },
   {
     "id_territorio": "Arbeca",
@@ -321,7 +494,13 @@ export const TERRITORIES = [
     "lat": 41.54165167,
     "lng": 0.924154304,
     "ist": 92.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´ARBECA",
+        "partidos": 14,
+        "avg_tarjetas": 5.07
+      }
+    ]
   },
   {
     "id_territorio": "Arboç, l'",
@@ -332,7 +511,18 @@ export const TERRITORIES = [
     "lat": 41.26763802,
     "lng": 1.60352186,
     "ist": 81.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE L´ARBOÇ",
+        "partidos": 35,
+        "avg_tarjetas": 4.51
+      },
+      {
+        "name": "CAMP DE FUTBOL ESCOLA CAMP JOLIU",
+        "partidos": 8,
+        "avg_tarjetas": 1.75
+      }
+    ]
   },
   {
     "id_territorio": "Arbúcies",
@@ -343,7 +533,23 @@ export const TERRITORIES = [
     "lat": 41.81608058,
     "lng": 2.514167946,
     "ist": 85.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM CAN PONS",
+        "partidos": 54,
+        "avg_tarjetas": 3.83
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA BATLLÒRIA",
+        "partidos": 1,
+        "avg_tarjetas": 7.0
+      },
+      {
+        "name": "CAMP DE FUTBOL ZEM D´HOSTALRIC",
+        "partidos": 1,
+        "avg_tarjetas": 5.0
+      }
+    ]
   },
   {
     "id_territorio": "Arenys de Mar",
@@ -354,7 +560,18 @@ export const TERRITORIES = [
     "lat": 41.57938543,
     "lng": 2.551497556,
     "ist": 105.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´ARENYS DE MUNT",
+        "partidos": 11,
+        "avg_tarjetas": 3.73
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE GINESTAR",
+        "partidos": 1,
+        "avg_tarjetas": 1.0
+      }
+    ]
   },
   {
     "id_territorio": "Argentona",
@@ -365,7 +582,13 @@ export const TERRITORIES = [
     "lat": 41.55472727,
     "lng": 2.400663981,
     "ist": 112.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM RAÜL PALOMA",
+        "partidos": 115,
+        "avg_tarjetas": 4.26
+      }
+    ]
   },
   {
     "id_territorio": "Armentera, l'",
@@ -376,7 +599,13 @@ export const TERRITORIES = [
     "lat": 42.1721013,
     "lng": 3.074523974,
     "ist": 93.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´ARMENTERA",
+        "partidos": 13,
+        "avg_tarjetas": 4.08
+      }
+    ]
   },
   {
     "id_territorio": "Arnes",
@@ -387,7 +616,13 @@ export const TERRITORIES = [
     "lat": 40.91000512,
     "lng": 0.260882637,
     "ist": 92.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VALDERROBRES",
+        "partidos": 21,
+        "avg_tarjetas": 3.76
+      }
+    ]
   },
   {
     "id_territorio": "Artés",
@@ -398,7 +633,28 @@ export const TERRITORIES = [
     "lat": 41.7981938,
     "lng": 1.953516241,
     "ist": 97.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´ARTÉS",
+        "partidos": 87,
+        "avg_tarjetas": 4.55
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´ARTESA DE SEGRE",
+        "partidos": 57,
+        "avg_tarjetas": 3.91
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´ARTESA DE LLEIDA",
+        "partidos": 14,
+        "avg_tarjetas": 5.5
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE TORREGROSSA",
+        "partidos": 1,
+        "avg_tarjetas": 5.0
+      }
+    ]
   },
   {
     "id_territorio": "Ascó",
@@ -409,7 +665,13 @@ export const TERRITORIES = [
     "lat": 41.18063105,
     "lng": 0.567443286,
     "ist": 94.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´ASCÓ ANNEX",
+        "partidos": 30,
+        "avg_tarjetas": 5.5
+      }
+    ]
   },
   {
     "id_territorio": "Avinyó",
@@ -420,7 +682,18 @@ export const TERRITORIES = [
     "lat": 41.86375268,
     "lng": 1.971318448,
     "ist": 100.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOSEP HERMS",
+        "partidos": 41,
+        "avg_tarjetas": 4.88
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA GRAVA",
+        "partidos": 15,
+        "avg_tarjetas": 5.07
+      }
+    ]
   },
   {
     "id_territorio": "Avià",
@@ -431,7 +704,13 @@ export const TERRITORIES = [
     "lat": 42.07771723,
     "lng": 1.825611891,
     "ist": 110.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. ALFONS GONFAUS",
+        "partidos": 58,
+        "avg_tarjetas": 4.86
+      }
+    ]
   },
   {
     "id_territorio": "Badalona",
@@ -442,7 +721,18 @@ export const TERRITORIES = [
     "lat": 41.447577172220704,
     "lng": 2.239132815076302,
     "ist": 94.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BADALONA SUD",
+        "partidos": 90,
+        "avg_tarjetas": 5.29
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. PERE GOL",
+        "partidos": 35,
+        "avg_tarjetas": 4.4
+      }
+    ]
   },
   {
     "id_territorio": "Badalona 13 (Sant Antoni de Llefià)",
@@ -450,10 +740,16 @@ export const TERRITORIES = [
     "municipio": "Badalona",
     "ciudad": "Badalona",
     "barrio": "Sant Antoni de Llefià",
-    "lat": 41.44398505832778,
-    "lng": 2.2441497257445358,
+    "lat": 41.437,
+    "lng": 2.219,
     "ist": 82.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LLEFIÀ",
+        "partidos": 102,
+        "avg_tarjetas": 3.39
+      }
+    ]
   },
   {
     "id_territorio": "Badalona 16 (la Salut Centre)",
@@ -461,10 +757,16 @@ export const TERRITORIES = [
     "municipio": "Badalona",
     "ciudad": "Badalona",
     "barrio": "la Salut Centre",
-    "lat": 41.445785851164786,
-    "lng": 2.2400178731768436,
+    "lat": 41.441,
+    "lng": 2.225,
     "ist": 69.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. PERE GOL",
+        "partidos": 56,
+        "avg_tarjetas": 3.88
+      }
+    ]
   },
   {
     "id_territorio": "Badalona 18 (Sistrells)",
@@ -472,10 +774,16 @@ export const TERRITORIES = [
     "municipio": "Badalona",
     "ciudad": "Badalona",
     "barrio": "Sistrells",
-    "lat": 41.442164610237505,
-    "lng": 2.2404632507712727,
+    "lat": 41.444,
+    "lng": 2.231,
     "ist": 88.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM CAN CABANYES",
+        "partidos": 113,
+        "avg_tarjetas": 3.88
+      }
+    ]
   },
   {
     "id_territorio": "Badalona 22 (Lloreda)",
@@ -483,10 +791,16 @@ export const TERRITORIES = [
     "municipio": "Badalona",
     "ciudad": "Badalona",
     "barrio": "Lloreda",
-    "lat": 41.447846878856964,
-    "lng": 2.24937649208479,
+    "lat": 41.448,
+    "lng": 2.222,
     "ist": 98.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LLOREDA",
+        "partidos": 107,
+        "avg_tarjetas": 2.89
+      }
+    ]
   },
   {
     "id_territorio": "Badalona 25 (Bufalà Oest - sector Can Barriga)",
@@ -494,10 +808,16 @@ export const TERRITORIES = [
     "municipio": "Badalona",
     "ciudad": "Badalona",
     "barrio": "Bufalà Oest - sector Can Barriga",
-    "lat": 41.442135849621295,
-    "lng": 2.248682043991676,
+    "lat": 41.46,
+    "lng": 2.241,
     "ist": 115.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM BUFALÀ",
+        "partidos": 177,
+        "avg_tarjetas": 4.4
+      }
+    ]
   },
   {
     "id_territorio": "Badalona 29 (Canyet - Mas Ram - Pomar de Dalt - Pomar)",
@@ -505,10 +825,16 @@ export const TERRITORIES = [
     "municipio": "Badalona",
     "ciudad": "Badalona",
     "barrio": "Canyet - Mas Ram - Pomar de Dalt - Pomar",
-    "lat": 41.45181137200219,
-    "lng": 2.2389889733230204,
+    "lat": 41.482,
+    "lng": 2.235,
     "ist": 93.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. POMAR",
+        "partidos": 122,
+        "avg_tarjetas": 3.37
+      }
+    ]
   },
   {
     "id_territorio": "Badalona 7 (Sant Roc Sud-est - la Mora - el Remei)",
@@ -516,10 +842,16 @@ export const TERRITORIES = [
     "municipio": "Badalona",
     "ciudad": "Badalona",
     "barrio": "Sant Roc Sud-est - la Mora - el Remei",
-    "lat": 41.4440741998522,
-    "lng": 2.2473477998635145,
+    "lat": 41.431,
+    "lng": 2.229,
     "ist": 74.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. C.F.SANT ROC",
+        "partidos": 42,
+        "avg_tarjetas": 2.69
+      }
+    ]
   },
   {
     "id_territorio": "Badia del Vallès",
@@ -530,7 +862,13 @@ export const TERRITORIES = [
     "lat": 41.50907052,
     "lng": 2.113347047,
     "ist": 86.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. SERGIO BUSQUETS BURGOS",
+        "partidos": 71,
+        "avg_tarjetas": 4.23
+      }
+    ]
   },
   {
     "id_territorio": "Baix Pallars",
@@ -541,7 +879,33 @@ export const TERRITORIES = [
     "lat": 42.32339338,
     "lng": 1.064277037,
     "ist": 107.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. PLA DE BAIX",
+        "partidos": 73,
+        "avg_tarjetas": 3.55
+      },
+      {
+        "name": "CAMP DE FUTBOL ZEM DE TORROELLA DE MONTGRÍ",
+        "partidos": 71,
+        "avg_tarjetas": 3.34
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. EL XOPERAL",
+        "partidos": 46,
+        "avg_tarjetas": 3.43
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. BAIX CAMP (1)",
+        "partidos": 26,
+        "avg_tarjetas": 4.46
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOAN BAQUÉ",
+        "partidos": 5,
+        "avg_tarjetas": 3.4
+      }
+    ]
   },
   {
     "id_territorio": "Balaguer",
@@ -552,7 +916,18 @@ export const TERRITORIES = [
     "lat": 41.78973778,
     "lng": 0.805297348,
     "ist": 79.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BALAGUER",
+        "partidos": 89,
+        "avg_tarjetas": 5.0
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VALLFOGONA DE BALAGUER",
+        "partidos": 28,
+        "avg_tarjetas": 4.36
+      }
+    ]
   },
   {
     "id_territorio": "Balenyà",
@@ -563,7 +938,18 @@ export const TERRITORIES = [
     "lat": 41.81368983,
     "lng": 2.235818873,
     "ist": 94.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BALENYÀ-JOAN SERRA",
+        "partidos": 43,
+        "avg_tarjetas": 4.86
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT MIQUEL BALENYA",
+        "partidos": 29,
+        "avg_tarjetas": 4.41
+      }
+    ]
   },
   {
     "id_territorio": "Balsareny",
@@ -574,7 +960,13 @@ export const TERRITORIES = [
     "lat": 41.86311546,
     "lng": 1.876765648,
     "ist": 101.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM ELS AMETLLERS",
+        "partidos": 44,
+        "avg_tarjetas": 4.48
+      }
+    ]
   },
   {
     "id_territorio": "Banyeres del Penedès",
@@ -585,7 +977,13 @@ export const TERRITORIES = [
     "lat": 41.27950692,
     "lng": 1.580949266,
     "ist": 101.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BANYERES DEL PENEDÈS",
+        "partidos": 42,
+        "avg_tarjetas": 3.79
+      }
+    ]
   },
   {
     "id_territorio": "Banyoles",
@@ -596,7 +994,13 @@ export const TERRITORIES = [
     "lat": 42.11810557,
     "lng": 2.765370615,
     "ist": 92.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. NOU DE BANYOLES",
+        "partidos": 118,
+        "avg_tarjetas": 3.23
+      }
+    ]
   },
   {
     "id_territorio": "Barberà de la Conca",
@@ -607,7 +1011,13 @@ export const TERRITORIES = [
     "lat": 41.41091586,
     "lng": 1.228323935,
     "ist": 97.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. ANTONI SERRA I PUJOL",
+        "partidos": 171,
+        "avg_tarjetas": 4.46
+      }
+    ]
   },
   {
     "id_territorio": "Barberà del Vallès",
@@ -618,7 +1028,13 @@ export const TERRITORIES = [
     "lat": 41.51608259,
     "lng": 2.124595576,
     "ist": 105.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL IEM LA ROMÀNICA",
+        "partidos": 92,
+        "avg_tarjetas": 4.02
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona",
@@ -629,7 +1045,38 @@ export const TERRITORIES = [
     "lat": 41.382751219330416,
     "lng": 2.168371903623075,
     "ist": 107.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. VALL D´HEBRON",
+        "partidos": 155,
+        "avg_tarjetas": 3.59
+      },
+      {
+        "name": "CAMP DE FUTBOL INEF BARCELONA",
+        "partidos": 128,
+        "avg_tarjetas": 4.11
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. CANYELLES (BCN)",
+        "partidos": 18,
+        "avg_tarjetas": 0.56
+      },
+      {
+        "name": "CAMP DE FUTBOL CEM JÚPITER",
+        "partidos": 15,
+        "avg_tarjetas": 7.87
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. SANT MARTÍ DE PROVENÇALS",
+        "partidos": 15,
+        "avg_tarjetas": 5.8
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. POBLENOU-AGAPITO FERNÁNDEZ",
+        "partidos": 14,
+        "avg_tarjetas": 6.64
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 10 (Sant Miquel del Port)",
@@ -637,10 +1084,16 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "Sant Miquel del Port",
-    "lat": 41.38808310573026,
-    "lng": 2.1735815694149543,
+    "lat": 41.378,
+    "lng": 2.19,
     "ist": 97.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. PARC CATALANA",
+        "partidos": 82,
+        "avg_tarjetas": 3.51
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 103 (Joanic)",
@@ -648,10 +1101,26 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "Joanic",
-    "lat": 41.37811988202241,
-    "lng": 2.1736846679862785,
+    "lat": 41.405,
+    "lng": 2.162,
     "ist": 115.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. NOU SARDENYA",
+        "partidos": 65,
+        "avg_tarjetas": 4.08
+      },
+      {
+        "name": "CAMP DE FUTBOL SCHOOL EUROPA INTERNATIONAL",
+        "partidos": 41,
+        "avg_tarjetas": 2.98
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. L'ÀLIGA",
+        "partidos": 39,
+        "avg_tarjetas": 2.13
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 118 (el Baix Carmel)",
@@ -659,10 +1128,16 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "el Baix Carmel",
-    "lat": 41.38889044662481,
-    "lng": 2.1710354869722006,
+    "lat": 41.421,
+    "lng": 2.155,
     "ist": 93.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CARMEL",
+        "partidos": 124,
+        "avg_tarjetas": 4.02
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 120 (Sant Genís dels Agudells)",
@@ -670,10 +1145,16 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "Sant Genís dels Agudells",
-    "lat": 41.38870858841813,
-    "lng": 2.176621793339174,
+    "lat": 41.424,
+    "lng": 2.14,
     "ist": 99.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. SANT GENÍS",
+        "partidos": 142,
+        "avg_tarjetas": 4.17
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 124 (Sant Joan d'Horta)",
@@ -681,10 +1162,26 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "Sant Joan d'Horta",
-    "lat": 41.386903839525864,
-    "lng": 2.171313549413186,
+    "lat": 41.43,
+    "lng": 2.16,
     "ist": 95.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. HORTA",
+        "partidos": 112,
+        "avg_tarjetas": 4.23
+      },
+      {
+        "name": "CAMP DE FUTBOL COL·LEGI SALESIANS D´HORTA",
+        "partidos": 26,
+        "avg_tarjetas": 3.73
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´HORTA DE SANT JOAN",
+        "partidos": 9,
+        "avg_tarjetas": 5.22
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 13 (Sant Pere)",
@@ -692,10 +1189,16 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "Sant Pere",
-    "lat": 41.38413450200522,
-    "lng": 2.1737638044380034,
+    "lat": 41.388,
+    "lng": 2.18,
     "ist": 104.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. MENORCA",
+        "partidos": 83,
+        "avg_tarjetas": 3.28
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 130 (Can Dragó)",
@@ -703,10 +1206,16 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "Can Dragó",
-    "lat": 41.39102191498143,
-    "lng": 2.1759495167895104,
+    "lat": 41.434,
+    "lng": 2.18,
     "ist": 99.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM CAN DRAGO",
+        "partidos": 213,
+        "avg_tarjetas": 3.97
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 133 (el Turó de la Peira i Can Peguera)",
@@ -714,10 +1223,16 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "el Turó de la Peira i Can Peguera",
-    "lat": 41.392052450833276,
-    "lng": 2.1798455228865716,
+    "lat": 41.432,
+    "lng": 2.168,
     "ist": 83.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. TURÓ DE LA PEIRA",
+        "partidos": 144,
+        "avg_tarjetas": 2.97
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 135 (la Guineueta)",
@@ -725,10 +1240,16 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "la Guineueta",
-    "lat": 41.38089760446604,
-    "lng": 2.1757853356780914,
+    "lat": 41.439,
+    "lng": 2.17,
     "ist": 98.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM LA GUINEUETA",
+        "partidos": 125,
+        "avg_tarjetas": 3.96
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 142 (Santa Engràcia)",
@@ -736,10 +1257,16 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "Santa Engràcia",
-    "lat": 41.38777937345004,
-    "lng": 2.173709940460443,
+    "lat": 41.444,
+    "lng": 2.179,
     "ist": 92.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ESCOLA ESPORTIVA BRAFA",
+        "partidos": 96,
+        "avg_tarjetas": 3.06
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 146 (Torre Baró, Ciutat Meridiana i Vallbona)",
@@ -747,10 +1274,16 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "Torre Baró, Ciutat Meridiana i Vallbona",
-    "lat": 41.389062816204635,
-    "lng": 2.1755693512939778,
+    "lat": 41.46,
+    "lng": 2.179,
     "ist": 70.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM CIUTAT MERIDIANA-TORRENT BOSC",
+        "partidos": 54,
+        "avg_tarjetas": 3.0
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 147 (la Trinitat Vella)",
@@ -758,10 +1291,16 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "la Trinitat Vella",
-    "lat": 41.38018350839514,
-    "lng": 2.177659874606333,
+    "lat": 41.448,
+    "lng": 2.191,
     "ist": 75.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. TRINITAT VELLA",
+        "partidos": 116,
+        "avg_tarjetas": 3.29
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 149 (el Bon Pastor)",
@@ -769,10 +1308,16 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "el Bon Pastor",
-    "lat": 41.3899700351766,
-    "lng": 2.1738042778009095,
+    "lat": 41.437,
+    "lng": 2.206,
     "ist": 76.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM BON PASTOR",
+        "partidos": 57,
+        "avg_tarjetas": 3.68
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 15 (el Fort Pienc)",
@@ -780,10 +1325,16 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "el Fort Pienc",
-    "lat": 41.38202463425173,
-    "lng": 2.1744148191154036,
+    "lat": 41.398,
+    "lng": 2.181,
     "ist": 105.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM FORT-PIENC",
+        "partidos": 212,
+        "avg_tarjetas": 3.6
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 172 (la Vila Olímpica i el Bogatell)",
@@ -791,10 +1342,21 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "la Vila Olímpica i el Bogatell",
-    "lat": 41.38636183043473,
-    "lng": 2.1798803265746405,
+    "lat": 41.391,
+    "lng": 2.195,
     "ist": 125.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. POBLENOU-AGAPITO FERNÁNDEZ",
+        "partidos": 96,
+        "avg_tarjetas": 3.45
+      },
+      {
+        "name": "CAMP DE FUTBOL CEM CLOT DE LA MEL",
+        "partidos": 40,
+        "avg_tarjetas": 2.58
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 179 (el Besòs)",
@@ -802,10 +1364,26 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "el Besòs",
-    "lat": 41.390264592429105,
-    "lng": 2.1682643295289634,
+    "lat": 41.417,
+    "lng": 2.218,
     "ist": 78.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM BESÒS-TRAJANA",
+        "partidos": 88,
+        "avg_tarjetas": 3.92
+      },
+      {
+        "name": "CAMP DE FUTBOL CEM MARINA BESÒS JOSÉ LUIS RUIZ CASADO",
+        "partidos": 73,
+        "avg_tarjetas": 3.84
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. BARÓ DE VIVER",
+        "partidos": 57,
+        "avg_tarjetas": 4.42
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 180 (el Maresme i el Maresme Vell)",
@@ -813,10 +1391,16 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "el Maresme i el Maresme Vell",
-    "lat": 41.3846269737189,
-    "lng": 2.169417938368725,
+    "lat": 41.412,
+    "lng": 2.207,
     "ist": 74.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM MARESME",
+        "partidos": 195,
+        "avg_tarjetas": 3.43
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 35 (l'Escola Industrial)",
@@ -824,10 +1408,21 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "l'Escola Industrial",
-    "lat": 41.379118919518454,
-    "lng": 2.173959401912512,
+    "lat": 41.387,
+    "lng": 2.148,
     "ist": 120.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ESCOLA INDUSTRIAL",
+        "partidos": 171,
+        "avg_tarjetas": 4.06
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. SANT MARTÍ DE PROVENÇALS",
+        "partidos": 13,
+        "avg_tarjetas": 1.54
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 48 (Santa Madrona, la Satàlia i Montjuïc)",
@@ -835,10 +1430,31 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "Santa Madrona, la Satàlia i Montjuïc",
-    "lat": 41.38940382860762,
-    "lng": 2.1764616011042293,
+    "lat": 41.37,
+    "lng": 2.158,
     "ist": 95.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA SATÀLIA",
+        "partidos": 158,
+        "avg_tarjetas": 3.17
+      },
+      {
+        "name": "CAMP DE FUTBOL CEM MUNDET (1)",
+        "partidos": 6,
+        "avg_tarjetas": 2.0
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. IBERIA",
+        "partidos": 5,
+        "avg_tarjetas": 1.6
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. CARMEL",
+        "partidos": 1,
+        "avg_tarjetas": 11.0
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 51 (la Mare de Déu de Port, Can Clos i el Polvorí)",
@@ -846,10 +1462,16 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "la Mare de Déu de Port, Can Clos i el Polvorí",
-    "lat": 41.38406064103161,
-    "lng": 2.170837727613942,
+    "lat": 41.356,
+    "lng": 2.135,
     "ist": 89.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM LA BASCULA EMILIO FERNANDEZ F11",
+        "partidos": 177,
+        "avg_tarjetas": 3.63
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 62 (Santa Maria de Sants)",
@@ -857,10 +1479,16 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "Santa Maria de Sants",
-    "lat": 41.3864289251617,
-    "lng": 2.17844991027714,
+    "lat": 41.377,
+    "lng": 2.137,
     "ist": 87.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CE DE L´ENERGIA",
+        "partidos": 145,
+        "avg_tarjetas": 3.61
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 73 (Pedralbes, la Mercè i el Palau Reial)",
@@ -868,10 +1496,26 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "Pedralbes, la Mercè i el Palau Reial",
-    "lat": 41.387690014847365,
-    "lng": 2.174625277098414,
+    "lat": 41.396,
+    "lng": 2.112,
     "ist": 123.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL UB ESPORTS",
+        "partidos": 84,
+        "avg_tarjetas": 3.39
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VALLVIDRERA",
+        "partidos": 15,
+        "avg_tarjetas": 1.93
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. TEIXONERA",
+        "partidos": 14,
+        "avg_tarjetas": 6.29
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 79 (la Bonanova, la Torre Vilana i l'Avinguda del Tibidabo)",
@@ -879,10 +1523,26 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "la Bonanova, la Torre Vilana i l'Avinguda del Tibidabo",
-    "lat": 41.386708497303125,
-    "lng": 2.172627054771089,
+    "lat": 41.405,
+    "lng": 2.128,
     "ist": 131.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL COL·LEGI SANT IGNASI",
+        "partidos": 173,
+        "avg_tarjetas": 4.38
+      },
+      {
+        "name": "CAMP DE FUTBOL COL·LEGI LA SALLE BONANOVA",
+        "partidos": 84,
+        "avg_tarjetas": 3.95
+      },
+      {
+        "name": "CAMP DE FUTBOL CLUB MEILAND",
+        "partidos": 14,
+        "avg_tarjetas": 5.86
+      }
+    ]
   },
   {
     "id_territorio": "Barcelona 80 (Sant Gervasi de Cassoles)",
@@ -890,10 +1550,21 @@ export const TERRITORIES = [
     "municipio": "Barcelona",
     "ciudad": "Barcelona",
     "barrio": "Sant Gervasi de Cassoles",
-    "lat": 41.38887772313887,
-    "lng": 2.168854879085639,
+    "lat": 41.401,
+    "lng": 2.14,
     "ist": 124.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL COL·LEGI SANT ANTONI DE PÀDUA-SALESIANS",
+        "partidos": 57,
+        "avg_tarjetas": 3.95
+      },
+      {
+        "name": "CAMP DE FUTBOL ESCOLA ESPORTIVA BRAFA",
+        "partidos": 2,
+        "avg_tarjetas": 7.5
+      }
+    ]
   },
   {
     "id_territorio": "Batea",
@@ -904,7 +1575,13 @@ export const TERRITORIES = [
     "lat": 41.09446232,
     "lng": 0.311413833,
     "ist": 83.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BATEA",
+        "partidos": 29,
+        "avg_tarjetas": 3.9
+      }
+    ]
   },
   {
     "id_territorio": "Begues",
@@ -915,7 +1592,13 @@ export const TERRITORIES = [
     "lat": 41.33267297,
     "lng": 1.921745361,
     "ist": 121.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BEGUES",
+        "partidos": 72,
+        "avg_tarjetas": 4.24
+      }
+    ]
   },
   {
     "id_territorio": "Begur",
@@ -926,7 +1609,13 @@ export const TERRITORIES = [
     "lat": 41.95433767,
     "lng": 3.20707327,
     "ist": 102.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BEGUR",
+        "partidos": 56,
+        "avg_tarjetas": 4.0
+      }
+    ]
   },
   {
     "id_territorio": "Bell-lloc d'Urgell",
@@ -937,7 +1626,18 @@ export const TERRITORIES = [
     "lat": 41.62963892,
     "lng": 0.779431843,
     "ist": 95.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL COL·LEGI BELL-LLOC",
+        "partidos": 69,
+        "avg_tarjetas": 2.88
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BELL-LLOC D´URGELL",
+        "partidos": 15,
+        "avg_tarjetas": 3.8
+      }
+    ]
   },
   {
     "id_territorio": "Bellcaire d'Empordà",
@@ -948,7 +1648,18 @@ export const TERRITORIES = [
     "lat": 42.08076005,
     "lng": 3.094270988,
     "ist": 103.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BELLCAIRE D´EMPORDÀ",
+        "partidos": 15,
+        "avg_tarjetas": 5.73
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BELLCAIRE D´URGELL",
+        "partidos": 15,
+        "avg_tarjetas": 6.8
+      }
+    ]
   },
   {
     "id_territorio": "Bellpuig",
@@ -959,7 +1670,18 @@ export const TERRITORIES = [
     "lat": 41.62597958,
     "lng": 1.011153698,
     "ist": 83.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BELLPUIG",
+        "partidos": 66,
+        "avg_tarjetas": 3.83
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VILANOVA DE BELLPUIG",
+        "partidos": 23,
+        "avg_tarjetas": 3.48
+      }
+    ]
   },
   {
     "id_territorio": "Bellvei",
@@ -970,7 +1692,13 @@ export const TERRITORIES = [
     "lat": 41.24129713,
     "lng": 1.576592377,
     "ist": 91.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANTA OLIVA",
+        "partidos": 15,
+        "avg_tarjetas": 2.2
+      }
+    ]
   },
   {
     "id_territorio": "Bellvís",
@@ -981,7 +1709,13 @@ export const TERRITORIES = [
     "lat": 41.6718278,
     "lng": 0.817477768,
     "ist": 86.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BELLVÍS",
+        "partidos": 16,
+        "avg_tarjetas": 6.75
+      }
+    ]
   },
   {
     "id_territorio": "Benavent de Segrià",
@@ -992,7 +1726,13 @@ export const TERRITORIES = [
     "lat": 41.6959255,
     "lng": 0.633031977,
     "ist": 109.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BENAVENT DE SEGRIÀ",
+        "partidos": 15,
+        "avg_tarjetas": 3.8
+      }
+    ]
   },
   {
     "id_territorio": "Benissanet",
@@ -1003,7 +1743,13 @@ export const TERRITORIES = [
     "lat": 41.05670629,
     "lng": 0.634595291,
     "ist": 83.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. ALBERT TODÓ",
+        "partidos": 9,
+        "avg_tarjetas": 6.56
+      }
+    ]
   },
   {
     "id_territorio": "Berga",
@@ -1014,7 +1760,13 @@ export const TERRITORIES = [
     "lat": 42.10436455,
     "lng": 1.846218116,
     "ist": 93.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BERGA",
+        "partidos": 102,
+        "avg_tarjetas": 4.34
+      }
+    ]
   },
   {
     "id_territorio": "Besalú",
@@ -1025,7 +1777,13 @@ export const TERRITORIES = [
     "lat": 42.19889185,
     "lng": 2.699512098,
     "ist": 96.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL.  LA MARGINERA",
+        "partidos": 29,
+        "avg_tarjetas": 4.24
+      }
+    ]
   },
   {
     "id_territorio": "Bescanó",
@@ -1036,7 +1794,13 @@ export const TERRITORIES = [
     "lat": 41.96560048,
     "lng": 2.742168943,
     "ist": 112.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BESCANÓ",
+        "partidos": 97,
+        "avg_tarjetas": 3.47
+      }
+    ]
   },
   {
     "id_territorio": "Bigues i Riells del Fai",
@@ -1058,7 +1822,13 @@ export const TERRITORIES = [
     "lat": 41.95969678,
     "lng": 3.038550275,
     "ist": 84.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LA BISBAL DEL PENEDÈS",
+        "partidos": 12,
+        "avg_tarjetas": 3.25
+      }
+    ]
   },
   {
     "id_territorio": "Blanes",
@@ -1069,7 +1839,23 @@ export const TERRITORIES = [
     "lat": 41.67576646,
     "lng": 2.79240678,
     "ist": 89.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CA LA GUIDÓ-PEDRO ALIA DORADO",
+        "partidos": 84,
+        "avg_tarjetas": 3.51
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. NOVA CIUTAT ESPORTIVA BLANES",
+        "partidos": 62,
+        "avg_tarjetas": 3.68
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. CAN BORRELL",
+        "partidos": 54,
+        "avg_tarjetas": 3.26
+      }
+    ]
   },
   {
     "id_territorio": "Borges Blanques, les",
@@ -1080,7 +1866,18 @@ export const TERRITORIES = [
     "lat": 41.52125107,
     "lng": 0.867716983,
     "ist": 91.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. RAMON ESPASA",
+        "partidos": 76,
+        "avg_tarjetas": 4.34
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LES GARRIGUES",
+        "partidos": 57,
+        "avg_tarjetas": 3.4
+      }
+    ]
   },
   {
     "id_territorio": "Borrassà",
@@ -1091,7 +1888,13 @@ export const TERRITORIES = [
     "lat": 42.22279456,
     "lng": 2.926309348,
     "ist": 114.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BORRASSÀ",
+        "partidos": 52,
+        "avg_tarjetas": 4.02
+      }
+    ]
   },
   {
     "id_territorio": "Breda",
@@ -1102,7 +1905,18 @@ export const TERRITORIES = [
     "lat": 41.74853898,
     "lng": 2.556951659,
     "ist": 98.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM RICARD GINEBREDA",
+        "partidos": 85,
+        "avg_tarjetas": 4.32
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BREDA",
+        "partidos": 30,
+        "avg_tarjetas": 5.47
+      }
+    ]
   },
   {
     "id_territorio": "Bàscara",
@@ -1113,7 +1927,13 @@ export const TERRITORIES = [
     "lat": 42.15973574,
     "lng": 2.910444572,
     "ist": 100.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BÀSCARA",
+        "partidos": 54,
+        "avg_tarjetas": 2.94
+      }
+    ]
   },
   {
     "id_territorio": "Cabanes",
@@ -1124,7 +1944,18 @@ export const TERRITORIES = [
     "lat": 42.30700041,
     "lng": 2.978283233,
     "ist": 96.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CABANES",
+        "partidos": 11,
+        "avg_tarjetas": 4.73
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. MARCA DE L´HAM",
+        "partidos": 2,
+        "avg_tarjetas": 4.5
+      }
+    ]
   },
   {
     "id_territorio": "Cabanyes, les",
@@ -1135,7 +1966,13 @@ export const TERRITORIES = [
     "lat": 41.37148025,
     "lng": 1.689133527,
     "ist": 116.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LES CABANYES",
+        "partidos": 28,
+        "avg_tarjetas": 1.86
+      }
+    ]
   },
   {
     "id_territorio": "Cabrils",
@@ -1146,7 +1983,13 @@ export const TERRITORIES = [
     "lat": 41.52560018,
     "lng": 2.368450483,
     "ist": 119.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM DE CABRILS",
+        "partidos": 68,
+        "avg_tarjetas": 4.75
+      }
+    ]
   },
   {
     "id_territorio": "Cadaqués",
@@ -1157,7 +2000,13 @@ export const TERRITORIES = [
     "lat": 42.28808721,
     "lng": 3.275869869,
     "ist": 94.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SAGUARDA",
+        "partidos": 40,
+        "avg_tarjetas": 4.28
+      }
+    ]
   },
   {
     "id_territorio": "Calaf",
@@ -1168,7 +2017,18 @@ export const TERRITORIES = [
     "lat": 41.73401913,
     "lng": 1.510944003,
     "ist": 88.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CALAFELL",
+        "partidos": 116,
+        "avg_tarjetas": 3.53
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SEGUR DE CALAFELL",
+        "partidos": 15,
+        "avg_tarjetas": 6.27
+      }
+    ]
   },
   {
     "id_territorio": "Caldes d'Estrac",
@@ -1179,7 +2039,18 @@ export const TERRITORIES = [
     "lat": 41.5724984,
     "lng": 2.527811321,
     "ist": 107.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM LES CREMADES",
+        "partidos": 72,
+        "avg_tarjetas": 3.89
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. VALL-LLOBERA",
+        "partidos": 72,
+        "avg_tarjetas": 3.69
+      }
+    ]
   },
   {
     "id_territorio": "Calldetenes",
@@ -1190,7 +2061,13 @@ export const TERRITORIES = [
     "lat": 41.92468966,
     "lng": 2.284540336,
     "ist": 107.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CALLDETENES",
+        "partidos": 85,
+        "avg_tarjetas": 2.66
+      }
+    ]
   },
   {
     "id_territorio": "Callús",
@@ -1201,7 +2078,13 @@ export const TERRITORIES = [
     "lat": 41.78127786,
     "lng": 1.784135265,
     "ist": 102.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. ANDREU LLADÓ",
+        "partidos": 85,
+        "avg_tarjetas": 3.8
+      }
+    ]
   },
   {
     "id_territorio": "Calonge de Segarra",
@@ -1212,7 +2095,18 @@ export const TERRITORIES = [
     "lat": 41.76408573,
     "lng": 1.481977441,
     "ist": 111.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CALONGE",
+        "partidos": 67,
+        "avg_tarjetas": 2.88
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT ANTONI DE CALONGE",
+        "partidos": 30,
+        "avg_tarjetas": 3.3
+      }
+    ]
   },
   {
     "id_territorio": "Camarles",
@@ -1223,7 +2117,13 @@ export const TERRITORIES = [
     "lat": 40.77214068,
     "lng": 0.669673104,
     "ist": 83.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DEL PLA DE BARRA",
+        "partidos": 52,
+        "avg_tarjetas": 4.46
+      }
+    ]
   },
   {
     "id_territorio": "Cambrils",
@@ -1234,7 +2134,23 @@ export const TERRITORIES = [
     "lat": 41.07432746,
     "lng": 1.051688034,
     "ist": 100.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CAMBRILS (1)",
+        "partidos": 86,
+        "avg_tarjetas": 2.56
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CAMBRILS (3)",
+        "partidos": 17,
+        "avg_tarjetas": 1.29
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CAMBRILS (2)",
+        "partidos": 3,
+        "avg_tarjetas": 1.0
+      }
+    ]
   },
   {
     "id_territorio": "Campdevànol",
@@ -1245,7 +2161,13 @@ export const TERRITORIES = [
     "lat": 42.22446763,
     "lng": 2.167213333,
     "ist": 103.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CAMPDEVÀNOL",
+        "partidos": 20,
+        "avg_tarjetas": 3.6
+      }
+    ]
   },
   {
     "id_territorio": "Camprodon",
@@ -1256,7 +2178,13 @@ export const TERRITORIES = [
     "lat": 42.31174178,
     "lng": 2.365078268,
     "ist": 100.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CAMP DE LA VILA",
+        "partidos": 15,
+        "avg_tarjetas": 4.4
+      }
+    ]
   },
   {
     "id_territorio": "Camós",
@@ -1267,7 +2195,13 @@ export const TERRITORIES = [
     "lat": 42.09417137,
     "lng": 2.767199365,
     "ist": 113.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MIÀNIGUES",
+        "partidos": 15,
+        "avg_tarjetas": 3.73
+      }
+    ]
   },
   {
     "id_territorio": "Canet d'Adri",
@@ -1278,7 +2212,18 @@ export const TERRITORIES = [
     "lat": 42.03342444,
     "lng": 2.737025253,
     "ist": 116.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CANET DE MAR",
+        "partidos": 26,
+        "avg_tarjetas": 3.46
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MAÇANET DE LA SELVA",
+        "partidos": 26,
+        "avg_tarjetas": 2.08
+      }
+    ]
   },
   {
     "id_territorio": "Canonja, la",
@@ -1300,7 +2245,13 @@ export const TERRITORIES = [
     "lat": 41.62183857,
     "lng": 2.277179111,
     "ist": 75.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CANOVELLES",
+        "partidos": 80,
+        "avg_tarjetas": 3.69
+      }
+    ]
   },
   {
     "id_territorio": "Canyelles",
@@ -1311,7 +2262,18 @@ export const TERRITORIES = [
     "lat": 41.28615903,
     "lng": 1.722171016,
     "ist": 104.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CANYELLES (BCN)",
+        "partidos": 87,
+        "avg_tarjetas": 4.69
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. CANYELLES  (EL GARRAF)",
+        "partidos": 42,
+        "avg_tarjetas": 3.81
+      }
+    ]
   },
   {
     "id_territorio": "Capellades",
@@ -1322,7 +2284,13 @@ export const TERRITORIES = [
     "lat": 41.53116161,
     "lng": 1.686051806,
     "ist": 103.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. C.F.CAPELLADES",
+        "partidos": 72,
+        "avg_tarjetas": 3.89
+      }
+    ]
   },
   {
     "id_territorio": "Cardedeu",
@@ -1344,7 +2312,13 @@ export const TERRITORIES = [
     "lat": 41.91329668,
     "lng": 1.68113098,
     "ist": 92.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VIDA ACTIVA",
+        "partidos": 59,
+        "avg_tarjetas": 5.75
+      }
+    ]
   },
   {
     "id_territorio": "Casserres",
@@ -1355,7 +2329,13 @@ export const TERRITORIES = [
     "lat": 42.01371242,
     "lng": 1.841712148,
     "ist": 102.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CASSERRES",
+        "partidos": 15,
+        "avg_tarjetas": 5.13
+      }
+    ]
   },
   {
     "id_territorio": "Cassà de la Selva",
@@ -1366,7 +2346,13 @@ export const TERRITORIES = [
     "lat": 41.88738229,
     "lng": 2.874239415,
     "ist": 93.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CASSÀ DE LA SELVA",
+        "partidos": 67,
+        "avg_tarjetas": 3.78
+      }
+    ]
   },
   {
     "id_territorio": "Castell d'Aro, Platja d'Aro i s'Agaró",
@@ -1377,7 +2363,38 @@ export const TERRITORIES = [
     "lat": 41.81746772,
     "lng": 3.068417874,
     "ist": 87.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOAN CORTIELLA-CAN SERRADOR",
+        "partidos": 113,
+        "avg_tarjetas": 4.39
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CASTELL D´ARO",
+        "partidos": 67,
+        "avg_tarjetas": 3.48
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. ESPORTIU PITORT",
+        "partidos": 41,
+        "avg_tarjetas": 3.88
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. CEBRIÀ CALVET",
+        "partidos": 29,
+        "avg_tarjetas": 3.66
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. CASTELLNOU DE BAGES",
+        "partidos": 28,
+        "avg_tarjetas": 4.96
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. IÑAKI FERNÁNDEZ ORJALES, BÚFALO",
+        "partidos": 28,
+        "avg_tarjetas": 4.5
+      }
+    ]
   },
   {
     "id_territorio": "Castelldefels 2 (Vista Alegre - el Castell)",
@@ -1385,10 +2402,16 @@ export const TERRITORIES = [
     "municipio": "Castelldefels",
     "ciudad": "Castelldefels",
     "barrio": "Vista Alegre - el Castell",
-    "lat": 41.28047213,
-    "lng": 1.97701006,
+    "lat": 41.282,
+    "lng": 1.979,
     "ist": 94.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. VISTA ALEGRE-ELS MOLINS",
+        "partidos": 126,
+        "avg_tarjetas": 4.17
+      }
+    ]
   },
   {
     "id_territorio": "Castelló d'Empúries",
@@ -1399,7 +2422,13 @@ export const TERRITORIES = [
     "lat": 42.25832371,
     "lng": 3.074434461,
     "ist": 74.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DEL CENTRE HISTÒRIC",
+        "partidos": 74,
+        "avg_tarjetas": 3.27
+      }
+    ]
   },
   {
     "id_territorio": "Catalunya",
@@ -1410,7 +2439,18 @@ export const TERRITORIES = [
     "lat": 41.7286,
     "lng": 1.8222,
     "ist": 100.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM ARISTIDES MAILLOL",
+        "partidos": 69,
+        "avg_tarjetas": 3.87
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. LUIS GONZÁLEZ BAEZA",
+        "partidos": 42,
+        "avg_tarjetas": 5.86
+      }
+    ]
   },
   {
     "id_territorio": "Catllar, el",
@@ -1421,7 +2461,13 @@ export const TERRITORIES = [
     "lat": 41.17538073,
     "lng": 1.326250797,
     "ist": 112.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DEL CATLLAR",
+        "partidos": 68,
+        "avg_tarjetas": 3.41
+      }
+    ]
   },
   {
     "id_territorio": "Cava",
@@ -1432,7 +2478,18 @@ export const TERRITORIES = [
     "lat": 42.32536247,
     "lng": 1.584345925,
     "ist": 110.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL IEM DE DELTEBRE-LA CAVA",
+        "partidos": 64,
+        "avg_tarjetas": 4.25
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. SALVADOR GISBERT",
+        "partidos": 3,
+        "avg_tarjetas": 0.0
+      }
+    ]
   },
   {
     "id_territorio": "Cellera de Ter, la",
@@ -1443,7 +2500,13 @@ export const TERRITORIES = [
     "lat": 41.96830412,
     "lng": 2.620736596,
     "ist": 101.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LA CELLERA DE TER",
+        "partidos": 69,
+        "avg_tarjetas": 4.01
+      }
+    ]
   },
   {
     "id_territorio": "Celrà",
@@ -1454,7 +2517,13 @@ export const TERRITORIES = [
     "lat": 42.02469083,
     "lng": 2.878947284,
     "ist": 96.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CELRÀ",
+        "partidos": 82,
+        "avg_tarjetas": 2.94
+      }
+    ]
   },
   {
     "id_territorio": "Centelles",
@@ -1465,7 +2534,13 @@ export const TERRITORIES = [
     "lat": 41.79750909,
     "lng": 2.219070942,
     "ist": 105.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CENTELLES",
+        "partidos": 55,
+        "avg_tarjetas": 4.02
+      }
+    ]
   },
   {
     "id_territorio": "Cercs",
@@ -1476,7 +2551,13 @@ export const TERRITORIES = [
     "lat": 42.14598452,
     "lng": 1.86074923,
     "ist": 99.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT JORDI DE CERCS",
+        "partidos": 15,
+        "avg_tarjetas": 5.07
+      }
+    ]
   },
   {
     "id_territorio": "Cerdanyola del Vallès",
@@ -1487,7 +2568,18 @@ export const TERRITORIES = [
     "lat": 41.4913073,
     "lng": 2.140571964,
     "ist": 108.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM LES FONTETES",
+        "partidos": 151,
+        "avg_tarjetas": 3.08
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DEL CAMI DEL MIG",
+        "partidos": 98,
+        "avg_tarjetas": 2.8
+      }
+    ]
   },
   {
     "id_territorio": "Cervelló",
@@ -1498,7 +2590,18 @@ export const TERRITORIES = [
     "lat": 41.39610698,
     "lng": 1.959104276,
     "ist": 114.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA PLANA - CERVELLÓ",
+        "partidos": 84,
+        "avg_tarjetas": 3.96
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LA PALMA DE CERVELLÓ",
+        "partidos": 43,
+        "avg_tarjetas": 4.09
+      }
+    ]
   },
   {
     "id_territorio": "Cervera",
@@ -1531,7 +2634,13 @@ export const TERRITORIES = [
     "lat": 42.17470995,
     "lng": 1.315770473,
     "ist": 93.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE COLL DE NARGÓ",
+        "partidos": 15,
+        "avg_tarjetas": 5.33
+      }
+    ]
   },
   {
     "id_territorio": "Collsuspina",
@@ -1542,7 +2651,18 @@ export const TERRITORIES = [
     "lat": 41.82560516,
     "lng": 2.175212812,
     "ist": 117.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE COLLSUSPINA",
+        "partidos": 13,
+        "avg_tarjetas": 6.15
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MOIÀ",
+        "partidos": 2,
+        "avg_tarjetas": 6.0
+      }
+    ]
   },
   {
     "id_territorio": "Coma i la Pedra, la",
@@ -1553,7 +2673,13 @@ export const TERRITORIES = [
     "lat": 42.17604808,
     "lng": 1.589748936,
     "ist": 112.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA COMA",
+        "partidos": 52,
+        "avg_tarjetas": 4.08
+      }
+    ]
   },
   {
     "id_territorio": "Conca de Dalt",
@@ -1564,7 +2690,13 @@ export const TERRITORIES = [
     "lat": 42.24475867,
     "lng": 0.971516787,
     "ist": 108.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. AITANA BONMATÍ CONCA",
+        "partidos": 101,
+        "avg_tarjetas": 4.56
+      }
+    ]
   },
   {
     "id_territorio": "Constantí",
@@ -1586,7 +2718,18 @@ export const TERRITORIES = [
     "lat": 41.07766046,
     "lng": 0.477947926,
     "ist": 86.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CORBERA DE LLOBREGAT",
+        "partidos": 70,
+        "avg_tarjetas": 3.66
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CORBERA D´EBRE",
+        "partidos": 9,
+        "avg_tarjetas": 5.67
+      }
+    ]
   },
   {
     "id_territorio": "Cornellà de Llobregat",
@@ -1597,7 +2740,28 @@ export const TERRITORIES = [
     "lat": 41.35582660935652,
     "lng": 2.0677896647419054,
     "ist": 95.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CORNELLÀ DE LLOBREGAT",
+        "partidos": 142,
+        "avg_tarjetas": 2.83
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CORNELLÀ DE TERRI",
+        "partidos": 57,
+        "avg_tarjetas": 3.63
+      },
+      {
+        "name": "CAMP DE FUTBOL CEM CAN ROIG",
+        "partidos": 3,
+        "avg_tarjetas": 2.0
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LES PLANES (SANT JOAN DESPÍ)",
+        "partidos": 1,
+        "avg_tarjetas": 5.0
+      }
+    ]
   },
   {
     "id_territorio": "Cornellà de Llobregat 2 (Fontsanta - Fatjó)",
@@ -1605,10 +2769,21 @@ export const TERRITORIES = [
     "municipio": "Cornellà de Llobregat",
     "ciudad": "Cornellà de Llobregat",
     "barrio": "Fontsanta - Fatjó",
-    "lat": 41.36018965143458,
-    "lng": 2.061515678285392,
+    "lat": 41.361,
+    "lng": 2.067,
     "ist": 112.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CAN FATJÓ",
+        "partidos": 99,
+        "avg_tarjetas": 4.89
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. FONTSANTA-FATJÓ",
+        "partidos": 97,
+        "avg_tarjetas": 3.77
+      }
+    ]
   },
   {
     "id_territorio": "Cornellà de Llobregat 6 (Sant Ildefons Oest)",
@@ -1616,10 +2791,16 @@ export const TERRITORIES = [
     "municipio": "Cornellà de Llobregat",
     "ciudad": "Cornellà de Llobregat",
     "barrio": "Sant Ildefons Oest",
-    "lat": 41.35174308949214,
-    "lng": 2.0745611000722413,
+    "lat": 41.363,
+    "lng": 2.053,
     "ist": 73.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. SANT ILDEFONS",
+        "partidos": 155,
+        "avg_tarjetas": 3.61
+      }
+    ]
   },
   {
     "id_territorio": "Cornellà de Llobregat 9 (Almeda)",
@@ -1627,10 +2808,16 @@ export const TERRITORIES = [
     "municipio": "Cornellà de Llobregat",
     "ciudad": "Cornellà de Llobregat",
     "barrio": "Almeda",
-    "lat": 41.36128109916864,
-    "lng": 2.066523027317604,
+    "lat": 41.354,
+    "lng": 2.083,
     "ist": 114.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. ALMEDA",
+        "partidos": 170,
+        "avg_tarjetas": 3.15
+      }
+    ]
   },
   {
     "id_territorio": "Creixell",
@@ -1641,7 +2828,13 @@ export const TERRITORIES = [
     "lat": 41.16774336,
     "lng": 1.44069294,
     "ist": 92.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CREIXELL",
+        "partidos": 35,
+        "avg_tarjetas": 3.43
+      }
+    ]
   },
   {
     "id_territorio": "Cruïlles, Monells i Sant Sadurní de l'Heura",
@@ -1652,7 +2845,13 @@ export const TERRITORIES = [
     "lat": 41.95652847,
     "lng": 2.990801454,
     "ist": 103.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MONELLS",
+        "partidos": 97,
+        "avg_tarjetas": 3.41
+      }
+    ]
   },
   {
     "id_territorio": "Cubelles",
@@ -1663,7 +2862,13 @@ export const TERRITORIES = [
     "lat": 41.20831285,
     "lng": 1.672372818,
     "ist": 102.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOSEP PONS I VENTURA",
+        "partidos": 131,
+        "avg_tarjetas": 3.92
+      }
+    ]
   },
   {
     "id_territorio": "Cunit",
@@ -1674,7 +2879,13 @@ export const TERRITORIES = [
     "lat": 41.1984463,
     "lng": 1.634466186,
     "ist": 88.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CUNIT",
+        "partidos": 12,
+        "avg_tarjetas": 6.17
+      }
+    ]
   },
   {
     "id_territorio": "Dosrius",
@@ -1685,7 +2896,13 @@ export const TERRITORIES = [
     "lat": 41.59434163,
     "lng": 2.406755957,
     "ist": 112.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CAN BATLLE",
+        "partidos": 14,
+        "avg_tarjetas": 2.21
+      }
+    ]
   },
   {
     "id_territorio": "Escala, l'",
@@ -1696,7 +2913,13 @@ export const TERRITORIES = [
     "lat": 42.12479045,
     "lng": 3.132502105,
     "ist": 85.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE L´ESCALA",
+        "partidos": 83,
+        "avg_tarjetas": 4.58
+      }
+    ]
   },
   {
     "id_territorio": "Esparreguera",
@@ -1707,7 +2930,18 @@ export const TERRITORIES = [
     "lat": 41.53901438,
     "lng": 1.870411656,
     "ist": 102.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´ESPARREGUERA",
+        "partidos": 32,
+        "avg_tarjetas": 2.59
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LES PLANES  (OLESA MONT)",
+        "partidos": 24,
+        "avg_tarjetas": 5.54
+      }
+    ]
   },
   {
     "id_territorio": "Espluga Calba, l'",
@@ -1718,7 +2952,13 @@ export const TERRITORIES = [
     "lat": 41.4950131,
     "lng": 1.003650523,
     "ist": 105.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE L´ESPLUGA FRANCOLI",
+        "partidos": 24,
+        "avg_tarjetas": 4.71
+      }
+    ]
   },
   {
     "id_territorio": "Esplugues de Llobregat",
@@ -1737,8 +2977,8 @@ export const TERRITORIES = [
     "municipio": "Esplugues de Llobregat",
     "ciudad": "Esplugues de Llobregat",
     "barrio": "Can Vidalet",
-    "lat": 41.372916822975505,
-    "lng": 2.093480577716219,
+    "lat": 41.369,
+    "lng": 2.091,
     "ist": 81.5,
     "stadiums": []
   },
@@ -1751,7 +2991,13 @@ export const TERRITORIES = [
     "lat": 42.391085,
     "lng": 3.000865645,
     "ist": 101.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOAN GELI ARGELÉS",
+        "partidos": 13,
+        "avg_tarjetas": 4.38
+      }
+    ]
   },
   {
     "id_territorio": "Esquirol, l'",
@@ -1762,7 +3008,13 @@ export const TERRITORIES = [
     "lat": 42.03482801,
     "lng": 2.370095341,
     "ist": 107.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE L´ESQUIROL",
+        "partidos": 15,
+        "avg_tarjetas": 4.87
+      }
+    ]
   },
   {
     "id_territorio": "Falset",
@@ -1773,7 +3025,13 @@ export const TERRITORIES = [
     "lat": 41.14598035,
     "lng": 0.820118387,
     "ist": 94.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE FALSET",
+        "partidos": 35,
+        "avg_tarjetas": 2.86
+      }
+    ]
   },
   {
     "id_territorio": "Farrera",
@@ -1784,7 +3042,13 @@ export const TERRITORIES = [
     "lat": 42.50371096,
     "lng": 1.273561963,
     "ist": 112.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL COMPLEX ESPORTIU ANTONI PALAU",
+        "partidos": 15,
+        "avg_tarjetas": 4.47
+      }
+    ]
   },
   {
     "id_territorio": "Fatarella, la",
@@ -1795,7 +3059,13 @@ export const TERRITORIES = [
     "lat": 41.16236912,
     "lng": 0.473250114,
     "ist": 94.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LA FATARELLA",
+        "partidos": 9,
+        "avg_tarjetas": 4.89
+      }
+    ]
   },
   {
     "id_territorio": "Figaró-Montmany",
@@ -1806,7 +3076,13 @@ export const TERRITORIES = [
     "lat": 41.721838,
     "lng": 2.27318706,
     "ist": 102.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE FIGARÓ-MONTMANY",
+        "partidos": 15,
+        "avg_tarjetas": 3.73
+      }
+    ]
   },
   {
     "id_territorio": "Figueres",
@@ -1817,7 +3093,13 @@ export const TERRITORIES = [
     "lat": 42.26725302,
     "lng": 2.960796851,
     "ist": 72.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE RECASENS",
+        "partidos": 134,
+        "avg_tarjetas": 3.62
+      }
+    ]
   },
   {
     "id_territorio": "Flaçà",
@@ -1828,7 +3110,13 @@ export const TERRITORIES = [
     "lat": 42.04707389,
     "lng": 2.957735312,
     "ist": 85.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE FLAÇÀ",
+        "partidos": 27,
+        "avg_tarjetas": 4.52
+      }
+    ]
   },
   {
     "id_territorio": "Flix",
@@ -1839,7 +3127,13 @@ export const TERRITORIES = [
     "lat": 41.23190229,
     "lng": 0.550170156,
     "ist": 93.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA VENTONELLA",
+        "partidos": 15,
+        "avg_tarjetas": 7.33
+      }
+    ]
   },
   {
     "id_territorio": "Floresta, la",
@@ -1850,7 +3144,13 @@ export const TERRITORIES = [
     "lat": 41.51038466,
     "lng": 0.91958904,
     "ist": 113.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA FLORESTA",
+        "partidos": 60,
+        "avg_tarjetas": 3.63
+      }
+    ]
   },
   {
     "id_territorio": "Fogars de la Selva",
@@ -1861,7 +3161,13 @@ export const TERRITORIES = [
     "lat": 41.7350115,
     "lng": 2.671644331,
     "ist": 97.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE FOGARS DE LA SELVA",
+        "partidos": 14,
+        "avg_tarjetas": 4.14
+      }
+    ]
   },
   {
     "id_territorio": "Folgueroles",
@@ -1872,7 +3178,13 @@ export const TERRITORIES = [
     "lat": 41.93868614,
     "lng": 2.318939366,
     "ist": 118.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE FOLGUEROLES",
+        "partidos": 56,
+        "avg_tarjetas": 4.55
+      }
+    ]
   },
   {
     "id_territorio": "Fondarella",
@@ -1883,7 +3195,13 @@ export const TERRITORIES = [
     "lat": 41.6346832,
     "lng": 0.874474119,
     "ist": 107.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE FONDARELLA",
+        "partidos": 15,
+        "avg_tarjetas": 5.2
+      }
+    ]
   },
   {
     "id_territorio": "Fontcoberta",
@@ -1894,7 +3212,13 @@ export const TERRITORIES = [
     "lat": 42.14295455,
     "lng": 2.789082911,
     "ist": 115.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM DE MELIANTA",
+        "partidos": 15,
+        "avg_tarjetas": 4.27
+      }
+    ]
   },
   {
     "id_territorio": "Fornells de la Selva",
@@ -1905,7 +3229,13 @@ export const TERRITORIES = [
     "lat": 41.93092034,
     "lng": 2.812237664,
     "ist": 123.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOAN BUSÓ",
+        "partidos": 117,
+        "avg_tarjetas": 4.13
+      }
+    ]
   },
   {
     "id_territorio": "Fortià",
@@ -1927,7 +3257,18 @@ export const TERRITORIES = [
     "lat": 41.63627782,
     "lng": 2.297473315,
     "ist": 98.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CORRÓ D´AVALL",
+        "partidos": 115,
+        "avg_tarjetas": 3.64
+      },
+      {
+        "name": "CAMP DE FUTBOL ZEM DE CORRÓ D´AMUNT",
+        "partidos": 6,
+        "avg_tarjetas": 4.17
+      }
+    ]
   },
   {
     "id_territorio": "Fuliola, la",
@@ -1938,7 +3279,18 @@ export const TERRITORIES = [
     "lat": 41.71301071,
     "lng": 1.018525477,
     "ist": 82.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LA FULIOLA",
+        "partidos": 22,
+        "avg_tarjetas": 4.32
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE TORNABOUS",
+        "partidos": 1,
+        "avg_tarjetas": 5.0
+      }
+    ]
   },
   {
     "id_territorio": "Gaià",
@@ -1949,7 +3301,18 @@ export const TERRITORIES = [
     "lat": 41.91649269,
     "lng": 1.92564494,
     "ist": 104.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LA RIERA DE GAIÀ",
+        "partidos": 36,
+        "avg_tarjetas": 4.03
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LA NOU DE GAIÀ",
+        "partidos": 12,
+        "avg_tarjetas": 4.58
+      }
+    ]
   },
   {
     "id_territorio": "Gandesa",
@@ -1960,7 +3323,13 @@ export const TERRITORIES = [
     "lat": 41.052136,
     "lng": 0.439214346,
     "ist": 89.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE GANDESA",
+        "partidos": 45,
+        "avg_tarjetas": 4.78
+      }
+    ]
   },
   {
     "id_territorio": "Garriga, la",
@@ -1971,7 +3340,13 @@ export const TERRITORIES = [
     "lat": 41.68517517,
     "lng": 2.285700594,
     "ist": 110.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. FRANCESC GARRIGA",
+        "partidos": 68,
+        "avg_tarjetas": 4.51
+      }
+    ]
   },
   {
     "id_territorio": "Garriguella",
@@ -1982,7 +3357,13 @@ export const TERRITORIES = [
     "lat": 42.34228001,
     "lng": 3.064274139,
     "ist": 100.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE GARRIGUELLA",
+        "partidos": 13,
+        "avg_tarjetas": 5.0
+      }
+    ]
   },
   {
     "id_territorio": "Gavà",
@@ -1993,7 +3374,18 @@ export const TERRITORIES = [
     "lat": 41.30315785,
     "lng": 2.003335671,
     "ist": 105.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM CAN TINTORER",
+        "partidos": 131,
+        "avg_tarjetas": 3.37
+      },
+      {
+        "name": "CAMP DE FUTBOL ZEM CAN TORELLÓ (Gavà)",
+        "partidos": 107,
+        "avg_tarjetas": 2.88
+      }
+    ]
   },
   {
     "id_territorio": "Gelida",
@@ -2004,7 +3396,13 @@ export const TERRITORIES = [
     "lat": 41.44076893,
     "lng": 1.863724449,
     "ist": 104.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE GELIDA",
+        "partidos": 42,
+        "avg_tarjetas": 4.31
+      }
+    ]
   },
   {
     "id_territorio": "Ginestar",
@@ -2015,7 +3413,13 @@ export const TERRITORIES = [
     "lat": 41.04184318,
     "lng": 0.634355505,
     "ist": 92.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE GINESTAR",
+        "partidos": 15,
+        "avg_tarjetas": 4.73
+      }
+    ]
   },
   {
     "id_territorio": "Girona",
@@ -2026,7 +3430,38 @@ export const TERRITORIES = [
     "lat": 41.9794,
     "lng": 2.8214,
     "ist": 97.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE FONTAJAU",
+        "partidos": 98,
+        "avg_tarjetas": 2.98
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. GERMANS SÀBAT",
+        "partidos": 87,
+        "avg_tarjetas": 3.97
+      },
+      {
+        "name": "CAMP DE FUTBOL CE GEIEG PALAU SACOSTA",
+        "partidos": 68,
+        "avg_tarjetas": 2.68
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. CAN GIBERT",
+        "partidos": 68,
+        "avg_tarjetas": 3.88
+      },
+      {
+        "name": "CAMP DE FUTBOL CLUB CENTRE ESPORTIU VEDRUNA",
+        "partidos": 67,
+        "avg_tarjetas": 4.15
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. VILA-ROJA",
+        "partidos": 26,
+        "avg_tarjetas": 1.27
+      }
+    ]
   },
   {
     "id_territorio": "Gironella",
@@ -2037,7 +3472,13 @@ export const TERRITORIES = [
     "lat": 42.03355592,
     "lng": 1.882829957,
     "ist": 95.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE GIRONELLA",
+        "partidos": 72,
+        "avg_tarjetas": 4.67
+      }
+    ]
   },
   {
     "id_territorio": "Godall",
@@ -2048,7 +3489,18 @@ export const TERRITORIES = [
     "lat": 40.65506982,
     "lng": 0.469734342,
     "ist": 88.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE GODALL",
+        "partidos": 14,
+        "avg_tarjetas": 4.29
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANTA BÀRBARA",
+        "partidos": 1,
+        "avg_tarjetas": 3.0
+      }
+    ]
   },
   {
     "id_territorio": "Golmés",
@@ -2059,7 +3511,13 @@ export const TERRITORIES = [
     "lat": 41.63253599,
     "lng": 0.932518362,
     "ist": 98.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE GOLMÉS",
+        "partidos": 88,
+        "avg_tarjetas": 2.92
+      }
+    ]
   },
   {
     "id_territorio": "Granada, la",
@@ -2070,7 +3528,13 @@ export const TERRITORIES = [
     "lat": 41.37841979,
     "lng": 1.718923634,
     "ist": 110.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOSEP FERRÉ FARRIOL",
+        "partidos": 44,
+        "avg_tarjetas": 3.23
+      }
+    ]
   },
   {
     "id_territorio": "Granja d'Escarp, la",
@@ -2081,7 +3545,13 @@ export const TERRITORIES = [
     "lat": 41.41843885,
     "lng": 0.352225093,
     "ist": 63.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA GRANJA",
+        "partidos": 53,
+        "avg_tarjetas": 2.62
+      }
+    ]
   },
   {
     "id_territorio": "Granollers",
@@ -2092,7 +3562,28 @@ export const TERRITORIES = [
     "lat": 41.61061831913142,
     "lng": 2.2918353645250193,
     "ist": 97.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. 1ER. DE MAIG",
+        "partidos": 145,
+        "avg_tarjetas": 2.48
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE GRANOLLERS",
+        "partidos": 118,
+        "avg_tarjetas": 3.64
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. FONT VERDA",
+        "partidos": 13,
+        "avg_tarjetas": 4.46
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. CAN GILI",
+        "partidos": 1,
+        "avg_tarjetas": 0.0
+      }
+    ]
   },
   {
     "id_territorio": "Granollers 6 (Congost - Can Gili)",
@@ -2100,10 +3591,16 @@ export const TERRITORIES = [
     "municipio": "Granollers",
     "ciudad": "Granollers",
     "barrio": "Congost - Can Gili",
-    "lat": 41.606797725874955,
-    "lng": 2.2879784984656935,
+    "lat": 41.614,
+    "lng": 2.274,
     "ist": 75.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM DEL CONGOST ANNEX 1",
+        "partidos": 14,
+        "avg_tarjetas": 3.14
+      }
+    ]
   },
   {
     "id_territorio": "Gualba",
@@ -2114,7 +3611,13 @@ export const TERRITORIES = [
     "lat": 41.73155161,
     "lng": 2.501889753,
     "ist": 111.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CAN PAHISSA",
+        "partidos": 22,
+        "avg_tarjetas": 2.32
+      }
+    ]
   },
   {
     "id_territorio": "Guardiola de Berguedà",
@@ -2125,7 +3628,18 @@ export const TERRITORIES = [
     "lat": 42.23347717,
     "lng": 1.87918005,
     "ist": 97.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT SALVADOR DE GUARDIOLA",
+        "partidos": 57,
+        "avg_tarjetas": 3.67
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOSEP GUARDIOLA",
+        "partidos": 43,
+        "avg_tarjetas": 3.88
+      }
+    ]
   },
   {
     "id_territorio": "Guissona",
@@ -2147,7 +3661,13 @@ export const TERRITORIES = [
     "lat": 41.94004888,
     "lng": 2.2444015,
     "ist": 121.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. U.E.GURB",
+        "partidos": 83,
+        "avg_tarjetas": 4.14
+      }
+    ]
   },
   {
     "id_territorio": "Hospitalet de Llobregat 10 (la Florida - Plaça de la Llibertat), l'",
@@ -2155,10 +3675,16 @@ export const TERRITORIES = [
     "municipio": "Hospitalet de Llobregat",
     "ciudad": "Hospitalet de Llobregat",
     "barrio": "la Florida - Plaça de la Llibertat",
-    "lat": 41.360878238999135,
-    "lng": 2.10694015316396,
+    "lat": 41.369,
+    "lng": 2.108,
     "ist": 66.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LUIS GONZÁLEZ BAEZA",
+        "partidos": 55,
+        "avg_tarjetas": 3.15
+      }
+    ]
   },
   {
     "id_territorio": "Hospitalet de Llobregat 15 (Collblanc - Centre - Vallparda), l'",
@@ -2166,10 +3692,26 @@ export const TERRITORIES = [
     "municipio": "Hospitalet de Llobregat",
     "ciudad": "Hospitalet de Llobregat",
     "barrio": "Collblanc - Centre - Vallparda",
-    "lat": 41.36496133677416,
-    "lng": 2.105406588856342,
+    "lat": 41.368,
+    "lng": 2.102,
     "ist": 70.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA TORRASSA",
+        "partidos": 97,
+        "avg_tarjetas": 3.63
+      },
+      {
+        "name": "CAMP DE FUTBOL CEM ARISTIDES MAILLOL",
+        "partidos": 87,
+        "avg_tarjetas": 3.68
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VALLVIDRERA",
+        "partidos": 7,
+        "avg_tarjetas": 3.0
+      }
+    ]
   },
   {
     "id_territorio": "Hospitalet de Llobregat 16 (Collblanc - Cementiri - Carretera), l'",
@@ -2177,10 +3719,16 @@ export const TERRITORIES = [
     "municipio": "Hospitalet de Llobregat",
     "ciudad": "Hospitalet de Llobregat",
     "barrio": "Collblanc - Cementiri - Carretera",
-    "lat": 41.362953121591225,
-    "lng": 2.097448248315823,
+    "lat": 41.37,
+    "lng": 2.095,
     "ist": 82.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CAN BUXERES",
+        "partidos": 133,
+        "avg_tarjetas": 3.66
+      }
+    ]
   },
   {
     "id_territorio": "Hospitalet de Llobregat 18 (la Torrassa - Plaça dels Pirineus), l'",
@@ -2188,10 +3736,16 @@ export const TERRITORIES = [
     "municipio": "Hospitalet de Llobregat",
     "ciudad": "Hospitalet de Llobregat",
     "barrio": "la Torrassa - Plaça dels Pirineus",
-    "lat": 41.3528540105441,
-    "lng": 2.101051155974751,
+    "lat": 41.368,
+    "lng": 2.115,
     "ist": 74.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA TORRASSA",
+        "partidos": 1,
+        "avg_tarjetas": 2.0
+      }
+    ]
   },
   {
     "id_territorio": "Hospitalet de Llobregat 26 (Santa Eulàlia - Centre Sud - Ciutat de la Justícia), l'",
@@ -2199,10 +3753,16 @@ export const TERRITORIES = [
     "municipio": "Hospitalet de Llobregat",
     "ciudad": "Hospitalet de Llobregat",
     "barrio": "Santa Eulàlia - Centre Sud - Ciutat de la Justícia",
-    "lat": 41.36429500393308,
-    "lng": 2.098084651432369,
+    "lat": 41.363,
+    "lng": 2.125,
     "ist": 100.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL COL·LEGI XALOC",
+        "partidos": 139,
+        "avg_tarjetas": 2.45
+      }
+    ]
   },
   {
     "id_territorio": "Hospitalet de Llobregat 28 (el Gornal), l'",
@@ -2210,10 +3770,21 @@ export const TERRITORIES = [
     "municipio": "Hospitalet de Llobregat",
     "ciudad": "Hospitalet de Llobregat",
     "barrio": "el Gornal",
-    "lat": 41.36113934872896,
-    "lng": 2.0961389713649727,
+    "lat": 41.352,
+    "lng": 2.122,
     "ist": 91.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. EL GORNAL",
+        "partidos": 94,
+        "avg_tarjetas": 4.27
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA PARELLADA St. Boi",
+        "partidos": 1,
+        "avg_tarjetas": 0.0
+      }
+    ]
   },
   {
     "id_territorio": "Hospitalet de Llobregat 29 (Bellvitge - Estació), l'",
@@ -2221,10 +3792,16 @@ export const TERRITORIES = [
     "municipio": "Hospitalet de Llobregat",
     "ciudad": "Hospitalet de Llobregat",
     "barrio": "Bellvitge - Estació",
-    "lat": 41.35843693182546,
-    "lng": 2.101790296495727,
+    "lat": 41.35,
+    "lng": 2.113,
     "ist": 87.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA FEIXA LLARGA",
+        "partidos": 125,
+        "avg_tarjetas": 3.53
+      }
+    ]
   },
   {
     "id_territorio": "Hospitalet de Llobregat 3 (Centre - la Farga), l'",
@@ -2232,8 +3809,8 @@ export const TERRITORIES = [
     "municipio": "Hospitalet de Llobregat",
     "ciudad": "Hospitalet de Llobregat",
     "barrio": "Centre - la Farga",
-    "lat": 41.36532934679692,
-    "lng": 2.093522966969065,
+    "lat": 41.36,
+    "lng": 2.099,
     "ist": 102.7,
     "stadiums": []
   },
@@ -2246,7 +3823,38 @@ export const TERRITORIES = [
     "lat": 41.3597,
     "lng": 2.1003,
     "ist": 83.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE L´HOSPITALET LLOBREGAT",
+        "partidos": 142,
+        "avg_tarjetas": 3.03
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. SANTA EULÀLIA",
+        "partidos": 103,
+        "avg_tarjetas": 2.96
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. L'ARENAL",
+        "partidos": 77,
+        "avg_tarjetas": 3.78
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. PROVENÇANA",
+        "partidos": 77,
+        "avg_tarjetas": 3.12
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. PUBILLA CASAS",
+        "partidos": 68,
+        "avg_tarjetas": 4.53
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. LUIS GONZÁLEZ BAEZA",
+        "partidos": 5,
+        "avg_tarjetas": 2.8
+      }
+    ]
   },
   {
     "id_territorio": "Hostalets de Pierola, els",
@@ -2257,7 +3865,13 @@ export const TERRITORIES = [
     "lat": 41.53475862,
     "lng": 1.769372473,
     "ist": 102.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE ELS HOSTALETS DE PIEROLA",
+        "partidos": 15,
+        "avg_tarjetas": 5.53
+      }
+    ]
   },
   {
     "id_territorio": "Hostalric",
@@ -2268,7 +3882,13 @@ export const TERRITORIES = [
     "lat": 41.74599253,
     "lng": 2.636836674,
     "ist": 93.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM D´HOSTALRIC",
+        "partidos": 42,
+        "avg_tarjetas": 4.98
+      }
+    ]
   },
   {
     "id_territorio": "Igualada",
@@ -2279,7 +3899,23 @@ export const TERRITORIES = [
     "lat": 41.57868135,
     "lng": 1.617228953,
     "ist": 99.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM LES COMES  2 Camps",
+        "partidos": 231,
+        "avg_tarjetas": 3.38
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. CAN MASARNAU",
+        "partidos": 116,
+        "avg_tarjetas": 4.03
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LA TORRE DE CLARAMUNT",
+        "partidos": 3,
+        "avg_tarjetas": 0.0
+      }
+    ]
   },
   {
     "id_territorio": "Ivars d'Urgell",
@@ -2290,7 +3926,18 @@ export const TERRITORIES = [
     "lat": 41.68291349,
     "lng": 0.985676464,
     "ist": 86.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´IVARS D´URGELL",
+        "partidos": 12,
+        "avg_tarjetas": 6.5
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LINYOLA",
+        "partidos": 1,
+        "avg_tarjetas": 2.0
+      }
+    ]
   },
   {
     "id_territorio": "Jafre",
@@ -2301,7 +3948,13 @@ export const TERRITORIES = [
     "lat": 42.07197571,
     "lng": 3.010617083,
     "ist": 101.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DEL PADRÓ",
+        "partidos": 13,
+        "avg_tarjetas": 4.15
+      }
+    ]
   },
   {
     "id_territorio": "Jonquera, la",
@@ -2312,7 +3965,13 @@ export const TERRITORIES = [
     "lat": 42.41741552,
     "lng": 2.874256251,
     "ist": 73.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LES FORQUES",
+        "partidos": 52,
+        "avg_tarjetas": 2.87
+      }
+    ]
   },
   {
     "id_territorio": "Jorba",
@@ -2323,7 +3982,13 @@ export const TERRITORIES = [
     "lat": 41.60189937,
     "lng": 1.54743913,
     "ist": 115.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE JORBA",
+        "partidos": 15,
+        "avg_tarjetas": 4.4
+      }
+    ]
   },
   {
     "id_territorio": "Juneda",
@@ -2334,7 +3999,13 @@ export const TERRITORIES = [
     "lat": 41.54944683,
     "lng": 0.825093631,
     "ist": 81.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM DE JUNEDA",
+        "partidos": 75,
+        "avg_tarjetas": 3.76
+      }
+    ]
   },
   {
     "id_territorio": "Linyola",
@@ -2345,7 +4016,13 @@ export const TERRITORIES = [
     "lat": 41.7119,
     "lng": 0.9037,
     "ist": 94.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LINYOLA",
+        "partidos": 32,
+        "avg_tarjetas": 4.81
+      }
+    ]
   },
   {
     "id_territorio": "Llacuna, la",
@@ -2356,7 +4033,13 @@ export const TERRITORIES = [
     "lat": 41.47257065,
     "lng": 1.533788903,
     "ist": 101.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA CUITORA",
+        "partidos": 15,
+        "avg_tarjetas": 6.33
+      }
+    ]
   },
   {
     "id_territorio": "Lladó",
@@ -2367,7 +4050,13 @@ export const TERRITORIES = [
     "lat": 42.24760608,
     "lng": 2.813803126,
     "ist": 110.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LLADÓ",
+        "partidos": 13,
+        "avg_tarjetas": 4.31
+      }
+    ]
   },
   {
     "id_territorio": "Llagosta, la",
@@ -2378,7 +4067,13 @@ export const TERRITORIES = [
     "lat": 41.51291664,
     "lng": 2.192966992,
     "ist": 88.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOAN GELABERT",
+        "partidos": 64,
+        "avg_tarjetas": 4.39
+      }
+    ]
   },
   {
     "id_territorio": "Llagostera",
@@ -2400,7 +4095,13 @@ export const TERRITORIES = [
     "lat": 42.36976614,
     "lng": 3.161675555,
     "ist": 93.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM LES ESPLANES",
+        "partidos": 57,
+        "avg_tarjetas": 3.16
+      }
+    ]
   },
   {
     "id_territorio": "Lleida",
@@ -2411,7 +4112,28 @@ export const TERRITORIES = [
     "lat": 41.614057026466604,
     "lng": 0.6143002986482579,
     "ist": 89.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LA BORDETA",
+        "partidos": 150,
+        "avg_tarjetas": 3.14
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MAGRANERS",
+        "partidos": 104,
+        "avg_tarjetas": 2.71
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. RAMON FARRÚS",
+        "partidos": 91,
+        "avg_tarjetas": 3.16
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PUIGVERD DE LLEIDA",
+        "partidos": 15,
+        "avg_tarjetas": 5.13
+      }
+    ]
   },
   {
     "id_territorio": "Lleida 1 (Balàfia)",
@@ -2419,10 +4141,16 @@ export const TERRITORIES = [
     "municipio": "Lleida",
     "ciudad": "Lleida",
     "barrio": "Balàfia",
-    "lat": 41.62332426745127,
-    "lng": 0.6156035992518541,
+    "lat": 41.629,
+    "lng": 0.622,
     "ist": 89.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "Camp de Futbol MPAL. DE BALÀFIA MANUEL LORITE",
+        "partidos": 91,
+        "avg_tarjetas": 4.02
+      }
+    ]
   },
   {
     "id_territorio": "Lleida 9 (Pardinyes)",
@@ -2430,10 +4158,16 @@ export const TERRITORIES = [
     "municipio": "Lleida",
     "ciudad": "Lleida",
     "barrio": "Pardinyes",
-    "lat": 41.61822406675881,
-    "lng": 0.6157314275462952,
+    "lat": 41.627,
+    "lng": 0.635,
     "ist": 95.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PARDINYES",
+        "partidos": 90,
+        "avg_tarjetas": 3.14
+      }
+    ]
   },
   {
     "id_territorio": "Llinars del Vallès",
@@ -2455,7 +4189,18 @@ export const TERRITORIES = [
     "lat": 41.61109241,
     "lng": 2.238010433,
     "ist": 109.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LLIÇÀ DE VALL",
+        "partidos": 95,
+        "avg_tarjetas": 3.35
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. PARC ESPORTIU TENES",
+        "partidos": 42,
+        "avg_tarjetas": 3.76
+      }
+    ]
   },
   {
     "id_territorio": "Llorenç del Penedès",
@@ -2466,7 +4211,33 @@ export const TERRITORIES = [
     "lat": 41.28291792,
     "lng": 1.553134736,
     "ist": 102.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT LLORENÇ DE TERRASSA",
+        "partidos": 80,
+        "avg_tarjetas": 3.73
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT LLORENÇ D´HORTONS",
+        "partidos": 57,
+        "avg_tarjetas": 4.16
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PONSFERRER",
+        "partidos": 15,
+        "avg_tarjetas": 6.07
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT LLORENÇ DE MORUNYS",
+        "partidos": 15,
+        "avg_tarjetas": 4.2
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. QUIM JUANOLA",
+        "partidos": 15,
+        "avg_tarjetas": 6.47
+      }
+    ]
   },
   {
     "id_territorio": "Lloret de Mar",
@@ -2477,7 +4248,18 @@ export const TERRITORIES = [
     "lat": 41.69946593,
     "lng": 2.847167472,
     "ist": 79.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LLORET MAR",
+        "partidos": 101,
+        "avg_tarjetas": 4.66
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. EL MOLÍ (LLORET)",
+        "partidos": 58,
+        "avg_tarjetas": 2.57
+      }
+    ]
   },
   {
     "id_territorio": "Lluçà",
@@ -2488,7 +4270,13 @@ export const TERRITORIES = [
     "lat": 42.06830434,
     "lng": 2.072504134,
     "ist": 115.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PRATS DE LLUÇANES",
+        "partidos": 68,
+        "avg_tarjetas": 3.63
+      }
+    ]
   },
   {
     "id_territorio": "Maià de Montcal",
@@ -2499,7 +4287,13 @@ export const TERRITORIES = [
     "lat": 42.22232301,
     "lng": 2.742129247,
     "ist": 107.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MAIÀ DE MONTCAL",
+        "partidos": 15,
+        "avg_tarjetas": 4.93
+      }
+    ]
   },
   {
     "id_territorio": "Malgrat de Mar",
@@ -2510,7 +4304,13 @@ export const TERRITORIES = [
     "lat": 41.64616227,
     "lng": 2.741868343,
     "ist": 95.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MALGRAT DE MAR",
+        "partidos": 88,
+        "avg_tarjetas": 5.41
+      }
+    ]
   },
   {
     "id_territorio": "Malla",
@@ -2521,7 +4321,13 @@ export const TERRITORIES = [
     "lat": 41.88706572,
     "lng": 2.234648149,
     "ist": 125.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VILAMALLA Annex F7",
+        "partidos": 40,
+        "avg_tarjetas": 3.5
+      }
+    ]
   },
   {
     "id_territorio": "Manlleu",
@@ -2543,7 +4349,18 @@ export const TERRITORIES = [
     "lat": 41.72749967182554,
     "lng": 1.8323178561001237,
     "ist": 90.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CLUB GIMNÀSTIC PARC",
+        "partidos": 87,
+        "avg_tarjetas": 4.0
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LES COTS",
+        "partidos": 4,
+        "avg_tarjetas": 5.75
+      }
+    ]
   },
   {
     "id_territorio": "Manresa 5 (el Poble Nou - Mion, Puigberenguer i Miralpeix)",
@@ -2551,10 +4368,16 @@ export const TERRITORIES = [
     "municipio": "Manresa",
     "ciudad": "Manresa",
     "barrio": "el Poble Nou - Mion, Puigberenguer i Miralpeix",
-    "lat": 41.727543221906636,
-    "lng": 1.829752082003816,
+    "lat": 41.733,
+    "lng": 1.815,
     "ist": 97.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. MION-PUIGBERENGUER",
+        "partidos": 73,
+        "avg_tarjetas": 4.89
+      }
+    ]
   },
   {
     "id_territorio": "Manresa 9 (les Escodines - la Balconada - Cal Gravat - Sant Pau)",
@@ -2562,10 +4385,21 @@ export const TERRITORIES = [
     "municipio": "Manresa",
     "ciudad": "Manresa",
     "barrio": "les Escodines - la Balconada - Cal Gravat - Sant Pau",
-    "lat": 41.719077720812294,
-    "lng": 1.8294352382244503,
+    "lat": 41.721,
+    "lng": 1.832,
     "ist": 87.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA BALCONADA",
+        "partidos": 73,
+        "avg_tarjetas": 4.68
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. PARE IGNASI PUIG",
+        "partidos": 43,
+        "avg_tarjetas": 3.67
+      }
+    ]
   },
   {
     "id_territorio": "Martorell",
@@ -2576,7 +4410,18 @@ export const TERRITORIES = [
     "lat": 41.47442004,
     "lng": 1.930625438,
     "ist": 89.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM TORRENT DE LLOPS",
+        "partidos": 156,
+        "avg_tarjetas": 3.29
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MARTORELLES",
+        "partidos": 83,
+        "avg_tarjetas": 4.41
+      }
+    ]
   },
   {
     "id_territorio": "Marçà",
@@ -2587,7 +4432,28 @@ export const TERRITORIES = [
     "lat": 41.12609573,
     "lng": 0.8002487,
     "ist": 93.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. MARCA DE L´HAM",
+        "partidos": 43,
+        "avg_tarjetas": 4.4
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LA POBLA DE SEGUR",
+        "partidos": 14,
+        "avg_tarjetas": 1.36
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE TORREGROSSA",
+        "partidos": 13,
+        "avg_tarjetas": 4.0
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VILATENIM",
+        "partidos": 13,
+        "avg_tarjetas": 4.62
+      }
+    ]
   },
   {
     "id_territorio": "Mas de Barberans",
@@ -2598,7 +4464,23 @@ export const TERRITORIES = [
     "lat": 40.73468861,
     "lng": 0.373914393,
     "ist": 95.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. MAS IGLESIAS",
+        "partidos": 130,
+        "avg_tarjetas": 3.3
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DISTRICTE 5È",
+        "partidos": 33,
+        "avg_tarjetas": 3.45
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANTA MARGARIDA I ELS MONJOS",
+        "partidos": 28,
+        "avg_tarjetas": 2.86
+      }
+    ]
   },
   {
     "id_territorio": "Masdenverge",
@@ -2609,7 +4491,13 @@ export const TERRITORIES = [
     "lat": 40.71580481,
     "lng": 0.531035324,
     "ist": 91.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. POU NOU",
+        "partidos": 15,
+        "avg_tarjetas": 5.33
+      }
+    ]
   },
   {
     "id_territorio": "Masnou, el",
@@ -2620,7 +4508,13 @@ export const TERRITORIES = [
     "lat": 41.47922686,
     "lng": 2.316344462,
     "ist": 113.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´OCATA",
+        "partidos": 115,
+        "avg_tarjetas": 4.14
+      }
+    ]
   },
   {
     "id_territorio": "Masquefa",
@@ -2631,7 +4525,13 @@ export const TERRITORIES = [
     "lat": 41.50219584,
     "lng": 1.811022748,
     "ist": 102.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MASQUEFA",
+        "partidos": 43,
+        "avg_tarjetas": 2.88
+      }
+    ]
   },
   {
     "id_territorio": "Matadepera",
@@ -2642,7 +4542,13 @@ export const TERRITORIES = [
     "lat": 41.59681928,
     "lng": 2.026405601,
     "ist": 129.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MATADEPERA",
+        "partidos": 111,
+        "avg_tarjetas": 2.95
+      }
+    ]
   },
   {
     "id_territorio": "Mataró",
@@ -2653,7 +4559,23 @@ export const TERRITORIES = [
     "lat": 41.539137782533565,
     "lng": 2.4461059389332322,
     "ist": 92.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DEL CENTENARI",
+        "partidos": 112,
+        "avg_tarjetas": 3.41
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DEL CAMI DEL MIG",
+        "partidos": 15,
+        "avg_tarjetas": 4.13
+      },
+      {
+        "name": "CAMP DE FUTBOL COMPLEX ESPORTIU ESPAI LARU",
+        "partidos": 3,
+        "avg_tarjetas": 4.0
+      }
+    ]
   },
   {
     "id_territorio": "Mataró 10 (la Llàntia)",
@@ -2661,10 +4583,26 @@ export const TERRITORIES = [
     "municipio": "Mataró",
     "ciudad": "Mataró",
     "barrio": "la Llàntia",
-    "lat": 41.5435317868921,
-    "lng": 2.4386584506165607,
+    "lat": 41.547,
+    "lng": 2.43,
     "ist": 100.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CAN XALANT",
+        "partidos": 93,
+        "avg_tarjetas": 4.02
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LA LLÀNTIA",
+        "partidos": 46,
+        "avg_tarjetas": 4.0
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. EL MOLÍ (LLORET)",
+        "partidos": 30,
+        "avg_tarjetas": 5.03
+      }
+    ]
   },
   {
     "id_territorio": "Mataró 7 (Rocafonda)",
@@ -2672,10 +4610,16 @@ export const TERRITORIES = [
     "municipio": "Mataró",
     "ciudad": "Mataró",
     "barrio": "Rocafonda",
-    "lat": 41.53585946357818,
-    "lng": 2.445726978789835,
+    "lat": 41.546,
+    "lng": 2.454,
     "ist": 63.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE ROCAFONDA",
+        "partidos": 53,
+        "avg_tarjetas": 3.74
+      }
+    ]
   },
   {
     "id_territorio": "Mataró 9 (Cirera)",
@@ -2683,10 +4627,16 @@ export const TERRITORIES = [
     "municipio": "Mataró",
     "ciudad": "Mataró",
     "barrio": "Cirera",
-    "lat": 41.534294297956116,
-    "lng": 2.442820503360201,
+    "lat": 41.549,
+    "lng": 2.441,
     "ist": 104.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CIRERA",
+        "partidos": 29,
+        "avg_tarjetas": 5.17
+      }
+    ]
   },
   {
     "id_territorio": "Mediona",
@@ -2697,7 +4647,18 @@ export const TERRITORIES = [
     "lat": 41.47748045,
     "lng": 1.611263745,
     "ist": 96.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOAN SAUMELL",
+        "partidos": 28,
+        "avg_tarjetas": 4.39
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT QUINTÍ DE MEDIONA",
+        "partidos": 15,
+        "avg_tarjetas": 5.87
+      }
+    ]
   },
   {
     "id_territorio": "Milà, el",
@@ -2708,7 +4669,13 @@ export const TERRITORIES = [
     "lat": 41.24790685,
     "lng": 1.20662969,
     "ist": 107.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOAN BAPTISTA MILÀ",
+        "partidos": 119,
+        "avg_tarjetas": 3.31
+      }
+    ]
   },
   {
     "id_territorio": "Miralcamp",
@@ -2719,7 +4686,18 @@ export const TERRITORIES = [
     "lat": 41.60528225,
     "lng": 0.878953557,
     "ist": 93.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MIRALCAMP",
+        "partidos": 12,
+        "avg_tarjetas": 5.58
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MOLLERUSSA",
+        "partidos": 2,
+        "avg_tarjetas": 4.5
+      }
+    ]
   },
   {
     "id_territorio": "Moià",
@@ -2730,7 +4708,13 @@ export const TERRITORIES = [
     "lat": 41.81305607,
     "lng": 2.097144427,
     "ist": 99.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MOIÀ",
+        "partidos": 60,
+        "avg_tarjetas": 4.82
+      }
+    ]
   },
   {
     "id_territorio": "Molins de Rei",
@@ -2741,7 +4725,18 @@ export const TERRITORIES = [
     "lat": 41.41390212,
     "lng": 2.015893753,
     "ist": 114.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOSEP RAICH",
+        "partidos": 87,
+        "avg_tarjetas": 3.54
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BÍTEM",
+        "partidos": 15,
+        "avg_tarjetas": 4.0
+      }
+    ]
   },
   {
     "id_territorio": "Mollerussa",
@@ -2752,7 +4747,13 @@ export const TERRITORIES = [
     "lat": 41.62983521,
     "lng": 0.893696867,
     "ist": 81.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MOLLERUSSA",
+        "partidos": 90,
+        "avg_tarjetas": 3.2
+      }
+    ]
   },
   {
     "id_territorio": "Mollet de Peralada",
@@ -2763,7 +4764,23 @@ export const TERRITORIES = [
     "lat": 42.35980952,
     "lng": 2.999774376,
     "ist": 106.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. ZONA SUD",
+        "partidos": 81,
+        "avg_tarjetas": 3.32
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. GERMANS GONZALVO (1)",
+        "partidos": 80,
+        "avg_tarjetas": 4.39
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. GERMANS GONZALVO (2)",
+        "partidos": 69,
+        "avg_tarjetas": 2.8
+      }
+    ]
   },
   {
     "id_territorio": "Mont-ras",
@@ -2774,7 +4791,13 @@ export const TERRITORIES = [
     "lat": 41.9091538,
     "lng": 3.143230296,
     "ist": 102.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MONT-RAS",
+        "partidos": 69,
+        "avg_tarjetas": 3.62
+      }
+    ]
   },
   {
     "id_territorio": "Mont-roig del Camp",
@@ -2785,7 +4808,13 @@ export const TERRITORIES = [
     "lat": 41.08825085,
     "lng": 0.957769917,
     "ist": 86.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MONT-ROIG DEL CAMP",
+        "partidos": 53,
+        "avg_tarjetas": 4.34
+      }
+    ]
   },
   {
     "id_territorio": "Montagut i Oix",
@@ -2807,7 +4836,13 @@ export const TERRITORIES = [
     "lat": 41.37656212,
     "lng": 1.161499167,
     "ist": 97.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM JOSEP GOMIS",
+        "partidos": 41,
+        "avg_tarjetas": 4.29
+      }
+    ]
   },
   {
     "id_territorio": "Montbrió del Camp",
@@ -2818,7 +4853,13 @@ export const TERRITORIES = [
     "lat": 41.12072351,
     "lng": 1.003519447,
     "ist": 104.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MONTBRIÓ DEL CAMP",
+        "partidos": 35,
+        "avg_tarjetas": 2.26
+      }
+    ]
   },
   {
     "id_territorio": "Montcada i Reixac",
@@ -2829,7 +4870,18 @@ export const TERRITORIES = [
     "lat": 41.48660514,
     "lng": 2.18799215,
     "ist": 96.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA FERRERIA",
+        "partidos": 122,
+        "avg_tarjetas": 3.76
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. CAN SANT JOAN",
+        "partidos": 31,
+        "avg_tarjetas": 4.61
+      }
+    ]
   },
   {
     "id_territorio": "Montesquiu",
@@ -2840,7 +4892,13 @@ export const TERRITORIES = [
     "lat": 42.10999187,
     "lng": 2.209748189,
     "ist": 96.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. C.E.MONTESQUIU",
+        "partidos": 14,
+        "avg_tarjetas": 5.79
+      }
+    ]
   },
   {
     "id_territorio": "Montgai",
@@ -2851,7 +4909,13 @@ export const TERRITORIES = [
     "lat": 41.79986039,
     "lng": 0.961007723,
     "ist": 99.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BUTSÈNIT DE MONTGAI",
+        "partidos": 14,
+        "avg_tarjetas": 5.64
+      }
+    ]
   },
   {
     "id_territorio": "Montgat",
@@ -2862,7 +4926,13 @@ export const TERRITORIES = [
     "lat": 41.46660361,
     "lng": 2.279058431,
     "ist": 114.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MONTGAT",
+        "partidos": 109,
+        "avg_tarjetas": 4.17
+      }
+    ]
   },
   {
     "id_territorio": "Montmajor",
@@ -2873,7 +4943,13 @@ export const TERRITORIES = [
     "lat": 42.01764703,
     "lng": 1.735139512,
     "ist": 96.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CLUB DE MONTMAJOR",
+        "partidos": 15,
+        "avg_tarjetas": 4.47
+      }
+    ]
   },
   {
     "id_territorio": "Montmeló",
@@ -2884,7 +4960,13 @@ export const TERRITORIES = [
     "lat": 41.5515773,
     "lng": 2.248068696,
     "ist": 101.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MONTMELÓ",
+        "partidos": 59,
+        "avg_tarjetas": 4.08
+      }
+    ]
   },
   {
     "id_territorio": "Montornès de Segarra",
@@ -2895,7 +4977,13 @@ export const TERRITORIES = [
     "lat": 41.60074469,
     "lng": 1.229567753,
     "ist": 109.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM LES VERNEDES",
+        "partidos": 15,
+        "avg_tarjetas": 6.13
+      }
+    ]
   },
   {
     "id_territorio": "Morell, el",
@@ -2906,7 +4994,13 @@ export const TERRITORIES = [
     "lat": 41.19219179,
     "lng": 1.208875583,
     "ist": 100.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DEL MORELL",
+        "partidos": 51,
+        "avg_tarjetas": 4.37
+      }
+    ]
   },
   {
     "id_territorio": "Móra d'Ebre",
@@ -2917,7 +5011,13 @@ export const TERRITORIES = [
     "lat": 41.09251056,
     "lng": 0.641124373,
     "ist": 89.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. ANTONI MATEU",
+        "partidos": 35,
+        "avg_tarjetas": 4.63
+      }
+    ]
   },
   {
     "id_territorio": "Navarcles",
@@ -2928,7 +5028,13 @@ export const TERRITORIES = [
     "lat": 41.7516175,
     "lng": 1.903756546,
     "ist": 102.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE NAVARCLES",
+        "partidos": 72,
+        "avg_tarjetas": 4.89
+      }
+    ]
   },
   {
     "id_territorio": "Navata",
@@ -2939,7 +5045,13 @@ export const TERRITORIES = [
     "lat": 42.22377294,
     "lng": 2.860683132,
     "ist": 111.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE NAVATA",
+        "partidos": 41,
+        "avg_tarjetas": 2.85
+      }
+    ]
   },
   {
     "id_territorio": "Navàs",
@@ -2950,7 +5062,13 @@ export const TERRITORIES = [
     "lat": 41.89994691,
     "lng": 1.878918213,
     "ist": 98.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA DEVESA",
+        "partidos": 74,
+        "avg_tarjetas": 5.16
+      }
+    ]
   },
   {
     "id_territorio": "Nou de Berguedà, la",
@@ -2961,7 +5079,38 @@ export const TERRITORIES = [
     "lat": 42.1672,
     "lng": 1.8845,
     "ist": 118.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. NOU BARRIS",
+        "partidos": 144,
+        "avg_tarjetas": 2.49
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. POBLE NOU",
+        "partidos": 104,
+        "avg_tarjetas": 3.39
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. NOU PINS VENS",
+        "partidos": 57,
+        "avg_tarjetas": 2.67
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. VALLBONA (NOU PROVISIONAL)",
+        "partidos": 27,
+        "avg_tarjetas": 3.74
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. ASSOCIACIÓ ALUMNES OBRERS Annex, (2)",
+        "partidos": 1,
+        "avg_tarjetas": 5.0
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. MENORCA",
+        "partidos": 1,
+        "avg_tarjetas": 3.0
+      }
+    ]
   },
   {
     "id_territorio": "Olesa de Bonesvalls",
@@ -2972,7 +5121,13 @@ export const TERRITORIES = [
     "lat": 41.35179497,
     "lng": 1.850525294,
     "ist": 107.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LES PLANES  (OLESA MONT)",
+        "partidos": 55,
+        "avg_tarjetas": 3.04
+      }
+    ]
   },
   {
     "id_territorio": "Oliana",
@@ -2983,7 +5138,18 @@ export const TERRITORIES = [
     "lat": 42.06490075,
     "lng": 1.314700495,
     "ist": 92.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´OLIANA",
+        "partidos": 28,
+        "avg_tarjetas": 4.07
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PONTS",
+        "partidos": 1,
+        "avg_tarjetas": 9.0
+      }
+    ]
   },
   {
     "id_territorio": "Olivella",
@@ -2994,7 +5160,13 @@ export const TERRITORIES = [
     "lat": 41.31039899,
     "lng": 1.81099001,
     "ist": 105.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM LA CRIVELLERA",
+        "partidos": 29,
+        "avg_tarjetas": 4.55
+      }
+    ]
   },
   {
     "id_territorio": "Olost",
@@ -3005,7 +5177,13 @@ export const TERRITORIES = [
     "lat": 41.98602728,
     "lng": 2.095915035,
     "ist": 110.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM D´OLOST",
+        "partidos": 14,
+        "avg_tarjetas": 5.0
+      }
+    ]
   },
   {
     "id_territorio": "Olot",
@@ -3016,7 +5194,13 @@ export const TERRITORIES = [
     "lat": 42.18257737,
     "lng": 2.489740859,
     "ist": 83.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT JAUME DE LLIERCA",
+        "partidos": 15,
+        "avg_tarjetas": 5.07
+      }
+    ]
   },
   {
     "id_territorio": "Olvan",
@@ -3027,7 +5211,18 @@ export const TERRITORIES = [
     "lat": 42.05707803,
     "lng": 1.904980123,
     "ist": 102.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´OLVAN",
+        "partidos": 14,
+        "avg_tarjetas": 3.36
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PUIG-REIG",
+        "partidos": 1,
+        "avg_tarjetas": 2.0
+      }
+    ]
   },
   {
     "id_territorio": "Olèrdola",
@@ -3038,7 +5233,13 @@ export const TERRITORIES = [
     "lat": 41.3201636,
     "lng": 1.722925638,
     "ist": 105.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. ELS PINS",
+        "partidos": 14,
+        "avg_tarjetas": 2.29
+      }
+    ]
   },
   {
     "id_territorio": "Organyà",
@@ -3049,7 +5250,18 @@ export const TERRITORIES = [
     "lat": 42.21109576,
     "lng": 1.32855282,
     "ist": 91.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LES LLOREDES",
+        "partidos": 27,
+        "avg_tarjetas": 4.0
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PONTS",
+        "partidos": 1,
+        "avg_tarjetas": 2.0
+      }
+    ]
   },
   {
     "id_territorio": "Palafolls",
@@ -3060,7 +5272,13 @@ export const TERRITORIES = [
     "lat": 41.66696309,
     "lng": 2.749378597,
     "ist": 102.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. PALASTADIUM LLUÍS MONER",
+        "partidos": 43,
+        "avg_tarjetas": 4.53
+      }
+    ]
   },
   {
     "id_territorio": "Palafrugell",
@@ -3071,7 +5289,13 @@ export const TERRITORIES = [
     "lat": 41.91484048,
     "lng": 3.164038525,
     "ist": 82.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. EL GREGAL",
+        "partidos": 71,
+        "avg_tarjetas": 3.18
+      }
+    ]
   },
   {
     "id_territorio": "Palamós",
@@ -3082,7 +5306,13 @@ export const TERRITORIES = [
     "lat": 41.84678772,
     "lng": 3.12937825,
     "ist": 94.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM JOSEP MASSOT I SAIS ANNEX 1",
+        "partidos": 83,
+        "avg_tarjetas": 4.37
+      }
+    ]
   },
   {
     "id_territorio": "Palau d'Anglesola, el",
@@ -3093,7 +5323,33 @@ export const TERRITORIES = [
     "lat": 41.65172257,
     "lng": 0.88017925,
     "ist": 104.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. FRANCESC SERRACANTA",
+        "partidos": 98,
+        "avg_tarjetas": 4.76
+      },
+      {
+        "name": "CAMP DE FUTBOL COMPLEX ESPORTIU ANTONI PALAU",
+        "partidos": 59,
+        "avg_tarjetas": 2.97
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. FONT MARTINA",
+        "partidos": 50,
+        "avg_tarjetas": 4.18
+      },
+      {
+        "name": "CAMP DE FUTBOL COL·LEGI MONTESSORI-PALAU",
+        "partidos": 27,
+        "avg_tarjetas": 2.3
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PALAU-SAVERDERA",
+        "partidos": 13,
+        "avg_tarjetas": 4.23
+      }
+    ]
   },
   {
     "id_territorio": "Pallaresos, els",
@@ -3104,7 +5360,13 @@ export const TERRITORIES = [
     "lat": 41.17517029,
     "lng": 1.26952816,
     "ist": 116.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DELS PALLARESOS",
+        "partidos": 82,
+        "avg_tarjetas": 4.26
+      }
+    ]
   },
   {
     "id_territorio": "Pallejà",
@@ -3115,7 +5377,13 @@ export const TERRITORIES = [
     "lat": 41.42143064,
     "lng": 1.996614979,
     "ist": 112.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM FERNANDO MUÑOZ CARRASCO",
+        "partidos": 88,
+        "avg_tarjetas": 4.07
+      }
+    ]
   },
   {
     "id_territorio": "Pals",
@@ -3126,7 +5394,13 @@ export const TERRITORIES = [
     "lat": 41.97099257,
     "lng": 3.144940997,
     "ist": 100.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. PERE SERVIÀ CANTÓ",
+        "partidos": 15,
+        "avg_tarjetas": 5.13
+      }
+    ]
   },
   {
     "id_territorio": "Papiol, el",
@@ -3137,7 +5411,13 @@ export const TERRITORIES = [
     "lat": 41.43899897,
     "lng": 2.010620353,
     "ist": 111.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DEL PAPIOL",
+        "partidos": 41,
+        "avg_tarjetas": 4.12
+      }
+    ]
   },
   {
     "id_territorio": "Parets del Vallès",
@@ -3148,7 +5428,13 @@ export const TERRITORIES = [
     "lat": 41.57305833,
     "lng": 2.234374942,
     "ist": 106.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOSEP SEGUER",
+        "partidos": 105,
+        "avg_tarjetas": 4.21
+      }
+    ]
   },
   {
     "id_territorio": "Perafort",
@@ -3159,7 +5445,13 @@ export const TERRITORIES = [
     "lat": 41.19107296,
     "lng": 1.255320372,
     "ist": 112.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. PERAFORT",
+        "partidos": 24,
+        "avg_tarjetas": 5.08
+      }
+    ]
   },
   {
     "id_territorio": "Peralada",
@@ -3170,7 +5462,18 @@ export const TERRITORIES = [
     "lat": 42.30824132,
     "lng": 3.008139245,
     "ist": 113.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PERALADA Annex",
+        "partidos": 86,
+        "avg_tarjetas": 4.02
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PERALADA",
+        "partidos": 15,
+        "avg_tarjetas": 6.73
+      }
+    ]
   },
   {
     "id_territorio": "Perelló, el",
@@ -3181,7 +5484,13 @@ export const TERRITORIES = [
     "lat": 40.87548015,
     "lng": 0.712376156,
     "ist": 80.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA VINYETA",
+        "partidos": 27,
+        "avg_tarjetas": 4.19
+      }
+    ]
   },
   {
     "id_territorio": "Piera",
@@ -3192,7 +5501,13 @@ export const TERRITORIES = [
     "lat": 41.51765402,
     "lng": 1.742556235,
     "ist": 95.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PIERA",
+        "partidos": 88,
+        "avg_tarjetas": 4.06
+      }
+    ]
   },
   {
     "id_territorio": "Pinell de Brai, el",
@@ -3203,7 +5518,13 @@ export const TERRITORIES = [
     "lat": 41.01546909,
     "lng": 0.51439464,
     "ist": 93.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DEL PINELL DE BRAI",
+        "partidos": 15,
+        "avg_tarjetas": 5.4
+      }
+    ]
   },
   {
     "id_territorio": "Pla de Santa Maria, el",
@@ -3214,7 +5535,33 @@ export const TERRITORIES = [
     "lat": 41.36562491,
     "lng": 1.288852863,
     "ist": 98.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. PLÀ D´EN BOET",
+        "partidos": 60,
+        "avg_tarjetas": 4.72
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DEL PLA DE BARRA",
+        "partidos": 59,
+        "avg_tarjetas": 5.27
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. PLÀ DEL BONAIRE",
+        "partidos": 39,
+        "avg_tarjetas": 1.15
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DEL PLA DE SANTA MARIA",
+        "partidos": 23,
+        "avg_tarjetas": 2.96
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DEL POAL",
+        "partidos": 1,
+        "avg_tarjetas": 3.0
+      }
+    ]
   },
   {
     "id_territorio": "Planes d'Hostoles, les",
@@ -3225,7 +5572,18 @@ export const TERRITORIES = [
     "lat": 42.05553479,
     "lng": 2.537176248,
     "ist": 94.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LES PLANES (SANT JOAN DESPÍ)",
+        "partidos": 79,
+        "avg_tarjetas": 2.27
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LES PLANES D´HOSTOLES",
+        "partidos": 12,
+        "avg_tarjetas": 2.33
+      }
+    ]
   },
   {
     "id_territorio": "Poal, el",
@@ -3236,7 +5594,13 @@ export const TERRITORIES = [
     "lat": 41.67816923,
     "lng": 0.856747415,
     "ist": 99.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DEL POAL",
+        "partidos": 13,
+        "avg_tarjetas": 5.0
+      }
+    ]
   },
   {
     "id_territorio": "Pobla de Cérvoles, la",
@@ -3247,7 +5611,18 @@ export const TERRITORIES = [
     "lat": 41.36770865,
     "lng": 0.915522735,
     "ist": 98.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LA POBLA DE SEGUR",
+        "partidos": 30,
+        "avg_tarjetas": 4.0
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. PAS BLAU",
+        "partidos": 29,
+        "avg_tarjetas": 4.28
+      }
+    ]
   },
   {
     "id_territorio": "Polinyà",
@@ -3258,7 +5633,13 @@ export const TERRITORIES = [
     "lat": 41.55763252,
     "lng": 2.156558703,
     "ist": 104.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE POLINYÀ",
+        "partidos": 39,
+        "avg_tarjetas": 4.41
+      }
+    ]
   },
   {
     "id_territorio": "Pont d'Armentera, el",
@@ -3269,7 +5650,23 @@ export const TERRITORIES = [
     "lat": 41.38367447,
     "lng": 1.362805361,
     "ist": 91.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. EL PONT DE VILOMARA",
+        "partidos": 29,
+        "avg_tarjetas": 3.9
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PONT DE SUERT",
+        "partidos": 14,
+        "avg_tarjetas": 2.71
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PONT MAJOR",
+        "partidos": 13,
+        "avg_tarjetas": 3.31
+      }
+    ]
   },
   {
     "id_territorio": "Ponts",
@@ -3280,7 +5677,13 @@ export const TERRITORIES = [
     "lat": 41.91567944,
     "lng": 1.18619719,
     "ist": 80.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PONTS",
+        "partidos": 43,
+        "avg_tarjetas": 4.53
+      }
+    ]
   },
   {
     "id_territorio": "Porqueres",
@@ -3291,7 +5694,13 @@ export const TERRITORIES = [
     "lat": 42.10723249,
     "lng": 2.783509078,
     "ist": 112.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MIÀNIGUES",
+        "partidos": 60,
+        "avg_tarjetas": 4.15
+      }
+    ]
   },
   {
     "id_territorio": "Porrera",
@@ -3302,7 +5711,13 @@ export const TERRITORIES = [
     "lat": 41.18895869,
     "lng": 0.856046971,
     "ist": 106.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PORRERA",
+        "partidos": 12,
+        "avg_tarjetas": 3.75
+      }
+    ]
   },
   {
     "id_territorio": "Portbou",
@@ -3313,7 +5728,13 @@ export const TERRITORIES = [
     "lat": 42.42586273,
     "lng": 3.158606152,
     "ist": 89.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PORTBOU",
+        "partidos": 15,
+        "avg_tarjetas": 4.07
+      }
+    ]
   },
   {
     "id_territorio": "Prat de Comte",
@@ -3324,7 +5745,18 @@ export const TERRITORIES = [
     "lat": 40.98377527,
     "lng": 0.405234861,
     "ist": 85.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM SAGNIER",
+        "partidos": 146,
+        "avg_tarjetas": 3.65
+      },
+      {
+        "name": "CAMP DE FUTBOL CEM JULIO MÉNDEZ",
+        "partidos": 67,
+        "avg_tarjetas": 3.31
+      }
+    ]
   },
   {
     "id_territorio": "Premià de Dalt",
@@ -3335,7 +5767,13 @@ export const TERRITORIES = [
     "lat": 41.50727392,
     "lng": 2.34197767,
     "ist": 112.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PREMIÀ DE DALT",
+        "partidos": 165,
+        "avg_tarjetas": 3.84
+      }
+    ]
   },
   {
     "id_territorio": "Preses, les",
@@ -3346,7 +5784,13 @@ export const TERRITORIES = [
     "lat": 42.14118307,
     "lng": 2.461175183,
     "ist": 111.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LES PRESES",
+        "partidos": 70,
+        "avg_tarjetas": 3.97
+      }
+    ]
   },
   {
     "id_territorio": "Puig-reig",
@@ -3357,7 +5801,13 @@ export const TERRITORIES = [
     "lat": 41.97473919,
     "lng": 1.878837767,
     "ist": 95.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PUIG-REIG",
+        "partidos": 44,
+        "avg_tarjetas": 4.68
+      }
+    ]
   },
   {
     "id_territorio": "Puigcerdà",
@@ -3368,7 +5818,13 @@ export const TERRITORIES = [
     "lat": 42.43123876,
     "lng": 1.927164705,
     "ist": 87.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CLUB PUIGCERDÀ C.E.",
+        "partidos": 58,
+        "avg_tarjetas": 2.72
+      }
+    ]
   },
   {
     "id_territorio": "Puigdàlber",
@@ -3379,7 +5835,13 @@ export const TERRITORIES = [
     "lat": 41.40440678,
     "lng": 1.700907912,
     "ist": 107.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PUIGDÀLBER",
+        "partidos": 44,
+        "avg_tarjetas": 3.55
+      }
+    ]
   },
   {
     "id_territorio": "Quart",
@@ -3390,7 +5852,13 @@ export const TERRITORIES = [
     "lat": 41.93979289,
     "lng": 2.839871945,
     "ist": 115.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. GAUDENCI SELLÉS ROMÀ",
+        "partidos": 88,
+        "avg_tarjetas": 3.95
+      }
+    ]
   },
   {
     "id_territorio": "Reus",
@@ -3401,7 +5869,28 @@ export const TERRITORIES = [
     "lat": 41.15510545,
     "lng": 1.108762995,
     "ist": 90.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. REDDIS",
+        "partidos": 109,
+        "avg_tarjetas": 3.3
+      },
+      {
+        "name": "CAMP DE FUTBOL COL·LEGI PARE MANYANET DE REUS",
+        "partidos": 87,
+        "avg_tarjetas": 3.84
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA PASTORETA",
+        "partidos": 71,
+        "avg_tarjetas": 2.87
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DISTRICTE 5È",
+        "partidos": 12,
+        "avg_tarjetas": 3.58
+      }
+    ]
   },
   {
     "id_territorio": "Rialp",
@@ -3412,7 +5901,13 @@ export const TERRITORIES = [
     "lat": 42.44413236,
     "lng": 1.134765713,
     "ist": 113.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE RIALP",
+        "partidos": 13,
+        "avg_tarjetas": 2.54
+      }
+    ]
   },
   {
     "id_territorio": "Ribera d'Ondara",
@@ -3423,7 +5918,13 @@ export const TERRITORIES = [
     "lat": 41.62558472,
     "lng": 1.340967564,
     "ist": 112.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE RIBERA D´ONDARA",
+        "partidos": 14,
+        "avg_tarjetas": 3.0
+      }
+    ]
   },
   {
     "id_territorio": "Ribes de Freser",
@@ -3434,7 +5935,18 @@ export const TERRITORIES = [
     "lat": 42.30616631,
     "lng": 2.167638307,
     "ist": 101.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE RIBES DE FRESER",
+        "partidos": 25,
+        "avg_tarjetas": 3.48
+      },
+      {
+        "name": "CAMP DE FUTBOL ZEM LA CRIVELLERA",
+        "partidos": 1,
+        "avg_tarjetas": 8.0
+      }
+    ]
   },
   {
     "id_territorio": "Riells i Viabrea",
@@ -3445,7 +5957,13 @@ export const TERRITORIES = [
     "lat": 41.72520182,
     "lng": 2.558162486,
     "ist": 106.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE RIELLS I VIABREA",
+        "partidos": 15,
+        "avg_tarjetas": 1.93
+      }
+    ]
   },
   {
     "id_territorio": "Riera de Gaià, la",
@@ -3467,7 +5985,13 @@ export const TERRITORIES = [
     "lat": 42.20086675,
     "lng": 2.190587139,
     "ist": 88.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM DE RIPOLL (1)",
+        "partidos": 28,
+        "avg_tarjetas": 3.68
+      }
+    ]
   },
   {
     "id_territorio": "Ripollet 1 (Centre - Maragall)",
@@ -3475,10 +5999,21 @@ export const TERRITORIES = [
     "municipio": "Ripollet",
     "ciudad": "Ripollet",
     "barrio": "Centre - Maragall",
-    "lat": 41.49710519,
-    "lng": 2.155081583,
+    "lat": 41.498,
+    "lng": 2.153,
     "ist": 89.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. INDUSTRIAL RIPOLLET",
+        "partidos": 139,
+        "avg_tarjetas": 4.06
+      },
+      {
+        "name": "CAMP DE FUTBOL ZEM DE RIPOLLET",
+        "partidos": 109,
+        "avg_tarjetas": 3.44
+      }
+    ]
   },
   {
     "id_territorio": "Riudarenes",
@@ -3489,7 +6024,13 @@ export const TERRITORIES = [
     "lat": 41.82258709,
     "lng": 2.717045116,
     "ist": 94.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE RIUDARENES",
+        "partidos": 40,
+        "avg_tarjetas": 2.73
+      }
+    ]
   },
   {
     "id_territorio": "Riudellots de la Selva",
@@ -3500,7 +6041,13 @@ export const TERRITORIES = [
     "lat": 41.89281813,
     "lng": 2.803296238,
     "ist": 107.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE RIUDELLOTS DE LA SELVA",
+        "partidos": 15,
+        "avg_tarjetas": 5.67
+      }
+    ]
   },
   {
     "id_territorio": "Riudoms",
@@ -3511,7 +6058,13 @@ export const TERRITORIES = [
     "lat": 41.13889158,
     "lng": 1.051519302,
     "ist": 93.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. RIUDOMS A",
+        "partidos": 29,
+        "avg_tarjetas": 3.1
+      }
+    ]
   },
   {
     "id_territorio": "Roca del Vallès, la",
@@ -3522,7 +6075,18 @@ export const TERRITORIES = [
     "lat": 41.58743705,
     "lng": 2.325707417,
     "ist": 112.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM FERNANDO GONZÁLEZ RESINA",
+        "partidos": 49,
+        "avg_tarjetas": 4.57
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. SANTA AGNÈS",
+        "partidos": 40,
+        "avg_tarjetas": 2.4
+      }
+    ]
   },
   {
     "id_territorio": "Roda de Berà",
@@ -3533,7 +6097,18 @@ export const TERRITORIES = [
     "lat": 41.18597879,
     "lng": 1.45440035,
     "ist": 93.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE RODA DE TER (1)",
+        "partidos": 57,
+        "avg_tarjetas": 3.77
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DEL CAMÍ DE RODA",
+        "partidos": 44,
+        "avg_tarjetas": 4.16
+      }
+    ]
   },
   {
     "id_territorio": "Roquetes",
@@ -3544,7 +6119,18 @@ export const TERRITORIES = [
     "lat": 40.82039282,
     "lng": 0.50298736,
     "ist": 92.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM DE ROQUETES ANNEX",
+        "partidos": 31,
+        "avg_tarjetas": 3.74
+      },
+      {
+        "name": "CAMP DE FUTBOL ZEM DE ROQUETES",
+        "partidos": 1,
+        "avg_tarjetas": 7.0
+      }
+    ]
   },
   {
     "id_territorio": "Roses",
@@ -3555,7 +6141,23 @@ export const TERRITORIES = [
     "lat": 42.2616,
     "lng": 3.1799,
     "ist": 79.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM CAN ROSÉS (1)",
+        "partidos": 153,
+        "avg_tarjetas": 3.58
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA VINYASSA",
+        "partidos": 99,
+        "avg_tarjetas": 3.46
+      },
+      {
+        "name": "CAMP DE FUTBOL ZEM CAN ROSÉS (2)",
+        "partidos": 68,
+        "avg_tarjetas": 3.25
+      }
+    ]
   },
   {
     "id_territorio": "Rosselló",
@@ -3566,7 +6168,13 @@ export const TERRITORIES = [
     "lat": 41.69328751,
     "lng": 0.595233971,
     "ist": 95.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE ROSSELLÓ",
+        "partidos": 32,
+        "avg_tarjetas": 4.91
+      }
+    ]
   },
   {
     "id_territorio": "Rubí",
@@ -3585,10 +6193,16 @@ export const TERRITORIES = [
     "municipio": "Rubí",
     "ciudad": "Rubí",
     "barrio": "Districte 5 Nord-est",
-    "lat": 41.498310768738314,
-    "lng": 2.0303537728678673,
+    "lat": 41.499,
+    "lng": 2.029,
     "ist": 98.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DEL 25 DE SETEMBRE",
+        "partidos": 108,
+        "avg_tarjetas": 4.08
+      }
+    ]
   },
   {
     "id_territorio": "Rupit i Pruit",
@@ -3599,7 +6213,18 @@ export const TERRITORIES = [
     "lat": 42.02355956,
     "lng": 2.464781417,
     "ist": 114.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE RUPIT-PRUIT",
+        "partidos": 12,
+        "avg_tarjetas": 5.58
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT PERE DE TORELLÓ",
+        "partidos": 2,
+        "avg_tarjetas": 2.0
+      }
+    ]
   },
   {
     "id_territorio": "Sabadell",
@@ -3610,7 +6235,28 @@ export const TERRITORIES = [
     "lat": 41.54966695533022,
     "lng": 2.111523673468624,
     "ist": 97.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. OLÍMPIA",
+        "partidos": 141,
+        "avg_tarjetas": 3.7
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA CREU",
+        "partidos": 127,
+        "avg_tarjetas": 3.83
+      },
+      {
+        "name": "CAMP DE FUTBOL CEM SANT OLEGUER",
+        "partidos": 88,
+        "avg_tarjetas": 2.02
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. CAN PUIGGENER",
+        "partidos": 13,
+        "avg_tarjetas": 3.92
+      }
+    ]
   },
   {
     "id_territorio": "Sabadell 10 (Ca n'Oriac - Torreguitart - Torrent del Capellà)",
@@ -3618,10 +6264,16 @@ export const TERRITORIES = [
     "municipio": "Sabadell",
     "ciudad": "Sabadell",
     "barrio": "Ca n'Oriac - Torreguitart - Torrent del Capellà",
-    "lat": 41.551982176367076,
-    "lng": 2.102614862010492,
+    "lat": 41.569,
+    "lng": 2.095,
     "ist": 83.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CA N´ORIAC",
+        "partidos": 56,
+        "avg_tarjetas": 3.18
+      }
+    ]
   },
   {
     "id_territorio": "Sabadell 12 (la Roureda - Sant Julià)",
@@ -3629,10 +6281,26 @@ export const TERRITORIES = [
     "municipio": "Sabadell",
     "ciudad": "Sabadell",
     "barrio": "la Roureda - Sant Julià",
-    "lat": 41.54310292714941,
-    "lng": 2.1113097196182493,
+    "lat": 41.579,
+    "lng": 2.096,
     "ist": 92.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. ROUREDA",
+        "partidos": 120,
+        "avg_tarjetas": 3.53
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. CAN DEU",
+        "partidos": 110,
+        "avg_tarjetas": 3.86
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA ROUREDA",
+        "partidos": 82,
+        "avg_tarjetas": 4.77
+      }
+    ]
   },
   {
     "id_territorio": "Sabadell 14 (Can Rull Nord - Via Alexandra)",
@@ -3640,10 +6308,16 @@ export const TERRITORIES = [
     "municipio": "Sabadell",
     "ciudad": "Sabadell",
     "barrio": "Can Rull Nord - Via Alexandra",
-    "lat": 41.54500688389049,
-    "lng": 2.1135137416807734,
+    "lat": 41.554,
+    "lng": 2.088,
     "ist": 89.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM CAN RULL-PACO HERRERA (1)",
+        "partidos": 129,
+        "avg_tarjetas": 3.79
+      }
+    ]
   },
   {
     "id_territorio": "Sabadell 18 (Gràcia)",
@@ -3651,10 +6325,16 @@ export const TERRITORIES = [
     "municipio": "Sabadell",
     "ciudad": "Sabadell",
     "barrio": "Gràcia",
-    "lat": 41.54567924793185,
-    "lng": 2.1041685819765945,
+    "lat": 41.542,
+    "lng": 2.102,
     "ist": 111.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CAN PUIGGENER",
+        "partidos": 52,
+        "avg_tarjetas": 2.29
+      }
+    ]
   },
   {
     "id_territorio": "Sabadell 22 (Torre-romeu - Can Roqueta - el Poblenou)",
@@ -3662,10 +6342,16 @@ export const TERRITORIES = [
     "municipio": "Sabadell",
     "ciudad": "Sabadell",
     "barrio": "Torre-romeu - Can Roqueta - el Poblenou",
-    "lat": 41.550658065639944,
-    "lng": 2.1099621054958466,
+    "lat": 41.555,
+    "lng": 2.131,
     "ist": 74.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. TORRE-ROMEU",
+        "partidos": 73,
+        "avg_tarjetas": 5.0
+      }
+    ]
   },
   {
     "id_territorio": "Sallent",
@@ -3687,7 +6373,13 @@ export const TERRITORIES = [
     "lat": 41.08147166,
     "lng": 1.134226673,
     "ist": 89.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL COMPLEX ESPORTIU SALOU",
+        "partidos": 1,
+        "avg_tarjetas": 2.0
+      }
+    ]
   },
   {
     "id_territorio": "Salt",
@@ -3698,7 +6390,13 @@ export const TERRITORIES = [
     "lat": 41.97448262,
     "lng": 2.793078442,
     "ist": 59.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SALT",
+        "partidos": 84,
+        "avg_tarjetas": 3.06
+      }
+    ]
   },
   {
     "id_territorio": "Sant Adrià de Besòs",
@@ -3720,7 +6418,28 @@ export const TERRITORIES = [
     "lat": 41.44681571,
     "lng": 1.975556653,
     "ist": 100.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. NARCÍS SALA",
+        "partidos": 116,
+        "avg_tarjetas": 3.83
+      },
+      {
+        "name": "CAMP DE FUTBOL IEM CAN SALVI",
+        "partidos": 101,
+        "avg_tarjetas": 4.21
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT ANDREU DE LLAVANERES",
+        "partidos": 82,
+        "avg_tarjetas": 4.6
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DEL CENTENARI-AISS",
+        "partidos": 82,
+        "avg_tarjetas": 2.35
+      }
+    ]
   },
   {
     "id_territorio": "Sant Antoni de Vilamajor",
@@ -3731,7 +6450,18 @@ export const TERRITORIES = [
     "lat": 41.67353114,
     "lng": 2.401225232,
     "ist": 110.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. ANTONIO ORTEGA PAREJO",
+        "partidos": 145,
+        "avg_tarjetas": 4.04
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. CANTONIGROS",
+        "partidos": 15,
+        "avg_tarjetas": 4.6
+      }
+    ]
   },
   {
     "id_territorio": "Sant Boi de Llobregat",
@@ -3742,7 +6472,13 @@ export const TERRITORIES = [
     "lat": 41.350339447564444,
     "lng": 2.042293304436395,
     "ist": 99.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA PARELLADA St. Boi",
+        "partidos": 84,
+        "avg_tarjetas": 3.81
+      }
+    ]
   },
   {
     "id_territorio": "Sant Boi de Llobregat 11 (Ciutat Cooperativa)",
@@ -3750,10 +6486,16 @@ export const TERRITORIES = [
     "municipio": "Sant Boi de Llobregat",
     "ciudad": "Sant Boi de Llobregat",
     "barrio": "Ciutat Cooperativa",
-    "lat": 41.34596907076045,
-    "lng": 2.0394721071471618,
+    "lat": 41.352,
+    "lng": 2.021,
     "ist": 91.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DANI JARQUE CIUTAT COOPERATIVA",
+        "partidos": 119,
+        "avg_tarjetas": 3.09
+      }
+    ]
   },
   {
     "id_territorio": "Sant Cebrià de Vallalta",
@@ -3764,7 +6506,13 @@ export const TERRITORIES = [
     "lat": 41.61975383,
     "lng": 2.599659686,
     "ist": 108.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT CEBRIÀ DE VALLALTA",
+        "partidos": 56,
+        "avg_tarjetas": 4.04
+      }
+    ]
   },
   {
     "id_territorio": "Sant Celoni",
@@ -3775,7 +6523,13 @@ export const TERRITORIES = [
     "lat": 41.68997481,
     "lng": 2.492009735,
     "ist": 98.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM ESTRUCH",
+        "partidos": 139,
+        "avg_tarjetas": 3.39
+      }
+    ]
   },
   {
     "id_territorio": "Sant Cugat del Vallès",
@@ -3786,7 +6540,33 @@ export const TERRITORIES = [
     "lat": 41.46950642033643,
     "lng": 2.0823919093366463,
     "ist": 123.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CAN MAGÍ",
+        "partidos": 116,
+        "avg_tarjetas": 3.0
+      },
+      {
+        "name": "CAMP DE FUTBOL ZEM JAUME TUBAU",
+        "partidos": 70,
+        "avg_tarjetas": 4.01
+      },
+      {
+        "name": "CAMP DE FUTBOL COL·LEGI LA FARGA",
+        "partidos": 58,
+        "avg_tarjetas": 4.05
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT CUGAT SESGARRIGUES",
+        "partidos": 44,
+        "avg_tarjetas": 3.7
+      },
+      {
+        "name": "CAMP DE FUTBOL SCHOOL AGORA INTERNATIONAL SANT CUGAT",
+        "partidos": 13,
+        "avg_tarjetas": 0.69
+      }
+    ]
   },
   {
     "id_territorio": "Sant Cugat del Vallès 6 (Mirasol - Mas Gener - Can Cabassa - Can Fontanals - les Casetes de Can Ravella)",
@@ -3794,10 +6574,16 @@ export const TERRITORIES = [
     "municipio": "Sant Cugat del Vallès",
     "ciudad": "Sant Cugat del Vallès",
     "barrio": "Mirasol - Mas Gener - Can Cabassa - Can Fontanals - les Casetes de Can Ravella",
-    "lat": 41.47694868747714,
-    "lng": 2.0867175974320196,
+    "lat": 41.464,
+    "lng": 2.061,
     "ist": 127.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE MIRA-SOL",
+        "partidos": 157,
+        "avg_tarjetas": 3.95
+      }
+    ]
   },
   {
     "id_territorio": "Sant Cugat del Vallès 9 (Can Sant Joan - Sant Mamet - Vullpalleres - Can Barata - Sector Nord - Can Graells)",
@@ -3805,10 +6591,21 @@ export const TERRITORIES = [
     "municipio": "Sant Cugat del Vallès",
     "ciudad": "Sant Cugat del Vallès",
     "barrio": "Can Sant Joan - Sant Mamet - Vullpalleres - Can Barata - Sector Nord - Can Graells",
-    "lat": 41.478693422003225,
-    "lng": 2.079213768967128,
+    "lat": 41.488,
+    "lng": 2.062,
     "ist": 126.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL COL·LEGI VIARÓ",
+        "partidos": 190,
+        "avg_tarjetas": 3.7
+      },
+      {
+        "name": "CAMP DE FUTBOL CLUB JUNIOR, F.C.",
+        "partidos": 165,
+        "avg_tarjetas": 4.15
+      }
+    ]
   },
   {
     "id_territorio": "Sant Esteve de la Sarga",
@@ -3819,7 +6616,23 @@ export const TERRITORIES = [
     "lat": 42.07963463,
     "lng": 0.763690094,
     "ist": 91.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT ESTEVE SESROVIRES",
+        "partidos": 68,
+        "avg_tarjetas": 4.18
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT ESTEVE D´EN BAS",
+        "partidos": 59,
+        "avg_tarjetas": 3.56
+      },
+      {
+        "name": "CAMP DE FUTBOL CE CAN MONCLUS",
+        "partidos": 35,
+        "avg_tarjetas": 3.63
+      }
+    ]
   },
   {
     "id_territorio": "Sant Feliu de Buixalleu",
@@ -3830,7 +6643,38 @@ export const TERRITORIES = [
     "lat": 41.73539007,
     "lng": 2.607588551,
     "ist": 104.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LES GRASES",
+        "partidos": 128,
+        "avg_tarjetas": 3.88
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. FALGUERA",
+        "partidos": 85,
+        "avg_tarjetas": 4.0
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOSEP SUNYER I ARXER",
+        "partidos": 50,
+        "avg_tarjetas": 4.82
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. VILARTAGUES",
+        "partidos": 50,
+        "avg_tarjetas": 3.66
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT FELIU DE PALLEROLS",
+        "partidos": 15,
+        "avg_tarjetas": 4.53
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT FELIU SASSERRA",
+        "partidos": 14,
+        "avg_tarjetas": 5.14
+      }
+    ]
   },
   {
     "id_territorio": "Sant Fost de Campsentelles",
@@ -3841,7 +6685,13 @@ export const TERRITORIES = [
     "lat": 41.51879754,
     "lng": 2.232602775,
     "ist": 109.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT FOST DE CAMPSENTELLES",
+        "partidos": 56,
+        "avg_tarjetas": 4.46
+      }
+    ]
   },
   {
     "id_territorio": "Sant Fruitós de Bages",
@@ -3852,7 +6702,13 @@ export const TERRITORIES = [
     "lat": 41.75083128,
     "lng": 1.873697176,
     "ist": 108.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT FRUITÓS DE BAGES",
+        "partidos": 140,
+        "avg_tarjetas": 4.39
+      }
+    ]
   },
   {
     "id_territorio": "Sant Gregori",
@@ -3863,7 +6719,13 @@ export const TERRITORIES = [
     "lat": 41.99070008,
     "lng": 2.76017203,
     "ist": 119.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT GREGORI",
+        "partidos": 85,
+        "avg_tarjetas": 4.38
+      }
+    ]
   },
   {
     "id_territorio": "Sant Guim de Freixenet",
@@ -3874,7 +6736,13 @@ export const TERRITORIES = [
     "lat": 41.65566775,
     "lng": 1.418591093,
     "ist": 90.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT GUIM DE FREIXENET",
+        "partidos": 14,
+        "avg_tarjetas": 3.79
+      }
+    ]
   },
   {
     "id_territorio": "Sant Hilari Sacalm",
@@ -3885,7 +6753,13 @@ export const TERRITORIES = [
     "lat": 41.8791776,
     "lng": 2.508763908,
     "ist": 81.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT HILARI SACALM",
+        "partidos": 41,
+        "avg_tarjetas": 3.54
+      }
+    ]
   },
   {
     "id_territorio": "Sant Hipòlit de Voltregà",
@@ -3896,7 +6770,13 @@ export const TERRITORIES = [
     "lat": 42.01533257,
     "lng": 2.23642223,
     "ist": 98.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT HIPÒLIT DE VOLTREGÀ",
+        "partidos": 42,
+        "avg_tarjetas": 3.57
+      }
+    ]
   },
   {
     "id_territorio": "Sant Jaume d'Enveja",
@@ -3907,7 +6787,18 @@ export const TERRITORIES = [
     "lat": 40.70705096,
     "lng": 0.719470283,
     "ist": 87.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. SALVADOR GISBERT",
+        "partidos": 20,
+        "avg_tarjetas": 4.5
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT JAUME DE LLIERCA",
+        "partidos": 7,
+        "avg_tarjetas": 4.43
+      }
+    ]
   },
   {
     "id_territorio": "Sant Joan de les Abadesses",
@@ -3918,7 +6809,38 @@ export const TERRITORIES = [
     "lat": 42.23277865,
     "lng": 2.284821954,
     "ist": 103.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM DE SANT JOAN VILATORRADA",
+        "partidos": 101,
+        "avg_tarjetas": 4.56
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOAN CAPDEVILA MÉNDEZ",
+        "partidos": 97,
+        "avg_tarjetas": 3.66
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. ARRAHONA-MERINAL-JOAN MURTRO",
+        "partidos": 94,
+        "avg_tarjetas": 3.34
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOAN NICOLAU",
+        "partidos": 83,
+        "avg_tarjetas": 4.28
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOAN BOCANEGRA",
+        "partidos": 50,
+        "avg_tarjetas": 3.94
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT JOAN ABADESSES",
+        "partidos": 47,
+        "avg_tarjetas": 4.11
+      }
+    ]
   },
   {
     "id_territorio": "Sant Jordi Desvalls",
@@ -3929,7 +6851,13 @@ export const TERRITORIES = [
     "lat": 42.07206414,
     "lng": 2.953832637,
     "ist": 102.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM SANT JORDI",
+        "partidos": 65,
+        "avg_tarjetas": 3.86
+      }
+    ]
   },
   {
     "id_territorio": "Sant Julià de Cerdanyola",
@@ -3940,7 +6868,18 @@ export const TERRITORIES = [
     "lat": 42.2236694,
     "lng": 1.892847282,
     "ist": 115.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM DE SANT JULIÀ DE VILATORTA",
+        "partidos": 56,
+        "avg_tarjetas": 5.23
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT JULIÀ DE LLOR I BONMATÍ",
+        "partidos": 27,
+        "avg_tarjetas": 2.89
+      }
+    ]
   },
   {
     "id_territorio": "Sant Just Desvern",
@@ -3951,7 +6890,18 @@ export const TERRITORIES = [
     "lat": 41.38598602,
     "lng": 2.075766405,
     "ist": 123.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT JUST DESVERN",
+        "partidos": 239,
+        "avg_tarjetas": 3.59
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. LES GRASES",
+        "partidos": 2,
+        "avg_tarjetas": 5.0
+      }
+    ]
   },
   {
     "id_territorio": "Sant Martí d'Albars",
@@ -3962,7 +6912,33 @@ export const TERRITORIES = [
     "lat": 42.02826716,
     "lng": 2.073872971,
     "ist": 122.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM GUINARDÓ",
+        "partidos": 144,
+        "avg_tarjetas": 3.41
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOVENTUT SANT PERE MÀRTIR",
+        "partidos": 44,
+        "avg_tarjetas": 3.5
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT MARTI DE TOUS",
+        "partidos": 43,
+        "avg_tarjetas": 3.53
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. SANT MARTÍ DE PROVENÇALS",
+        "partidos": 31,
+        "avg_tarjetas": 4.35
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT MARTÍ SARROCA",
+        "partidos": 17,
+        "avg_tarjetas": 6.94
+      }
+    ]
   },
   {
     "id_territorio": "Sant Miquel de Campmajor",
@@ -3973,7 +6949,13 @@ export const TERRITORIES = [
     "lat": 42.126012,
     "lng": 2.684459438,
     "ist": 110.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT MIQUEL FLUVIÀ",
+        "partidos": 13,
+        "avg_tarjetas": 5.85
+      }
+    ]
   },
   {
     "id_territorio": "Sant Pau de Segúries",
@@ -3984,7 +6966,18 @@ export const TERRITORIES = [
     "lat": 42.26086051,
     "lng": 2.364922292,
     "ist": 104.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT PERE I SANT PAU",
+        "partidos": 92,
+        "avg_tarjetas": 3.74
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT PAU D´ORDAL",
+        "partidos": 59,
+        "avg_tarjetas": 4.76
+      }
+    ]
   },
   {
     "id_territorio": "Sant Pere de Ribes",
@@ -3995,7 +6988,33 @@ export const TERRITORIES = [
     "lat": 41.2588,
     "lng": 1.7739,
     "ist": 100.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT PERE NORD",
+        "partidos": 117,
+        "avg_tarjetas": 3.15
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. LES ROQUETES",
+        "partidos": 72,
+        "avg_tarjetas": 2.65
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT PERE DE RIUDEBITLLES",
+        "partidos": 42,
+        "avg_tarjetas": 5.38
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT PERE DE TORELLÓ",
+        "partidos": 41,
+        "avg_tarjetas": 4.24
+      },
+      {
+        "name": "CAMP DE FUTBOL PARROQUIA DE SANT PERE MOLANTA",
+        "partidos": 15,
+        "avg_tarjetas": 6.67
+      }
+    ]
   },
   {
     "id_territorio": "Sant Pol de Mar",
@@ -4006,7 +7025,13 @@ export const TERRITORIES = [
     "lat": 41.60020983,
     "lng": 2.62142265,
     "ist": 114.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. SOT DEL BAGUENY",
+        "partidos": 41,
+        "avg_tarjetas": 5.02
+      }
+    ]
   },
   {
     "id_territorio": "Sant Quirze de Besora",
@@ -4017,7 +7042,18 @@ export const TERRITORIES = [
     "lat": 42.10015944,
     "lng": 2.222831485,
     "ist": 95.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM CAN CASABLANQUES",
+        "partidos": 83,
+        "avg_tarjetas": 4.14
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT QUIRZE BESORA",
+        "partidos": 57,
+        "avg_tarjetas": 3.88
+      }
+    ]
   },
   {
     "id_territorio": "Sant Ramon",
@@ -4028,7 +7064,23 @@ export const TERRITORIES = [
     "lat": 41.72453272,
     "lng": 1.357902627,
     "ist": 105.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. XEVI RAMON",
+        "partidos": 158,
+        "avg_tarjetas": 4.08
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. RAMON FARRÚS",
+        "partidos": 59,
+        "avg_tarjetas": 3.0
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT RAMON",
+        "partidos": 14,
+        "avg_tarjetas": 3.71
+      }
+    ]
   },
   {
     "id_territorio": "Sant Sadurní d'Anoia",
@@ -4039,7 +7091,13 @@ export const TERRITORIES = [
     "lat": 41.42409689,
     "lng": 1.786538997,
     "ist": 106.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA TRIOLA",
+        "partidos": 57,
+        "avg_tarjetas": 3.19
+      }
+    ]
   },
   {
     "id_territorio": "Sant Salvador de Guardiola",
@@ -4050,7 +7108,18 @@ export const TERRITORIES = [
     "lat": 41.67944747,
     "lng": 1.766947392,
     "ist": 109.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM DE SANT SALVADOR",
+        "partidos": 40,
+        "avg_tarjetas": 4.62
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. SALVADOR GISBERT",
+        "partidos": 4,
+        "avg_tarjetas": 3.75
+      }
+    ]
   },
   {
     "id_territorio": "Sant Vicenç de Castellet",
@@ -4061,7 +7130,28 @@ export const TERRITORIES = [
     "lat": 41.66551791,
     "lng": 1.863882735,
     "ist": 89.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LA GUARDIA",
+        "partidos": 88,
+        "avg_tarjetas": 4.0
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA BARRUANA",
+        "partidos": 68,
+        "avg_tarjetas": 3.84
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT VICENÇ DE TORELLO",
+        "partidos": 42,
+        "avg_tarjetas": 4.6
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. LES ROQUES",
+        "partidos": 40,
+        "avg_tarjetas": 3.5
+      }
+    ]
   },
   {
     "id_territorio": "Sant Vicenç de Montalt",
@@ -4072,7 +7162,13 @@ export const TERRITORIES = [
     "lat": 41.57833386,
     "lng": 2.509331421,
     "ist": 117.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. TONI BUCH",
+        "partidos": 95,
+        "avg_tarjetas": 4.55
+      }
+    ]
   },
   {
     "id_territorio": "Santa Bàrbara",
@@ -4083,7 +7179,18 @@ export const TERRITORIES = [
     "lat": 40.7145205,
     "lng": 0.492412991,
     "ist": 86.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANTA BÀRBARA",
+        "partidos": 34,
+        "avg_tarjetas": 4.21
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´ULLDECONA",
+        "partidos": 2,
+        "avg_tarjetas": 5.0
+      }
+    ]
   },
   {
     "id_territorio": "Santa Coloma de Cervelló",
@@ -4094,7 +7201,18 @@ export const TERRITORIES = [
     "lat": 41.36740424,
     "lng": 2.015794152,
     "ist": 115.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANTA COLOMA DE FARNERS",
+        "partidos": 102,
+        "avg_tarjetas": 3.71
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANTA COLOMA DE QUERALT",
+        "partidos": 57,
+        "avg_tarjetas": 3.53
+      }
+    ]
   },
   {
     "id_territorio": "Santa Coloma de Gramenet",
@@ -4105,7 +7223,13 @@ export const TERRITORIES = [
     "lat": 41.44771706596007,
     "lng": 2.207955352936865,
     "ist": 81.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM CAN ZAM (1)",
+        "partidos": 99,
+        "avg_tarjetas": 2.51
+      }
+    ]
   },
   {
     "id_territorio": "Santa Coloma de Gramenet 7 (Singuerlin - Can Zam)",
@@ -4113,10 +7237,21 @@ export const TERRITORIES = [
     "municipio": "Santa Coloma de Gramenet",
     "ciudad": "Santa Coloma de Gramenet",
     "barrio": "Singuerlin - Can Zam",
-    "lat": 41.455235144287606,
-    "lng": 2.2103139156797744,
+    "lat": 41.461,
+    "lng": 2.211,
     "ist": 93.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM CAN ZAM (2)",
+        "partidos": 117,
+        "avg_tarjetas": 3.31
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. LES OLIVERES",
+        "partidos": 12,
+        "avg_tarjetas": 3.92
+      }
+    ]
   },
   {
     "id_territorio": "Santa Cristina d'Aro",
@@ -4127,7 +7262,13 @@ export const TERRITORIES = [
     "lat": 41.81268616,
     "lng": 2.996348425,
     "ist": 101.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANTA CRISTINA D´ARO",
+        "partidos": 44,
+        "avg_tarjetas": 4.11
+      }
+    ]
   },
   {
     "id_territorio": "Santa Eugènia de Berga",
@@ -4138,7 +7279,13 @@ export const TERRITORIES = [
     "lat": 41.90018835,
     "lng": 2.283161543,
     "ist": 102.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. TON TUNEU",
+        "partidos": 55,
+        "avg_tarjetas": 4.25
+      }
+    ]
   },
   {
     "id_territorio": "Santa Eulàlia de Riuprimer",
@@ -4149,7 +7296,18 @@ export const TERRITORIES = [
     "lat": 41.91101114,
     "lng": 2.188120418,
     "ist": 112.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANTA EULÀLIA DE RIUPRIMER",
+        "partidos": 60,
+        "avg_tarjetas": 4.7
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANTA EULÀLIA DE RONÇANA",
+        "partidos": 46,
+        "avg_tarjetas": 4.13
+      }
+    ]
   },
   {
     "id_territorio": "Santa Margarida de Montbui",
@@ -4160,7 +7318,13 @@ export const TERRITORIES = [
     "lat": 41.57515672,
     "lng": 1.607753847,
     "ist": 85.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANTA MARGARIDA I ELS MONJOS",
+        "partidos": 15,
+        "avg_tarjetas": 6.0
+      }
+    ]
   },
   {
     "id_territorio": "Santa Maria d'Oló",
@@ -4171,7 +7335,23 @@ export const TERRITORIES = [
     "lat": 41.87381952,
     "lng": 2.035604967,
     "ist": 105.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. MARIANAO",
+        "partidos": 121,
+        "avg_tarjetas": 4.99
+      },
+      {
+        "name": "CAMP DE FUTBOL PARROQUIA DE SANTA MARIA DE LLERONA",
+        "partidos": 60,
+        "avg_tarjetas": 4.35
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. L'AUBE",
+        "partidos": 44,
+        "avg_tarjetas": 4.77
+      }
+    ]
   },
   {
     "id_territorio": "Santa Oliva",
@@ -4182,7 +7362,18 @@ export const TERRITORIES = [
     "lat": 41.25311797,
     "lng": 1.55069958,
     "ist": 89.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANTA OLIVA",
+        "partidos": 24,
+        "avg_tarjetas": 3.79
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. POLIVALENT PINS VENS (RUGBY)",
+        "partidos": 1,
+        "avg_tarjetas": 2.0
+      }
+    ]
   },
   {
     "id_territorio": "Santa Pau",
@@ -4193,7 +7384,13 @@ export const TERRITORIES = [
     "lat": 42.14426939,
     "lng": 2.57136437,
     "ist": 114.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANTA PAU",
+        "partidos": 41,
+        "avg_tarjetas": 3.98
+      }
+    ]
   },
   {
     "id_territorio": "Santa Perpètua de Mogoda",
@@ -4204,7 +7401,13 @@ export const TERRITORIES = [
     "lat": 41.53491925,
     "lng": 2.183170164,
     "ist": 100.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CENTRE PACO NAVARRO (2)",
+        "partidos": 105,
+        "avg_tarjetas": 3.82
+      }
+    ]
   },
   {
     "id_territorio": "Santa Susanna",
@@ -4215,7 +7418,13 @@ export const TERRITORIES = [
     "lat": 41.63542109,
     "lng": 2.707549722,
     "ist": 103.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANTA SUSANNA",
+        "partidos": 51,
+        "avg_tarjetas": 3.94
+      }
+    ]
   },
   {
     "id_territorio": "Santpedor",
@@ -4237,7 +7446,38 @@ export const TERRITORIES = [
     "lat": 41.9961,
     "lng": 2.8286,
     "ist": 108.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. TEIXONERA",
+        "partidos": 99,
+        "avg_tarjetas": 3.11
+      },
+      {
+        "name": "CAMP DE FUTBOL CEM CAN CARALLEU",
+        "partidos": 89,
+        "avg_tarjetas": 3.98
+      },
+      {
+        "name": "CAMP DE FUTBOL ESCOLA PIA DE SARRIÀ",
+        "partidos": 73,
+        "avg_tarjetas": 4.15
+      },
+      {
+        "name": "CAMP DE FUTBOL COL·LEGI SAGRAT COR SARRIÀ",
+        "partidos": 30,
+        "avg_tarjetas": 2.03
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. L'ÀLIGA",
+        "partidos": 29,
+        "avg_tarjetas": 6.28
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VALLVIDRERA",
+        "partidos": 14,
+        "avg_tarjetas": 3.71
+      }
+    ]
   },
   {
     "id_territorio": "Selva de Mar, la",
@@ -4248,7 +7488,23 @@ export const TERRITORIES = [
     "lat": 42.32448788,
     "lng": 3.186472926,
     "ist": 104.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LA SELVA DEL CAMP",
+        "partidos": 36,
+        "avg_tarjetas": 4.25
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. SELVA DE MAR",
+        "partidos": 12,
+        "avg_tarjetas": 3.33
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SAGUARDA",
+        "partidos": 1,
+        "avg_tarjetas": 4.0
+      }
+    ]
   },
   {
     "id_territorio": "Sentmenat",
@@ -4259,7 +7515,13 @@ export const TERRITORIES = [
     "lat": 41.60866493,
     "lng": 2.135427871,
     "ist": 108.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CAN SORTS",
+        "partidos": 35,
+        "avg_tarjetas": 5.26
+      }
+    ]
   },
   {
     "id_territorio": "Serinyà",
@@ -4270,7 +7532,13 @@ export const TERRITORIES = [
     "lat": 42.16906301,
     "lng": 2.744392576,
     "ist": 110.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SERINYÀ",
+        "partidos": 15,
+        "avg_tarjetas": 4.6
+      }
+    ]
   },
   {
     "id_territorio": "Serra de Daró",
@@ -4281,7 +7549,13 @@ export const TERRITORIES = [
     "lat": 42.02833404,
     "lng": 3.072067372,
     "ist": 105.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. TORRE-ROJA",
+        "partidos": 100,
+        "avg_tarjetas": 4.11
+      }
+    ]
   },
   {
     "id_territorio": "Seròs",
@@ -4292,7 +7566,13 @@ export const TERRITORIES = [
     "lat": 41.46329226,
     "lng": 0.409552253,
     "ist": 65.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SERÒS",
+        "partidos": 15,
+        "avg_tarjetas": 5.2
+      }
+    ]
   },
   {
     "id_territorio": "Seu d'Urgell, la",
@@ -4303,7 +7583,13 @@ export const TERRITORIES = [
     "lat": 42.35816328,
     "lng": 1.46201318,
     "ist": 87.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. EMILI VICENTE",
+        "partidos": 76,
+        "avg_tarjetas": 3.09
+      }
+    ]
   },
   {
     "id_territorio": "Seva",
@@ -4314,7 +7600,13 @@ export const TERRITORIES = [
     "lat": 41.83885377,
     "lng": 2.279824361,
     "ist": 111.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. L'ALZINA",
+        "partidos": 56,
+        "avg_tarjetas": 3.75
+      }
+    ]
   },
   {
     "id_territorio": "Sils",
@@ -4325,7 +7617,13 @@ export const TERRITORIES = [
     "lat": 41.81082984,
     "lng": 2.742934015,
     "ist": 96.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LES MALLORQUINES",
+        "partidos": 69,
+        "avg_tarjetas": 3.72
+      }
+    ]
   },
   {
     "id_territorio": "Sitges",
@@ -4336,7 +7634,13 @@ export const TERRITORIES = [
     "lat": 41.23490746,
     "lng": 1.811618107,
     "ist": 111.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D'AIGUADOLÇ",
+        "partidos": 114,
+        "avg_tarjetas": 3.77
+      }
+    ]
   },
   {
     "id_territorio": "Siurana",
@@ -4347,7 +7651,18 @@ export const TERRITORIES = [
     "lat": 42.20947449,
     "lng": 2.994110033,
     "ist": 113.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SIURANA D´EMPORDA",
+        "partidos": 12,
+        "avg_tarjetas": 6.67
+      },
+      {
+        "name": "CAMP DE FUTBOL IE PELAI BUIXÓ",
+        "partidos": 1,
+        "avg_tarjetas": 3.0
+      }
+    ]
   },
   {
     "id_territorio": "Solsona",
@@ -4358,7 +7673,13 @@ export const TERRITORIES = [
     "lat": 41.99434845,
     "lng": 1.518177593,
     "ist": 91.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SOLSONA",
+        "partidos": 102,
+        "avg_tarjetas": 3.48
+      }
+    ]
   },
   {
     "id_territorio": "Subirats",
@@ -4380,7 +7701,13 @@ export const TERRITORIES = [
     "lat": 41.55761329,
     "lng": 0.567232421,
     "ist": 95.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SUDANELL",
+        "partidos": 15,
+        "avg_tarjetas": 2.73
+      }
+    ]
   },
   {
     "id_territorio": "Sunyer",
@@ -4391,7 +7718,13 @@ export const TERRITORIES = [
     "lat": 41.52325812,
     "lng": 0.593018412,
     "ist": 86.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SUNYER",
+        "partidos": 15,
+        "avg_tarjetas": 2.33
+      }
+    ]
   },
   {
     "id_territorio": "Sénia, la",
@@ -4402,7 +7735,13 @@ export const TERRITORIES = [
     "lat": 40.6330809,
     "lng": 0.286093403,
     "ist": 85.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CEM DE LA SÉNIA",
+        "partidos": 47,
+        "avg_tarjetas": 4.91
+      }
+    ]
   },
   {
     "id_territorio": "Súria",
@@ -4413,7 +7752,13 @@ export const TERRITORIES = [
     "lat": 41.83124121,
     "lng": 1.754309091,
     "ist": 96.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VALLS DE TORROELLA",
+        "partidos": 1,
+        "avg_tarjetas": 11.0
+      }
+    ]
   },
   {
     "id_territorio": "Taradell",
@@ -4435,7 +7780,33 @@ export const TERRITORIES = [
     "lat": 41.1189,
     "lng": 1.2445,
     "ist": 94.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BONAVISTA",
+        "partidos": 73,
+        "avg_tarjetas": 4.23
+      },
+      {
+        "name": "CAMP DE FUTBOL CIUTAT ESPORTIVA GIMNÀSTIC DE TARRAGONA 2 2 Camps",
+        "partidos": 71,
+        "avg_tarjetas": 3.35
+      },
+      {
+        "name": "CAMP DE FUTBOL COL·LEGI LA SALLE TARRAGONA",
+        "partidos": 23,
+        "avg_tarjetas": 4.96
+      },
+      {
+        "name": "CAMP DE FUTBOL CIUTAT ESPORTIVA GIMNÀSTIC DE TARRAGONA 1 2 Camps",
+        "partidos": 14,
+        "avg_tarjetas": 2.79
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. ENRIC TARRAGONA",
+        "partidos": 4,
+        "avg_tarjetas": 1.75
+      }
+    ]
   },
   {
     "id_territorio": "Teià",
@@ -4446,7 +7817,13 @@ export const TERRITORIES = [
     "lat": 41.49963426,
     "lng": 2.319523126,
     "ist": 121.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE TEIÀ",
+        "partidos": 94,
+        "avg_tarjetas": 3.41
+      }
+    ]
   },
   {
     "id_territorio": "Terrassa",
@@ -4457,7 +7834,13 @@ export const TERRITORIES = [
     "lat": 41.558712846555444,
     "lng": 2.0146800982517146,
     "ist": 98.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CLUB NATACIÓ TERRASSA",
+        "partidos": 112,
+        "avg_tarjetas": 3.88
+      }
+    ]
   },
   {
     "id_territorio": "Terrassa 10 (Can Parellada - les Fonts)",
@@ -4465,10 +7848,21 @@ export const TERRITORIES = [
     "municipio": "Terrassa",
     "ciudad": "Terrassa",
     "barrio": "Can Parellada - les Fonts",
-    "lat": 41.56624824678298,
-    "lng": 2.009647352201433,
+    "lat": 41.529,
+    "lng": 2.04,
     "ist": 97.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM LES FONTS-ARTUR TRAVESA",
+        "partidos": 62,
+        "avg_tarjetas": 2.85
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE SANT JOAN LES FONTS",
+        "partidos": 34,
+        "avg_tarjetas": 3.38
+      }
+    ]
   },
   {
     "id_territorio": "Terrassa 15 (la Maurina)",
@@ -4476,10 +7870,16 @@ export const TERRITORIES = [
     "municipio": "Terrassa",
     "ciudad": "Terrassa",
     "barrio": "la Maurina",
-    "lat": 41.5662068432719,
-    "lng": 2.0126142261054167,
+    "lat": 41.559,
+    "lng": 2.0,
     "ist": 83.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA MAURINA",
+        "partidos": 81,
+        "avg_tarjetas": 3.95
+      }
+    ]
   },
   {
     "id_territorio": "Terrassa 17 (Can Boada)",
@@ -4487,10 +7887,16 @@ export const TERRITORIES = [
     "municipio": "Terrassa",
     "ciudad": "Terrassa",
     "barrio": "Can Boada",
-    "lat": 41.55840303187594,
-    "lng": 2.0158808535668955,
+    "lat": 41.567,
+    "lng": 1.999,
     "ist": 94.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CAN BOADA",
+        "partidos": 95,
+        "avg_tarjetas": 3.86
+      }
+    ]
   },
   {
     "id_territorio": "Terrassa 22 (les Arenes - la Grípia - Can Montllor)",
@@ -4498,10 +7904,16 @@ export const TERRITORIES = [
     "municipio": "Terrassa",
     "ciudad": "Terrassa",
     "barrio": "les Arenes - la Grípia - Can Montllor",
-    "lat": 41.5702933558082,
-    "lng": 2.0169373513402973,
+    "lat": 41.571,
+    "lng": 2.039,
     "ist": 99.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LES ARENES",
+        "partidos": 76,
+        "avg_tarjetas": 4.28
+      }
+    ]
   },
   {
     "id_territorio": "Terrassa 6 (Ca n'Anglada)",
@@ -4509,10 +7921,16 @@ export const TERRITORIES = [
     "municipio": "Terrassa",
     "ciudad": "Terrassa",
     "barrio": "Ca n'Anglada",
-    "lat": 41.563198600610995,
-    "lng": 2.005728643557576,
+    "lat": 41.564,
+    "lng": 2.03,
     "ist": 64.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CA N´ANGLADA",
+        "partidos": 108,
+        "avg_tarjetas": 2.89
+      }
+    ]
   },
   {
     "id_territorio": "Terrassa 9 (Can Jofresa - Can Palet II - Guadalhorce - Xúquer)",
@@ -4520,10 +7938,21 @@ export const TERRITORIES = [
     "municipio": "Terrassa",
     "ciudad": "Terrassa",
     "barrio": "Can Jofresa - Can Palet II - Guadalhorce - Xúquer",
-    "lat": 41.560718188404735,
-    "lng": 2.0081891882761127,
+    "lat": 41.551,
+    "lng": 2.019,
     "ist": 78.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM CAN JOFRESA",
+        "partidos": 123,
+        "avg_tarjetas": 3.72
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. LES PALMERES",
+        "partidos": 1,
+        "avg_tarjetas": 2.0
+      }
+    ]
   },
   {
     "id_territorio": "Tiana",
@@ -4534,7 +7963,13 @@ export const TERRITORIES = [
     "lat": 41.48189047,
     "lng": 2.268902679,
     "ist": 124.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE TIANA",
+        "partidos": 88,
+        "avg_tarjetas": 3.6
+      }
+    ]
   },
   {
     "id_territorio": "Tivenys",
@@ -4545,7 +7980,18 @@ export const TERRITORIES = [
     "lat": 40.90733424,
     "lng": 0.5124489,
     "ist": 86.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE TIVENYS",
+        "partidos": 9,
+        "avg_tarjetas": 6.22
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BÍTEM",
+        "partidos": 1,
+        "avg_tarjetas": 4.0
+      }
+    ]
   },
   {
     "id_territorio": "Tona",
@@ -4556,7 +8002,18 @@ export const TERRITORIES = [
     "lat": 41.85031212,
     "lng": 2.228561133,
     "ist": 104.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM DE TONA (1)",
+        "partidos": 59,
+        "avg_tarjetas": 3.81
+      },
+      {
+        "name": "CAMP DE FUTBOL ZEM DE TONA (2)",
+        "partidos": 14,
+        "avg_tarjetas": 5.71
+      }
+    ]
   },
   {
     "id_territorio": "Tordera",
@@ -4578,7 +8035,13 @@ export const TERRITORIES = [
     "lat": 42.04672579,
     "lng": 2.262805553,
     "ist": 93.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE TORELLÓ",
+        "partidos": 129,
+        "avg_tarjetas": 3.71
+      }
+    ]
   },
   {
     "id_territorio": "Torre de Cabdella, la",
@@ -4589,7 +8052,38 @@ export const TERRITORIES = [
     "lat": 42.42190746,
     "lng": 0.982531466,
     "ist": 116.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. TORREFORTA",
+        "partidos": 94,
+        "avg_tarjetas": 3.81
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. TORRE-ROJA",
+        "partidos": 81,
+        "avg_tarjetas": 3.51
+      },
+      {
+        "name": "CAMP DE FUTBOL CEM CAN ROIG",
+        "partidos": 50,
+        "avg_tarjetas": 2.7
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE TORRELLES DE FOIX",
+        "partidos": 30,
+        "avg_tarjetas": 3.13
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LA TORRETA",
+        "partidos": 24,
+        "avg_tarjetas": 5.62
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE LA TORRE DE CLARAMUNT",
+        "partidos": 15,
+        "avg_tarjetas": 4.13
+      }
+    ]
   },
   {
     "id_territorio": "Torroella de Fluvià",
@@ -4600,7 +8094,18 @@ export const TERRITORIES = [
     "lat": 42.17487873,
     "lng": 3.040968953,
     "ist": 101.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM DE TORROELLA DE MONTGRÍ",
+        "partidos": 15,
+        "avg_tarjetas": 4.4
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VALLS DE TORROELLA",
+        "partidos": 14,
+        "avg_tarjetas": 4.86
+      }
+    ]
   },
   {
     "id_territorio": "Tortosa",
@@ -4611,7 +8116,13 @@ export const TERRITORIES = [
     "lat": 40.81100812,
     "lng": 0.52064304,
     "ist": 85.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA FORJA CAMP-REDÓ",
+        "partidos": 45,
+        "avg_tarjetas": 4.6
+      }
+    ]
   },
   {
     "id_territorio": "Torà",
@@ -4622,7 +8133,13 @@ export const TERRITORIES = [
     "lat": 41.81276729,
     "lng": 1.402776614,
     "ist": 99.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE TORÀ",
+        "partidos": 15,
+        "avg_tarjetas": 4.6
+      }
+    ]
   },
   {
     "id_territorio": "Tossa de Mar",
@@ -4633,7 +8150,13 @@ export const TERRITORIES = [
     "lat": 41.7180076,
     "lng": 2.931230066,
     "ist": 92.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE TOSSA DE MAR",
+        "partidos": 82,
+        "avg_tarjetas": 3.82
+      }
+    ]
   },
   {
     "id_territorio": "Tremp",
@@ -4644,7 +8167,13 @@ export const TERRITORIES = [
     "lat": 42.16741026,
     "lng": 0.895259127,
     "ist": 87.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE PEDRASANTA",
+        "partidos": 59,
+        "avg_tarjetas": 3.76
+      }
+    ]
   },
   {
     "id_territorio": "Tàrrega",
@@ -4655,7 +8184,13 @@ export const TERRITORIES = [
     "lat": 41.64640449,
     "lng": 1.13936906,
     "ist": 92.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. LA PLANA DE TÀRREGA Annex",
+        "partidos": 20,
+        "avg_tarjetas": 3.5
+      }
+    ]
   },
   {
     "id_territorio": "Térmens",
@@ -4666,7 +8201,13 @@ export const TERRITORIES = [
     "lat": 41.71746482,
     "lng": 0.760563433,
     "ist": 95.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE TÉRMENS",
+        "partidos": 17,
+        "avg_tarjetas": 5.24
+      }
+    ]
   },
   {
     "id_territorio": "Ullastrell",
@@ -4677,7 +8218,13 @@ export const TERRITORIES = [
     "lat": 41.52866568,
     "lng": 1.959821989,
     "ist": 120.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´ULLASTRELL",
+        "partidos": 25,
+        "avg_tarjetas": 4.56
+      }
+    ]
   },
   {
     "id_territorio": "Ulldecona",
@@ -4688,7 +8235,13 @@ export const TERRITORIES = [
     "lat": 40.59823916,
     "lng": 0.448875456,
     "ist": 70.6,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. D´ULLDECONA",
+        "partidos": 44,
+        "avg_tarjetas": 5.16
+      }
+    ]
   },
   {
     "id_territorio": "Vacarisses",
@@ -4699,7 +8252,13 @@ export const TERRITORIES = [
     "lat": 41.60722834,
     "lng": 1.917909239,
     "ist": 113.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VACARISSES",
+        "partidos": 37,
+        "avg_tarjetas": 3.11
+      }
+    ]
   },
   {
     "id_territorio": "Vall d'en Bas, la",
@@ -4710,7 +8269,18 @@ export const TERRITORIES = [
     "lat": 42.11825566,
     "lng": 2.459062907,
     "ist": 115.4,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. CAMP DE LA VILA",
+        "partidos": 23,
+        "avg_tarjetas": 2.61
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. VALL D´HEBRON",
+        "partidos": 14,
+        "avg_tarjetas": 6.64
+      }
+    ]
   },
   {
     "id_territorio": "Vallbona d'Anoia",
@@ -4732,7 +8302,13 @@ export const TERRITORIES = [
     "lat": 41.64741254,
     "lng": 2.510551073,
     "ist": 111.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VALLGORGUINA",
+        "partidos": 2,
+        "avg_tarjetas": 0.5
+      }
+    ]
   },
   {
     "id_territorio": "Vallirana",
@@ -4743,7 +8319,13 @@ export const TERRITORIES = [
     "lat": 41.38800715,
     "lng": 1.931888806,
     "ist": 108.3,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VALLIRANA",
+        "partidos": 71,
+        "avg_tarjetas": 4.59
+      }
+    ]
   },
   {
     "id_territorio": "Vallmoll",
@@ -4754,7 +8336,13 @@ export const TERRITORIES = [
     "lat": 41.24244387,
     "lng": 1.249025345,
     "ist": 104.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VALLMOLL",
+        "partidos": 53,
+        "avg_tarjetas": 4.36
+      }
+    ]
   },
   {
     "id_territorio": "Valls",
@@ -4765,7 +8353,23 @@ export const TERRITORIES = [
     "lat": 41.28417563,
     "lng": 1.247752539,
     "ist": 91.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL IEM DEL VILAR",
+        "partidos": 87,
+        "avg_tarjetas": 4.4
+      },
+      {
+        "name": "CAMP DE FUTBOL ZEM CASC ANTIC",
+        "partidos": 67,
+        "avg_tarjetas": 3.91
+      },
+      {
+        "name": "CAMP DE FUTBOL CEM EL FORNÀS",
+        "partidos": 7,
+        "avg_tarjetas": 1.71
+      }
+    ]
   },
   {
     "id_territorio": "Vendrell, el",
@@ -4776,7 +8380,13 @@ export const TERRITORIES = [
     "lat": 41.22021408,
     "lng": 1.534929051,
     "ist": 90.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL CLUB D´ESPORTS VENDRELL",
+        "partidos": 78,
+        "avg_tarjetas": 4.21
+      }
+    ]
   },
   {
     "id_territorio": "Ventalló",
@@ -4787,7 +8397,13 @@ export const TERRITORIES = [
     "lat": 42.14887521,
     "lng": 3.026876583,
     "ist": 98.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VENTALLÓ",
+        "partidos": 13,
+        "avg_tarjetas": 2.46
+      }
+    ]
   },
   {
     "id_territorio": "Verdú",
@@ -4798,7 +8414,13 @@ export const TERRITORIES = [
     "lat": 41.61018266,
     "lng": 1.143637907,
     "ist": 100.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VERDÚ",
+        "partidos": 14,
+        "avg_tarjetas": 4.71
+      }
+    ]
   },
   {
     "id_territorio": "Verges",
@@ -4809,7 +8431,13 @@ export const TERRITORIES = [
     "lat": 42.06040322,
     "lng": 3.046577287,
     "ist": 95.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VERGES",
+        "partidos": 28,
+        "avg_tarjetas": 3.61
+      }
+    ]
   },
   {
     "id_territorio": "Vic",
@@ -4820,7 +8448,13 @@ export const TERRITORIES = [
     "lat": 41.93049048,
     "lng": 2.254339978,
     "ist": 83.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM DE VIC ANNEX",
+        "partidos": 14,
+        "avg_tarjetas": 4.07
+      }
+    ]
   },
   {
     "id_territorio": "Vidreres",
@@ -4831,7 +8465,13 @@ export const TERRITORIES = [
     "lat": 41.78888434,
     "lng": 2.779222911,
     "ist": 94.8,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM DE VIDRERES",
+        "partidos": 56,
+        "avg_tarjetas": 4.39
+      }
+    ]
   },
   {
     "id_territorio": "Vila-seca",
@@ -4853,7 +8493,13 @@ export const TERRITORIES = [
     "lat": 41.95261121,
     "lng": 2.79400671,
     "ist": 123.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VILABLAREIX",
+        "partidos": 127,
+        "avg_tarjetas": 4.11
+      }
+    ]
   },
   {
     "id_territorio": "Vilada",
@@ -4864,7 +8510,18 @@ export const TERRITORIES = [
     "lat": 42.13711088,
     "lng": 1.931538128,
     "ist": 115.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VILADA",
+        "partidos": 15,
+        "avg_tarjetas": 3.8
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VILADAMAT",
+        "partidos": 13,
+        "avg_tarjetas": 6.0
+      }
+    ]
   },
   {
     "id_territorio": "Viladecans",
@@ -4875,7 +8532,13 @@ export const TERRITORIES = [
     "lat": 41.31578999,
     "lng": 2.020400769,
     "ist": 103.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VILADECANS",
+        "partidos": 156,
+        "avg_tarjetas": 3.62
+      }
+    ]
   },
   {
     "id_territorio": "Viladecavalls",
@@ -4886,7 +8549,13 @@ export const TERRITORIES = [
     "lat": 41.55485863,
     "lng": 1.953783969,
     "ist": 116.0,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL ZEM CAN TRIES",
+        "partidos": 93,
+        "avg_tarjetas": 3.12
+      }
+    ]
   },
   {
     "id_territorio": "Viladrau",
@@ -4897,7 +8566,13 @@ export const TERRITORIES = [
     "lat": 41.84751635,
     "lng": 2.389982465,
     "ist": 111.5,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VILADRAU",
+        "partidos": 15,
+        "avg_tarjetas": 5.67
+      }
+    ]
   },
   {
     "id_territorio": "Vilafant",
@@ -4908,7 +8583,13 @@ export const TERRITORIES = [
     "lat": 42.24698274,
     "lng": 2.937576321,
     "ist": 104.2,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VILAFANT",
+        "partidos": 12,
+        "avg_tarjetas": 2.58
+      }
+    ]
   },
   {
     "id_territorio": "Vilafranca del Penedès",
@@ -4919,7 +8600,33 @@ export const TERRITORIES = [
     "lat": 41.34640752,
     "lng": 1.698173458,
     "ist": 96.1,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. ESPIRALL",
+        "partidos": 102,
+        "avg_tarjetas": 2.82
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE CUNIT",
+        "partidos": 21,
+        "avg_tarjetas": 2.9
+      },
+      {
+        "name": "CAMP DE FUTBOL ESCOLA CAMP JOLIU",
+        "partidos": 15,
+        "avg_tarjetas": 4.0
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE BANYERES DEL PENEDÈS",
+        "partidos": 15,
+        "avg_tarjetas": 5.07
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. JOSEP FERRÉ FARRIOL",
+        "partidos": 1,
+        "avg_tarjetas": 8.0
+      }
+    ]
   },
   {
     "id_territorio": "Vilanova d'Escornalbou",
@@ -4930,7 +8637,33 @@ export const TERRITORIES = [
     "lat": 41.1128721,
     "lng": 0.936626812,
     "ist": 98.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VILANOVA DEL VALLÈS",
+        "partidos": 107,
+        "avg_tarjetas": 3.78
+      },
+      {
+        "name": "CAMP DE FUTBOL ZEM CAN TITÓ",
+        "partidos": 87,
+        "avg_tarjetas": 3.93
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VILANOVA DE LA BARCA",
+        "partidos": 30,
+        "avg_tarjetas": 4.3
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VILANOVA DE L´AGUDA",
+        "partidos": 15,
+        "avg_tarjetas": 4.33
+      },
+      {
+        "name": "CAMP DE FUTBOL MPAL. ASSOCIACIÓ ALUMNES OBRERS Annex, (2)",
+        "partidos": 14,
+        "avg_tarjetas": 1.21
+      }
+    ]
   },
   {
     "id_territorio": "Vilassar de Dalt",
@@ -4941,7 +8674,13 @@ export const TERRITORIES = [
     "lat": 41.5173,
     "lng": 2.3582,
     "ist": 111.7,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VILASSAR DE MAR",
+        "partidos": 17,
+        "avg_tarjetas": 2.06
+      }
+    ]
   },
   {
     "id_territorio": "Vilobí d'Onyar",
@@ -4952,7 +8691,13 @@ export const TERRITORIES = [
     "lat": 41.88850596,
     "lng": 2.742548231,
     "ist": 105.9,
-    "stadiums": []
+    "stadiums": [
+      {
+        "name": "CAMP DE FUTBOL MPAL. DE VILOBÍ D´ONYAR",
+        "partidos": 55,
+        "avg_tarjetas": 4.09
+      }
+    ]
   },
   {
     "id_territorio": "Xerta",
