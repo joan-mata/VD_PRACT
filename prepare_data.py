@@ -49,11 +49,51 @@ def get_muni_keywords(muni):
     words = muni_norm.split()
     if len(words) == 0:
         return []
+    
+    stop_words = {'LES', 'PAU', 'CARME', 'EL', 'LA', 'ELS', 'ES', 'L', 'SANT', 'SANTA'}
+    
     if words[0] in ['SANT', 'SANTA', 'EL', 'LA', 'LES', 'ELS', 'ES', 'L\'']:
         if len(words) > 1:
             core = words[0] + " " + words[1]
             return [muni_norm, core, words[1]]
+            
+    if len(words) == 1 and words[0] in stop_words:
+        return [muni_norm]
+        
     return [muni_norm, words[0]]
+
+def get_ciudad_y_barrio(id_territorio):
+    if not isinstance(id_territorio, str) or id_territorio in ['Desconocido', 'NONE', '']:
+        return 'Desconocido', 'Desconocido'
+    
+    clean_id = id_territorio.strip()
+    match = re.match(r'^([^0-9]+)\s+[0-9]+\s*\(([^)]+)\)', clean_id)
+    if match:
+        ciudad = match.group(1).strip()
+        barrio = match.group(2).strip()
+        
+        if ciudad.endswith(','):
+            ciudad = ciudad[:-1].strip()
+        if ',' in ciudad:
+            parts = [p.strip() for p in ciudad.split(',')]
+            if len(parts) == 2 and parts[1].lower() in ['el', 'la', 'les', 'els', 'es', 'l\'', 'l']:
+                article = parts[1].capitalize()
+                if article == "L'":
+                    ciudad = f"L'{parts[0]}"
+                else:
+                    ciudad = f"{article} {parts[0]}"
+        return ciudad, barrio
+        
+    ciudad = clean_id
+    if ',' in ciudad:
+        parts = [p.strip() for p in ciudad.split(',')]
+        if len(parts) == 2 and parts[1].lower() in ['el', 'la', 'les', 'els', 'es', 'l\'', 'l']:
+            article = parts[1].capitalize()
+            if article == "L'":
+                ciudad = f"L'{parts[0]}"
+            else:
+                ciudad = f"{article} {parts[0]}"
+    return ciudad, ciudad
 
 def main():
     print("🚀 Iniciando preparación de datos optimizada para la PRACT2...")
@@ -160,10 +200,10 @@ def main():
     # Patrones específicos refinados para estadios/equipos conflictivos o muy comunes
     patterns = {
         r'LA MINA|MINA': ('AC', 'Sant Adrià de Besòs 4 (la Mina - la Catalana)'),
-        r'SANT ROC|ST. ROC': ('AC', 'Badalona 7 (Sant Roc Sud-est - la Mora - el Remei)'),
+        r'SANT ROC|ST\. ROC': ('AC', 'Badalona 7 (Sant Roc Sud-est - la Mora - el Remei)'),
         r'LLEFIA|LLEFIÀ': ('AC', 'Badalona 13 (Sant Antoni de Llefià)'),
         r'RAVAL': ('AC', 'Barcelona 3 (la Riereta)'),
-        r'SANT GERVASI|ST. GERVASI': ('AC', 'Barcelona 80 (Sant Gervasi de Cassoles)'),
+        r'SANT GERVASI|ST\. GERVASI': ('AC', 'Barcelona 80 (Sant Gervasi de Cassoles)'),
         r'FORT PIENC|FORT-PIENC': ('AC', 'Barcelona 15 (el Fort Pienc)'),
         r'CAN DRAGO|CAN DRAGÓ': ('AC', 'Barcelona 130 (Can Dragó)'),
         r'BESOS|BESÒS': ('AC', 'Barcelona 179 (el Besòs)'),
@@ -174,10 +214,10 @@ def main():
         r'TRINITAT NOVA': ('AC', 'Barcelona 145 (la Trinitat Nova)'),
         r'TRINITAT VELLA': ('AC', 'Barcelona 147 (la Trinitat Vella)'),
         r'CIUTAT MERIDIANA': ('AC', 'Barcelona 146 (Torre Baró, Ciutat Meridiana i Vallbona)'),
-        r'GORNAL': ('AC', 'Hospitalet de Llobregat 28 (el Gornal)'),
-        r'BELLVITGE': ('AC', 'Hospitalet de Llobregat 29 (Bellvitge - Estació)'),
-        r'FLORIDA': ('AC', 'Hospitalet de Llobregat 10 (la Florida - Plaça de la Llibertat)'),
-        r'COLLBLANC': ('AC', 'Hospitalet de Llobregat 15 (Collblanc - Centre - Vallparda)'),
+        r'GORNAL|SPORTVENFI': ('AC', 'Hospitalet de Llobregat 28 (el Gornal), l\''),
+        r'BELLVITGE': ('AC', 'Hospitalet de Llobregat 29 (Bellvitge - Estació), l\''),
+        r'FLORIDA': ('AC', 'Hospitalet de Llobregat 10 (la Florida - Plaça de la Llibertat), l\''),
+        r'COLLBLANC': ('AC', 'Hospitalet de Llobregat 15 (Collblanc - Centre - Vallparda), l\''),
         r'SISTRELLS': ('AC', 'Badalona 18 (Sistrells)'),
         r'MONTAÑESA': ('AC', 'Barcelona 133 (el Turó de la Peira i Can Peguera)'),
         r'HORTA': ('AC', "Barcelona 124 (Sant Joan d'Horta)"),
@@ -185,32 +225,92 @@ def main():
         r'TORRE-ROMEU|TORRE ROMEU': ('AC', 'Sabadell 22 (Torre-romeu - Can Roqueta - el Poblenou)'),
         r'MERINALS': ('AC', 'Sabadell 17 (Can Feu - els Merinals - la Serra d\'en Camaró)'),
         r'ZEM DE RIPOLLET|RIPOLLET': ('AC', 'Ripollet 1 (Centre - Maragall)'),
-        
-        # Nuevas adiciones basadas en el análisis de estadios no emparejados más frecuentes
         r'BUFALA|BUFALÀ': ('AC', 'Badalona 25 (Bufalà Oest - sector Can Barriga)'),
-        r'SANT IGNASI': ('AC', 'Barcelona 79 (la Bonanova, la Torre Vilana i l\'Avinguda del Tibidabo)'),
-        r'ESCOLA INDUSTRIAL': ('AC', 'Barcelona 35 (l\'Escola Industrial)'),
+        r'SANT IGNASI|BONANOVA|LA SALLE BONANOVA': ('AC', 'Barcelona 79 (la Bonanova, la Torre Vilana i l\'Avinguda del Tibidabo)'),
+        r'ESCOLA INDUSTRIAL|DON BOSCO': ('AC', 'Barcelona 35 (l\'Escola Industrial)'),
         r'JUNIOR': ('AC', 'Sant Cugat del Vallès 9 (Can Sant Joan - Sant Mamet - Vullpalleres - Can Barata - Sector Nord - Can Graells)'),
         r'BASCULA|BÀSCULA': ('AC', 'Barcelona 51 (la Mare de Déu de Port, Can Clos i el Polvorí)'),
-        r'SATALIA|SATÀLIA': ('AC', 'Barcelona 48 (Santa Madrona, la Satàlia i Montjuïc)'),
+        r'SATALIA|SATÀLIA|PSEC|POBLE SEC|APA POBLE': ('AC', 'Barcelona 48 (Santa Madrona, la Satàlia i Montjuïc)'),
         r'MIRA-SOL|MIRASOL': ('AC', 'Sant Cugat del Vallès 6 (Mirasol - Mas Gener - Can Cabassa - Can Fontanals - les Casetes de Can Ravella)'),
         r'ALMEDA': ('AC', 'Cornellà de Llobregat 9 (Almeda)'),
         r'SANT ILDEFONS': ('AC', 'Cornellà de Llobregat 6 (Sant Ildefons Oest)'),
         r'SANT GENIS|SANT GENÍS': ('AC', 'Barcelona 120 (Sant Genís dels Agudells)'),
-        r'CAN BUXERES': ('AC', 'Hospitalet de Llobregat 16 (Collblanc - Cementiri - Carretera)'),
+        r'CAN BUXERES': ('AC', 'Hospitalet de Llobregat 16 (Collblanc - Cementiri - Carretera), l\''),
         r'TURO DE LA PEIRA|TURÓ DE LA PEIRA': ('AC', 'Barcelona 133 (el Turó de la Peira i Can Peguera)'),
         r'CAN RULL': ('AC', 'Sabadell 14 (Can Rull Nord - Via Alexandra)'),
         r'GUINEUETA': ('AC', 'Barcelona 135 (la Guineueta)'),
         r'POMAR': ('AC', 'Badalona 29 (Canyet - Mas Ram - Pomar de Dalt - Pomar)'),
         r'CIUTAT COOPERATIVA': ('AC', 'Sant Boi de Llobregat 11 (Ciutat Cooperativa)'),
         r'VIARO|VIARÓ': ('AC', 'Sant Cugat del Vallès 9 (Can Sant Joan - Sant Mamet - Vullpalleres - Can Barata - Sector Nord - Can Graells)'),
-        r'XALOC': ('AC', 'Hospitalet de Llobregat 26 (Santa Eulàlia - Centre Sud - Ciutat de la Justícia)'),
+        r'XALOC|BALANDRAU': ('AC', 'Hospitalet de Llobregat 26 (Santa Eulàlia - Centre Sud - Ciutat de la Justícia), l\''),
         r'LA CANYA': ('MUN', 'la Canya'),
-        r'CAN FATJO|CAN FATJÓ': ('AC', 'Rubí 5 (Districte 5 Nord Central)'),
-        r'CAMP-REDO|CAMP-REDÓ': ('MUN', 'Roquetes'),
-        r'FONTAJAU': ('MUN', 'Girona'),
-        r'GREGAL': ('MUN', 'Girona'),
-        r'RECASENS': ('MUN', 'Figueres'),
+        r'CAN FATJO|CAN FATJÓ': ('AC', 'Cornellà de Llobregat 2 (Fontsanta - Fatjó)'),
+        r'CAMP-REDO|CAMP-REDÓ|CAMPREDO': ('MUN', 'Tortosa'),
+        r'FONTAJAU|SANT PONÇ|GERMANS SABAT|GIRONES-SABAT|CAN GIBERT|GEIEG': ('MUN', 'Girona'),
+        r'RECASENS|AEM': ('MUN', 'Figueres'),
+        
+        # Mapeos adicionales
+        r'CAN VIDALET': ('AC', 'Esplugues de Llobregat 2 (Can Vidalet)'),
+        r'VISTA ALEGRE': ('AC', 'Castelldefels 2 (Vista Alegre - el Castell)'),
+        r'CIRERA': ('AC', 'Mataró 9 (Cirera)'),
+        r'CAN BOADA': ('AC', 'Terrassa 17 (Can Boada)'),
+        r'CA N\'ANGLADA|SAN CRISTOBAL|SAN CRISTÒFOL': ('AC', 'Terrassa 6 (Ca n\'Anglada)'),
+        r'CAN JOFRESA|JABAC': ('AC', 'Terrassa 9 (Can Jofresa - Can Palet II - Guadalhorce - Xúquer)'),
+        r'CAN CANYADÓ|CANYADO|CANYADÓ': ('AC', 'Badalona 30 (Casagemes - Canyadó - Manresà - les Guixeres)'),
+        r'ROVERE|ROUREDA|ATLETICO ROUREDA': ('AC', 'Sabadell 12 (la Roureda - Sant Julià)'),
+        r'SINGUERLIN|SINGUERLÍN': ('AC', 'Santa Coloma de Gramenet 7 (Singuerlin - Can Zam)'),
+        r'FATIMA|FÀTIMA': ('MUN', 'Igualada'),
+        r'BARCELONETA': ('AC', 'Barcelona 10 (Sant Miquel del Port)'),
+        r'JUVENTUS': ('AC', 'Mataró 10 (la Llàntia)'),
+        r'PADUA': ('AC', 'Barcelona 80 (Sant Gervasi de Cassoles)'),
+        r'LLANTIA|LA LLÀNTIA': ('AC', 'Mataró 10 (la Llàntia)'),
+        r'BARCINO': ('AC', 'Barcelona 13 (Sant Pere)'),
+        r'VILA OLIMPICA|VILA OLÍMPICA': ('AC', 'Barcelona 172 (la Vila Olímpica i el Bogatell)'),
+        r'COLLBLANC-TORRASSA|TORRASSA': ('AC', 'Hospitalet de Llobregat 18 (la Torrassa - Plaça dels Pirineus), l\''),
+        r'HOSPITALENSE': ('AC', 'Hospitalet de Llobregat 3 (Centre - la Farga), l\''),
+        r'EUROPA': ('AC', 'Barcelona 103 (Joanic)'),
+        r'LES FONTS': ('AC', 'Terrassa 10 (Can Parellada - les Fonts)'),
+        r'LES ROQUETES': ('MUN', 'Sant Pere de Ribes'),
+        r'LES GARRIGUES': ('MUN', 'Borges Blanques, les'),
+        r'LES MALLORQUINES': ('MUN', 'Sils'),
+        
+        # Mapeos de optimización de tasa (95%+)
+        r'PARDINYES': ('AC', 'Lleida 9 (Pardinyes)'),
+        r'REDDIS|SANTES CREUS': ('MUN', 'Reus'),
+        r'FONTSANTA-FATJO|FONTSANTA-FATJÓ': ('AC', 'Cornellà de Llobregat 2 (Fontsanta - Fatjó)'),
+        r'SANTVICENTI': ('MUN', 'Sant Vicenç de Montalt'),
+        r'ESPLAIS|CENTRE HISTORIC|CENTRE HISTÒRIC': ('MUN', "Castelló d'Empúries"),
+        r'MONELLS': ('MUN', "Cruïlles, Monells i Sant Sadurní de l'Heura"),
+        r'ESPLUGUENC': ('MUN', 'Esplugues de Llobregat'),
+        r'ROMANICA|ROMÀNICA': ('MUN', 'Barberà del Vallès'),
+        r'1ER. DE MAIG|1ER DE MAIG': ('MUN', 'Granollers'),
+        r'LLOREDA': ('AC', 'Badalona 22 (Lloreda)'),
+        r'MAURINA': ('AC', 'Terrassa 15 (la Maurina)'),
+        r'CARMEL|CARMELO': ('AC', 'Barcelona 118 (el Baix Carmel)'),
+        r'25 DE SETEMBRE|25 DE SEPTIEMBRE': ('AC', 'Rubí 7 (Districte 5 Nord-est)'),
+        r'CAN TRIES|CAN TRIAS': ('MUN', 'Viladecavalls'),
+        r'SINERA': ('MUN', 'Arenys de Mar'),
+        r'MARESME|PUJADAS': ('AC', 'Barcelona 180 (el Maresme i el Maresme Vell)'),
+        r'LES ARENES|JUAN XXIII': ('AC', 'Terrassa 22 (les Arenes - la Grípia - Can Montllor)'),
+        r'ENERGIA': ('AC', 'Barcelona 62 (Santa Maria de Sants)'),
+        r'PASTORETA': ('MUN', 'Reus'),
+        r'ORGEL\.LIA|EMILI VICENTE': ('MUN', "Seu d'Urgell, la"),
+        r'BALAFIA|BALÀFIA': ('AC', 'Lleida 1 (Balàfia)'),
+        r'LA FARGA': ('MUN', 'Sant Cugat del Vallès'),
+        r'GRAMA': ('MUN', 'Santa Coloma de Gramenet'),
+        r'MION|PUIGBERENGUER|PIRINAICA': ('AC', 'Manresa 5 (el Poble Nou - Mion, Puigberenguer i Miralpeix)'),
+        r'ESPIRALL|MARC BARTRA': ('MUN', 'Vilafranca del Penedès'),
+        r'SAN MAURO': ('MUN', 'Santa Margarida de Montbui'),
+        r'BALCONADA|PARE IGNASI PUIG': ('AC', 'Manresa 9 (les Escodines - la Balconada - Cal Gravat - Sant Pau)'),
+        r'BOSC DE TOSCA': ('MUN', 'les Preses'),
+        r'COSTA DAURADA': ('MUN', 'Salou'),
+        r'ATENEU IGUALADI': ('MUN', 'Igualada'),
+        r'BRAFA': ('AC', 'Barcelona 142 (Santa Engràcia)'),
+        r'CAL AGUIDO|CA LA GUIDO|CA LA GUIDÓ': ('MUN', 'Blanes'),
+        r'OAR GRÀCIA|OAR GRACIA': ('AC', 'Sabadell 18 (Gràcia)'),
+        r'CAN BORRELL': ('MUN', 'Blanes'),
+        r'DIAGONAL CLUB': ('AC', 'Barcelona 73 (Pedralbes, la Mercè i el Palau Reial)'),
+        r'BONAVISTA': ('MUN', 'Tarragona'),
     }
     
     def match_stadium_row(row):
@@ -220,27 +320,32 @@ def main():
         # Detectar si el estadio es genérico o desconocido
         is_unknown = any(x in estadio for x in ['DESCONOCIDO', 'NO ESPECIFICADO', 'DESCONEGUT', '']) or len(estadio.strip()) <= 3
         
-        # 1. Patrones manuales prioritarios (solo si el estadio es conocido)
-        if not is_unknown:
-            for pat, (tipo, val) in patterns.items():
-                if re.search(pat, estadio) or re.search(pat, equipo):
-                    return tipo, val
+        # 1. Patrones manuales prioritarios (se aplican siempre, sobre estadio o equipo)
+        for pat, (tipo, val) in patterns.items():
+            if re.search(pat, estadio) or re.search(pat, equipo):
+                return tipo, val
                 
-        # 2. Buscar en municipios grandes (AC) (solo si el estadio es conocido para evitar sesgo en barrios)
+        # 2. Buscar en municipios grandes (AC) (solo si el estadio es conocido para evitar sesgo)
         if not is_unknown:
             for muni, kws in muni_keywords_ac.items():
                 for kw in kws:
                     if len(kw) >= 3:
+                        if kw in ['LES', 'PAU', 'CARME']:
+                            continue
                         pattern = r'\b' + re.escape(kw) + r'\b' if len(kw) <= 4 else re.escape(kw)
                         if re.search(pattern, estadio) or re.search(pattern, equipo):
                             ac_list = df_ac[df_ac['municipio_ist'] == muni]['agrupació censal'].unique()
                             if len(ac_list) > 0:
                                 return 'AC', ac_list[0]
                             
-        # 3. Fallback a municipios pequeños (MUN) (se permite para estadios desconocidos en pueblos sin barrios)
+        # 3. Fallback a municipios pequeños (MUN) (se permite para estadios conocidos o desconocidos)
         for muni, kws in muni_keywords_all.items():
             for kw in kws:
                 if len(kw) >= 3:
+                    if kw in ['LES', 'PAU', 'CARME']:
+                        if estadio == kw or equipo == kw or estadio == f"CAMP DE FUTBOL MPAL {kw}" or estadio == f"CAMP DE FUTBOL MPAL DE {kw}":
+                            return 'MUN', muni
+                        continue
                     pattern = r'\b' + re.escape(kw) + r'\b' if len(kw) <= 4 else re.escape(kw)
                     if re.search(pattern, estadio) or re.search(pattern, equipo):
                         return 'MUN', muni
@@ -257,30 +362,35 @@ def main():
     total_count = len(unique_stadiums)
     print(f"   Mapeados con éxito: {mapped_count} de {total_count} ({mapped_count/total_count*100:.2f}%)")
     
-    # 6. Generar dimensiones y tablas puente
-    print("6. Generando dimensión territorial unificada y tablas puente...")
+    # 6. Generar dimensiones y tablas puente con ciudad y barrio
+    print("6. Generando dimensión territorial unificada y tablas puente con ciudad y barrio...")
     
     # Generar dim_territorio: Contiene las claves de territorio de AC e IST Municipal
-    # Columnas: id_territorio, tipo_territorio, nombre_territorio, municipio, valor_IST
     dim_records = []
     
     # Agregar agrupaciones censales
     for idx, row in df_ac.iterrows():
+        ciudad, barrio = get_ciudad_y_barrio(row['agrupació censal'])
         dim_records.append({
             'id_territorio': row['agrupació censal'],
             'tipo_territorio': 'Agrupación Censal',
             'nombre_territorio': row['agrupació censal'],
             'municipio': row['municipio_ist'],
+            'ciudad': ciudad,
+            'barrio': barrio,
             'valor_IST': row['valor']
         })
         
     # Agregar municipios (solo los que no estén ya representados como municipio en AC o todos como fallback)
     for idx, row in df_mun.iterrows():
+        ciudad, barrio = get_ciudad_y_barrio(row['municipi'])
         dim_records.append({
             'id_territorio': row['municipi'],
             'tipo_territorio': 'Municipio',
             'nombre_territorio': row['municipi'],
             'municipio': row['municipi'],
+            'ciudad': ciudad,
+            'barrio': barrio,
             'valor_IST': row['valor']
         })
         
@@ -294,6 +404,11 @@ def main():
     # Tabla Puente: estadio -> id_territorio
     df_mapping = unique_stadiums[['estadio', 'equipo_local', 'mapped_val']].copy()
     df_mapping.columns = ['estadio', 'equipo_local', 'id_territorio']
+    
+    # Agregar ciudad y barrio
+    res_cb = df_mapping['id_territorio'].apply(lambda val: pd.Series(get_ciudad_y_barrio(val)))
+    df_mapping['ciudad'] = res_cb[0]
+    df_mapping['barrio'] = res_cb[1]
     
     mapping_csv_path = os.path.join(base_dir, "data/stadium_to_ist_mapping.csv")
     df_mapping.to_csv(mapping_csv_path, sep=';', index=False)

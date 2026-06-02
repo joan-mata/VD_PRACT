@@ -187,10 +187,14 @@ function updateDetailPanel(muniData, matchesCount, avgCards) {
     stadiumItemsHTML = "<p style='font-size:0.8rem;color:var(--text-secondary);'>No hay estadios registrados.</p>";
   }
 
+  const subtitle = muniData.ciudad === muniData.barrio 
+    ? `Municipio: ${muniData.ciudad}` 
+    : `Ciudad: ${muniData.ciudad} | Barrio: ${muniData.barrio}`;
+
   panel.innerHTML = `
     <div class="panel-header">
       <h3 class="panel-title">${muniData.name}</h3>
-      <p class="panel-subtitle">Territorio Catalán</p>
+      <p class="panel-subtitle">${subtitle}</p>
     </div>
     
     <div class="panel-stats-row">
@@ -284,8 +288,12 @@ function updateDashboard() {
       fillOpacity: 0.65
     });
 
+    const subtitleTooltip = data.ciudad === data.barrio 
+      ? `Municipio: ${data.ciudad}` 
+      : `Ciudad: ${data.ciudad}<br>Barrio: ${data.barrio}`;
+
     // Tooltip simple
-    marker.bindTooltip(`<strong>${data.name}</strong><br>Partidos: ${stats.partidos}<br>IST: ${data.ist.toFixed(1)}`, {
+    marker.bindTooltip(`<strong>${data.name}</strong><br>${subtitleTooltip}<br>Partidos: ${stats.partidos}<br>IST: ${data.ist.toFixed(1)}`, {
       direction: "top",
       sticky: true,
       className: "custom-leaflet-tooltip"

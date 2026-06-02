@@ -198,6 +198,8 @@ def main():
             'id_territorio': str(terr),
             'name': str(terr_row['nombre_territorio']),
             'municipio': str(muni_raw),
+            'ciudad': str(terr_row['ciudad']) if 'ciudad' in terr_row else str(muni_raw),
+            'barrio': str(terr_row['barrio']) if 'barrio' in terr_row else str(terr_row['nombre_territorio']),
             'lat': float(lat),
             'lng': float(lng),
             'ist': round(float(terr_row['valor_IST']), 1),
