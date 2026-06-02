@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Árbitros y Desigualdad · PRACT2 Visualización de Datos (UOC)</title>
+  <meta name="description" content="Dashboard interactivo sobre designaciones arbitrales, conflictividad deportiva y contexto socioeconómico (IST) en Cataluña. PRACT2 Visualización de Datos — UOC." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── BARRA DE PROGRESO superior ─── -->
+  <div id="progress-bar" role="progressbar" aria-label="Progreso de lectura"></div>
+
+  <!-- ─── NAVEGACIÓN LATERAL ─── -->
+  <nav id="side-nav" aria-label="Navegación por secciones"></nav>
+
+  <!-- ─────────────────────────────────────────────────────────────────────────────
+       PORTADA
+  ─────────────────────────────────────────────────────────────────────────────── -->
+  <section id="cover" class="section section--cover" aria-label="Portada">
+
+    <p class="cover-eyebrow cover-eyebrow--author reveal">JOAN MATA PARRAGA</p>
+    <p class="cover-eyebrow reveal">PRACT2 · Visualización de Datos · UOC</p>
+
+    <h1 class="cover-title reveal reveal-delay-1">
+      Árbitros y Desigualdad:<br /><em>¿Influye el entorno en el juego?</em>
+    </h1>
+
+    <p class="cover-subtitle reveal reveal-delay-2">
+      Análisis del impacto socioeconómico (IST) en la conflictividad deportiva y la gestión táctica de las designaciones arbitrales en el fútbol base catalán.
+    </p>
+
+    <div class="cover-stats reveal reveal-delay-3">
+      <div class="cover-stat">
+        <span class="cover-stat__num" id="stat-partidos">39.137</span>
+        <span class="cover-stat__label">Partidos Mapeados</span>
+      </div>
+      <div class="cover-stat">
+        <span class="cover-stat__num" id="stat-arbitros">2.110</span>
+        <span class="cover-stat__label">Árbitros Estudiados</span>
+      </div>
+      <div class="cover-stat">
+        <span class="cover-stat__num" id="stat-mapeo">83.8%</span>
+        <span class="cover-stat__label">Tasa Geolocalización</span>
+      </div>
+      <div class="cover-stat">
+        <span class="cover-stat__num" id="stat-tarjetas">3,61</span>
+        <span class="cover-stat__label">Tarjetas / Partido</span>
+      </div>
+    </div>
+
+    <div class="tooltip-btn-wrap reveal reveal-delay-4" style="margin-top:40px">
+      <button class="tooltip-btn" type="button">
+        <em class="tooltip-btn__icon">ℹ</em>
+        <span>Metodología de Desarrollo</span>
+      </button>
+      <div class="tooltip-content" role="tooltip">
+        Este dashboard interactivo ha sido desarrollado en HTML5/CSS3/JS Vanilla con Leaflet.js y Chart.js.
+        Se alimenta de un dataset de actas de la FCF cruzado con los índices socioeconómicos territoriales (IST) del Idescat 2023.
+        Los datos se agregan de forma precomputada para maximizar la velocidad de carga y la fluidez interactiva del filtrado.
+      </div>
+    </div>
+
+    <div class="cover-scroll-hint" aria-hidden="true">
+      <span>Desplázate para comenzar la historia</span>
+      <div class="scroll-arrow"></div>
+    </div>
+
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────────────────
+       EXPLORACIÓN — Resumen de Datos
+  ─────────────────────────────────────────────────────────────────────────────── -->
+  <section id="explore" class="section section--act" aria-label="Exploración y objetivos">
+
+    <div class="act-header">
+      <p class="act-number reveal">EXPLORACIÓN INICIAL</p>
+      <h2 class="act-title reveal reveal-delay-1">Hipótesis y Preguntas Clave</h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+      <p class="act-message reveal reveal-delay-3">
+        Como árbitro en activo y estudiante, me propuse responder a tres interrogantes fundamentales: ¿Provocan los entornos con mayor exclusión social una mayor tensión y conflictividad (tarjetas)? ¿Actúa el Comité de Designación enviando árbitros más experimentados a estas zonas? ¿Y de qué manera influye la veteranía en el estilo y punitividad arbitral?
+      </p>
+    </div>
+
+    <div class="act-content">
+      <div class="explore-grid">
+        
+        <div class="explore-card reveal reveal-delay-1">
+          <p class="explore-card__label">Pregunta 1: Entorno</p>
+          <div class="explore-card__num warn">24%</div>
+          <p class="explore-card__text">
+            Más tarjetas de media en partidos jugados en barrios con IST críticamente bajo (&lt; 85) en comparación con zonas con IST alto.
+          </p>
+        </div>
+
+        <div class="explore-card reveal reveal-delay-2">
+          <p class="explore-card__label">Pregunta 2: Gestión de Riesgo</p>
+          <div class="explore-card__num highlight">6,2</div>
+          <p class="explore-card__text">
+            Años de experiencia media de los árbitros asignados a partidos de riesgo, frente a los 3,1 años asignados en zonas con IST alto.
+          </p>
+        </div>
+
+        <div class="explore-card reveal reveal-delay-3">
+          <p class="explore-card__label">Pregunta 3: Factor Humano</p>
+          <div class="explore-card__num">IDP</div>
+          <p class="explore-card__text">
+            El Índice de Desviación de Punitividad (IDP) revela que los árbitros noveles muestran desviaciones extremas de disciplina en el campo.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Texto de transición -->
+      <div class="explore-transition reveal">
+        <p class="explore-transition__text">
+          "Filtra los datos y explora los mapas y gráficos para observar cómo se comportan estas relaciones en tiempo real."
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────────────────
+       ACTO 1 — Entorno Socioeconómico y Conflictividad (Mapa e IST vs Tarjetas)
+  ─────────────────────────────────────────────────────────────────────────────── -->
+  <section id="act1" class="section section--act" aria-label="Acto 1: Entorno Socioeconómico y Conflictividad">
+    
+    <div class="act-header">
+      <p class="act-number reveal">ACTO 1 DE 3</p>
+      <h2 class="act-title reveal reveal-delay-1">
+        El Entorno Socioeconómico y la Tensión en el Campo
+      </h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+      <p class="act-message reveal reveal-delay-3">
+        El mapa interactivo muestra la ubicación de los partidos por barrio o municipio de Cataluña. El tamaño de los marcadores indica el volumen de partidos y el color codifica el nivel de IST de la zona: **el color rojo representa un IST bajo (mayor vulnerabilidad)** y el **azul representa un IST alto**. 
+      </p>
+    </div>
+
+    <!-- Barra de Filtros Cruzados -->
+    <div class="filters-bar reveal reveal-delay-1">
+      <div class="filter-group">
+        <label for="filter-category" class="filter-label">Categoría:</label>
+        <select id="filter-category" class="filter-select">
+          <option value="Todos">Todas las categorías</option>
+          <!-- Opciones se cargan por JS -->
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="filter-comite" class="filter-label">Comité Territorial:</label>
+        <select id="filter-comite" class="filter-select">
+          <option value="Todos">Todos los comités</option>
+          <!-- Opciones se cargan por JS -->
+        </select>
+      </div>
+    </div>
+
+    <div class="act-content">
+      <!-- Layout de Mapa + Panel de Detalles -->
+      <div class="map-layout reveal reveal-delay-2">
+        <div class="map-container-wrap">
+          <div id="map"></div>
+        </div>
+        
+        <div class="detail-panel" id="detail-panel">
+          <!-- Modificado dinámicamente por charts.js al interactuar con el mapa -->
+          <div class="panel-placeholder">
+            <i>📍</i>
+            <p>Pasa el cursor o haz clic en un territorio del mapa para explorar sus estadios y métricas específicas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scatter Plot de Correlación IST vs Tarjetas -->
+      <div class="chart-grid reveal reveal-delay-3">
+        <div class="chart-wrap" style="grid-column: 1 / -1;">
+          <div class="chart-header-block">
+            <h3 class="chart-title">Correlación: IST vs Tarjetas</h3>
+            <p class="chart-subtitle">Cada punto representa un barrio o municipio (agrupación censal). La recta representa la regresión lineal que confirma la tendencia.</p>
+          </div>
+          <div class="chart-canvas-container">
+            <canvas id="chart-ist-cards"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="insight-box reveal">
+        <p class="insight-box__label">Insight Clave</p>
+        <p class="insight-box__text">
+          La recta de regresión muestra una **pendiente negativa estadísticamente significativa**. A medida que disminuye el nivel socioeconómico de la zona (IST hacia la izquierda), la media de tarjetas amarillas y rojas se incrementa linealmente. Los partidos en zonas de vulnerabilidad ambiental son intrínsecamente más conflictivos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────────────────
+       ACTO 2 — Gestión del Riesgo (Boxplots de Veteranía vs IST)
+  ─────────────────────────────────────────────────────────────────────────────── -->
+  <section id="act2" class="section section--act" aria-label="Acto 2: Gestión del Riesgo">
+    
+    <div class="act-header">
+      <p class="act-number reveal">ACTO 2 DE 3</p>
+      <h2 class="act-title reveal reveal-delay-1">
+        Designaciones Tácticas: Gestión Institucional del Riesgo
+      </h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+      <p class="act-message reveal reveal-delay-3">
+        ¿Actúan los comités de designación para mitigar este riesgo? Evaluamos la veteranía de los árbitros asignados según los tres niveles de IST de la zona del partido: **Bajo** (IST &lt; 85), **Medio** (85–115) y **Alto** (IST &gt; 115).
+      </p>
+    </div>
+
+    <div class="act-content">
+      <div class="boxplot-container reveal reveal-delay-1">
+        
+        <!-- Boxplot Bajo IST -->
+        <div class="boxplot-card bajo">
+          <div class="box-title">Bajo IST (&lt; 85)</div>
+          <div class="box-metric" id="box-bajo-median">6,0</div>
+          <div class="box-metric-lbl">Años Medios de Experiencia</div>
+          
+          <div class="box-details-grid">
+            <div class="box-detail-item">
+              <span class="box-detail-val" id="box-bajo-max">18 años</span>
+              <span class="box-detail-lbl">Máximo</span>
+            </div>
+            <div class="box-detail-item">
+              <span class="box-detail-val" id="box-bajo-q3">9 años</span>
+              <span class="box-detail-lbl">Percentil 75</span>
+            </div>
+            <div class="box-detail-item">
+              <span class="box-detail-val" id="box-bajo-q1">3 años</span>
+              <span class="box-detail-lbl">Percentil 25</span>
+            </div>
+            <div class="box-detail-item">
+              <span class="box-detail-val" id="box-bajo-min">0 años</span>
+              <span class="box-detail-lbl">Mínimo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Boxplot Medio IST -->
+        <div class="boxplot-card medio">
+          <div class="box-title">Medio IST (85 - 115)</div>
+          <div class="box-metric" id="box-medio-median">4,5</div>
+          <div class="box-metric-lbl">Años Medios de Experiencia</div>
+          
+          <div class="box-details-grid">
+            <div class="box-detail-item">
+              <span class="box-detail-val" id="box-medio-max">16 años</span>
+              <span class="box-detail-lbl">Máximo</span>
+            </div>
+            <div class="box-detail-item">
+              <span class="box-detail-val" id="box-medio-q3">7 años</span>
+              <span class="box-detail-lbl">Percentil 75</span>
+            </div>
+            <div class="box-detail-item">
+              <span class="box-detail-val" id="box-medio-q1">2 años</span>
+              <span class="box-detail-lbl">Percentil 25</span>
+            </div>
+            <div class="box-detail-item">
+              <span class="box-detail-val" id="box-medio-min">0 años</span>
+              <span class="box-detail-lbl">Mínimo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Boxplot Alto IST -->
+        <div class="boxplot-card alto">
+          <div class="box-title">Alto IST (&gt; 115)</div>
+          <div class="box-metric" id="box-alto-median">3,0</div>
+          <div class="box-metric-lbl">Años Medios de Experiencia</div>
+          
+          <div class="box-details-grid">
+            <div class="box-detail-item">
+              <span class="box-detail-val" id="box-alto-max">12 años</span>
+              <span class="box-detail-lbl">Máximo</span>
+            </div>
+            <div class="box-detail-item">
+              <span class="box-detail-val" id="box-alto-q3">5 años</span>
+              <span class="box-detail-lbl">Percentil 75</span>
+            </div>
+            <div class="box-detail-item">
+              <span class="box-detail-val" id="box-alto-q1">1 año</span>
+              <span class="box-detail-lbl">Percentil 25</span>
+            </div>
+            <div class="box-detail-item">
+              <span class="box-detail-val" id="box-alto-min">0 años</span>
+              <span class="box-detail-lbl">Mínimo</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="insight-box reveal">
+        <p class="insight-box__label">Insight Clave</p>
+        <p class="insight-box__text">
+          La mediana de veteranía de los árbitros asignados a zonas con Bajo IST es de **6,0 años**, frente a los **3,0 años** en zonas de Alto IST. Esto evidencia una política de designación deliberada y adaptativa: se destina a colegiados más experimentados (con mayor capacidad de gestión de conflictos y control emocional) a entornos con mayor susceptibilidad de tensión social.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────────────────
+       ACTO 3 — Punitividad y Experiencia (Scatter Plot IDP vs Años)
+  ─────────────────────────────────────────────────────────────────────────────── -->
+  <section id="act3" class="section section--act" aria-label="Acto 3: Punitividad y Experiencia">
+    
+    <div class="act-header">
+      <p class="act-number reveal">ACTO 3 DE 3</p>
+      <h2 class="act-title reveal reveal-delay-1">
+        El Factor Humano: Punitividad vs Experiencia
+      </h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+      <p class="act-message reveal reveal-delay-3">
+        Cada árbitro tiene un estilo de gestión. Evaluamos su punitividad mediante el **IDP (Índice de Desviación de Punitividad)**, que indica cuántas tarjetas muestra en promedio un árbitro por encima o por debajo de la media de su categoría. Un IDP positivo (+1.0) significa que el árbitro es estricto y saca más tarjetas que sus compañeros.
+      </p>
+    </div>
+
+    <div class="act-content">
+      <div class="chart-wrap reveal reveal-delay-1">
+        <div class="chart-header-block">
+          <h3 class="chart-title">Estilo de Gestión: IDP vs Años de Experiencia</h3>
+          <p class="chart-subtitle">Cada punto representa un árbitro activo. El color codifica su categoría (Cadete, Juvenil, Amateur). El tamaño indica partidos dirigidos.</p>
+        </div>
+        <div class="chart-canvas-container">
+          <canvas id="chart-idp-exp"></canvas>
+        </div>
+      </div>
+
+      <div class="insight-box reveal">
+        <p class="insight-box__label">Insight Clave</p>
+        <p class="insight-box__text">
+          Se observa una clara **distribución en forma de embudo o abanico invertido**. Los árbitros noveles (0–3 años de experiencia) muestran una tremenda dispersión en su IDP, con valores extremadamente altos (sobre-reacción y pérdida de control del partido) o muy bajos. A medida que avanza la veteranía (eje X hacia la derecha), los IDPs convergen fuertemente hacia la línea del 0, demostrando un arbitraje maduro, consistente y equilibrado.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────────────────
+       CONCLUSIÓN Y ÉTICA
+  ─────────────────────────────────────────────────────────────────────────────── -->
+  <section id="conclusion" class="section section--conclusion" aria-label="Conclusiones e Integridad">
+
+    <div class="conclusion-intro">
+      <p class="act-number reveal">CONCLUSIONES</p>
+      <h2 class="conclusion-title reveal reveal-delay-1">
+        Resultados y Racional Técnico
+      </h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+      <p class="conclusion-lead reveal reveal-delay-3">
+        Los datos validan las hipótesis planteadas en la PRACT1: el contexto socioeconómico es un factor relevante en la conflictividad deportiva de Cataluña, y la veteranía de los árbitros es la herramienta fundamental de mitigación empleada en las designaciones.
+      </p>
+    </div>
+
+    <!-- 3 perfiles conclusivos -->
+    <div class="profiles-grid">
+      
+      <div class="profile-card reveal reveal-delay-1">
+        <p class="profile-card__num">01. CONTEXTO SOCIAL</p>
+        <span class="profile-card__icon">🏟️</span>
+        <h3 class="profile-card__title">IST vs Conflictividad</h3>
+        <div class="profile-card__value">+24%</div>
+        <p class="profile-card__metric">Incremento de Tarjetas</p>
+        <p class="profile-card__subtext">
+          Los campos ubicados en zonas con menor nivel socioeconómico registran una mayor tensión, requiriendo un enfoque específico de prevención.
+        </p>
+      </div>
+
+      <div class="profile-card reveal reveal-delay-2">
+        <p class="profile-card__num">02. ASIGNACIÓN PREVENTIVA</p>
+        <span class="profile-card__icon">🛡️</span>
+        <h3 class="profile-card__title">Designaciones Tácticas</h3>
+        <div class="profile-card__value">6,0 vs 3,0</div>
+        <p class="profile-card__metric">Años de Mediana Arbitral</p>
+        <p class="profile-card__subtext">
+          El Comité Técnico de Árbitros designa colegiados con el doble de veteranía en campos vulnerables que en campos estables.
+        </p>
+      </div>
+
+      <div class="profile-card reveal reveal-delay-3">
+        <p class="profile-card__num">03. FACTOR DE EXPERIENCIA</p>
+        <span class="profile-card__icon">⚖️</span>
+        <h3 class="profile-card__title">Estabilidad en el IDP</h3>
+        <div class="profile-card__value">±0,0</div>
+        <p class="profile-card__metric">Desviación en Veteranos</p>
+        <p class="profile-card__subtext">
+          La experiencia modera el estilo del árbitro, eliminando los extremos de sobre-reacción típicos de los primeros años de alta.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Cita final -->
+    <div class="final-quote reveal">
+      <p class="final-quote__text">
+        "El entorno socioeconómico influye en el comportamiento de los partidos. La veteranía humana actúa como un regulador natural de la conflictividad."
+      </p>
+      <p class="final-quote__source">
+        Estudio de designaciones FCF · Idescat · 39.137 partidos · Temporada 25/26
+      </p>
+    </div>
+
+    <!-- Botones de Reflexión y Ética -->
+    <div class="tooltip-group reveal">
+
+      <div class="tooltip-btn-wrap">
+        <button class="tooltip-btn" type="button">
+          <em class="tooltip-btn__icon">🛡️</em>
+          <span>Ética y Privacidad (C1)</span>
+        </button>
+        <div class="tooltip-content" role="tooltip">
+          Para garantizar la protección de datos personales de los colegiados, se eliminó el número de NIF en el preprocesamiento y todos los nombres han sido anonimizados utilizando un identificador ficticio (`COL_XXXX`) en la visualización web.
+        </div>
+      </div>
+
+      <div class="tooltip-btn-wrap">
+        <button class="tooltip-btn" type="button">
+          <em class="tooltip-btn__icon">🤖</em>
+          <span>Uso de IA y Herramientas</span>
+        </button>
+        <div class="tooltip-content" role="tooltip">
+          Este proyecto utilizó Python y librerías científicas para la limpieza y agregación territorial de datos, y Gemini (Google DeepMind) en la estructuración de la interfaz interactiva y visualizaciones en la web final.
+        </div>
+      </div>
+
+    </div>
+
+    <p class="footer-text">
+      Código y datos publicados en <a href="https://github.com/joan-mata/VD_PRACT.git" target="_blank">GitHub</a> · Visualización pública en <a href="https://joanmata.com/VD/PRACT/index.html" target="_blank">joanmata.com</a>
+    </p>
+
+  </section>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Scripts (type="module" para soportar imports) -->
+  <script type="module" src="charts.js"></script>
+  <script type="module" src="nav.js"></script>
+
+</body>
+</html>
