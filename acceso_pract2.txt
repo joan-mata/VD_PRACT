@@ -1,0 +1,74 @@
+========================================================
+ENTREGA — PRACT2 · Visualització de les Dades · UOC
+========================================================
+
+Estudiante : Joan Mata Parraga
+Asignatura : Visualització de les Dades — PRACT2
+Semestre   : Segundo semestre 2025-26
+
+--------------------------------------------------------
+ACCESO AL DASHBOARD
+--------------------------------------------------------
+
+URL pública   : https://joanmata.com/VD/PRACT/index.html
+               (requiere conexión a internet para cargar
+                los tiles de mapa y las librerías CDN)
+
+GitHub        : https://github.com/joan-mata/VD_PRACT.git
+
+Local (sin servidor):
+  Abrir directamente en el navegador el archivo:
+    web/index_local.html
+  No necesita servidor HTTP ni Node. Sólo se requiere
+  conexión a internet para Leaflet.js y Chart.js (CDN).
+
+--------------------------------------------------------
+ARCHIVOS INCLUIDOS
+--------------------------------------------------------
+
+web/
+  index.html          Dashboard principal (requiere HTTP server o live-server)
+  index_local.html    Versión standalone con CSS, datos y JS inline
+  styles.css          Estilos del dashboard
+  charts.js           Lógica de gráficos y mapa interactivo (Leaflet + Chart.js)
+  nav.js              Navegación lateral y barra de progreso
+  data.js             Datos precomputados exportados (ES module)
+
+data/
+  clean_partidos.csv          Partidos limpios con territorio y categoría asignados
+  clean_arbitros.csv          Árbitros anonimizados con veteranía e IDP calculado
+  dim_territorio.csv          Dimensión territorial (IST, coordenadas, agrupación censal)
+  stadium_to_ist_mapping.csv  Mapeo de estadios a territorio y IST
+
+aggregate_data.py   Script de agregación: genera data.js a partir de los CSV
+prepare_data.py     Script de preparación y limpieza de los datos brutos
+
+guion_video_pract2.md   Guion del vídeo de presentación
+
+--------------------------------------------------------
+FUENTES DE DATOS
+--------------------------------------------------------
+
+- FCF (Federació Catalana de Futbol): actas de partidos
+  temporada 25/26, extraídas mediante scraping de la
+  plataforma fcf.cat (API interna + web scraping).
+
+- Idescat: Índice Socioeconómico Territorial (IST) 2023,
+  desagregado a nivel de agrupación censal y municipio.
+  https://www.idescat.cat/pub/?id=ist
+
+--------------------------------------------------------
+NOTA SOBRE PRIVACIDAD Y ÉTICA
+--------------------------------------------------------
+
+- Se ha eliminado el número de NIF de todos los colegiados
+  durante la fase de preprocesamiento (prepare_data.py),
+  antes de cualquier análisis.
+- Los nombres reales de los árbitros han sido sustituidos
+  por un identificador anónimo del tipo COL_XXXX en todos
+  los ficheros exportados y en la visualización web.
+- Los datos de partidos y actas se usan exclusivamente
+  con fines académicos y de investigación, en el marco
+  del máster de Data Science de la UOC.
+
+========================================================
