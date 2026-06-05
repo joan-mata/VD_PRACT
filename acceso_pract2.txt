@@ -1,18 +1,19 @@
-========================================================
-ENTREGA — PRACT2 · Visualització de les Dades · UOC
-========================================================
+PRACT2 — Visualització de Dades
+Árbitros y Desigualdad: ¿Influye el entorno en el juego?
+================================================================
 
-Estudiante : Joan Mata Parraga
-Asignatura : Visualització de les Dades — PRACT2
-Semestre   : Segundo semestre 2025-26
+DADES DE L'ESTUDIANT
+--------------------
+Nom:        Joan Mata Parraga
+Assignatura: Visualització de Dades (VD)
+Activitat:  PRACT
 
---------------------------------------------------------
+
+
 ACCESO AL DASHBOARD
 --------------------------------------------------------
 
 URL pública   : https://joanmata.com/VD/PRACT/index.html
-               (requiere conexión a internet para cargar
-                los tiles de mapa y las librerías CDN)
 
 GitHub        : https://github.com/joan-mata/VD_PRACT.git
 
@@ -43,32 +44,20 @@ data/
 aggregate_data.py   Script de agregación: genera data.js a partir de los CSV
 prepare_data.py     Script de preparación y limpieza de los datos brutos
 
-guion_video_pract2.md   Guion del vídeo de presentación
-
 --------------------------------------------------------
 FUENTES DE DATOS
 --------------------------------------------------------
 
-- FCF (Federació Catalana de Futbol): actas de partidos
-  temporada 25/26, extraídas mediante scraping de la
-  plataforma fcf.cat (API interna + web scraping).
+- FCF (Federació Catalana de Futbol): actas de partidos temporada 25/26, extraídas mediante scraping de la plataforma fcf.cat (API interna + web scraping).
 
-- Idescat: Índice Socioeconómico Territorial (IST) 2023,
-  desagregado a nivel de agrupación censal y municipio.
-  https://www.idescat.cat/pub/?id=ist
+- Idescat: Índice Socioeconómico Territorial (IST) 2023, desagregado a nivel de agrupación censal y municipio. https://www.idescat.cat/pub/?id=ist
 
 --------------------------------------------------------
 NOTA SOBRE PRIVACIDAD Y ÉTICA
 --------------------------------------------------------
 
-- Se ha eliminado el número de NIF de todos los colegiados
-  durante la fase de preprocesamiento (prepare_data.py),
-  antes de cualquier análisis.
-- Los nombres reales de los árbitros han sido sustituidos
-  por un identificador anónimo del tipo COL_XXXX en todos
-  los ficheros exportados y en la visualización web.
-- Los datos de partidos y actas se usan exclusivamente
-  con fines académicos y de investigación, en el marco
-  del máster de Data Science de la UOC.
+- Se ha eliminado el número de NIF de todos los colegiados durante la fase de preprocesamiento (prepare_data.py), antes de cualquier análisis.
+- Los nombres reales de los árbitros han sido sustituidos por un identificador anónimo del tipo COL_XXXX en todos los ficheros exportados y en la visualización web.
+- Los datos de partidos y actas se usan exclusivamente con fines académicos y de investigación, en el marco del máster de Data Science de la UOC.
 
 ========================================================
