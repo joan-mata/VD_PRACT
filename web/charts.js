@@ -5,6 +5,7 @@
 import {
   SUMMARY_STATS,
   CATEGORIES,
+  RANGOS,
   COMITES,
   TERRITORIES,
   REFEREES,
@@ -18,6 +19,11 @@ let map = null;
 let markersLayerGroup = null;
 let chartIstCards = null;
 let chartIdpExp = null;
+
+// ─── Formato numérico local (coma decimal) ──────────────────
+function fmt(val, decimals = 2) {
+  return val.toFixed(decimals).replace(".", ",");
+}
 
 // ─── Animación de Contadores ────────────────────────────────
 function animateCounter(el, target, duration = 1000, decimals = 0, suffix = "") {
@@ -178,7 +184,7 @@ function updateDetailPanel(muniData, matchesCount, avgCards) {
         <div class="stadium-item">
           <span class="stadium-name" title="${stad.name}">${stad.name}</span>
           <span class="stadium-meta">
-            ${stad.partidos} part. · <span class="stadium-cards">${stad.avg_tarjetas.toFixed(2)} 🟨🟥</span>
+            ${stad.partidos} part. · <span class="stadium-cards">${fmt(stad.avg_tarjetas, 2)} 🟨🟥</span>
           </span>
         </div>
       `;
@@ -199,11 +205,11 @@ function updateDetailPanel(muniData, matchesCount, avgCards) {
     
     <div class="panel-stats-row">
       <div class="panel-stat-card">
-        <span class="panel-stat-val ${istClass}">${muniData.ist.toFixed(1)}</span>
+        <span class="panel-stat-val ${istClass}">${fmt(muniData.ist, 1)}</span>
         <span class="panel-stat-lbl">Índice IST (Idescat)</span>
       </div>
       <div class="panel-stat-card">
-        <span class="panel-stat-val">${avgCards.toFixed(2)}</span>
+        <span class="panel-stat-val">${fmt(avgCards, 2)}</span>
         <span class="panel-stat-lbl">Tarjetas / Partido</span>
       </div>
       <div class="panel-stat-card" style="grid-column: 1 / -1;">
@@ -293,7 +299,7 @@ function updateDashboard() {
       : `Ciudad: ${data.ciudad}<br>Barrio: ${data.barrio}`;
 
     // Tooltip simple
-    marker.bindTooltip(`<strong>${data.name}</strong><br>${subtitleTooltip}<br>Partidos: ${stats.partidos}<br>IST: ${data.ist.toFixed(1)}`, {
+    marker.bindTooltip(`<strong>${data.name}</strong><br>${subtitleTooltip}<br>Partidos: ${stats.partidos}<br>IST: ${fmt(data.ist, 1)}`, {
       direction: "top",
       sticky: true,
       className: "custom-leaflet-tooltip"
@@ -358,7 +364,7 @@ function updateDashboard() {
               label: (context) => {
                 if (context.datasetIndex === 0) {
                   const pt = context.raw;
-                  return `${pt.name} (IST: ${pt.x.toFixed(1)}, Tarjetas/Partido: ${pt.y.toFixed(2)}, Partidos: ${pt.partidos})`;
+                  return `${pt.name} (IST: ${fmt(pt.x, 1)}, Tarjetas/Partido: ${fmt(pt.y, 2)}, Partidos: ${pt.partidos})`;
                 }
                 return "Línea de tendencia";
               }
@@ -387,8 +393,9 @@ function updateDashboard() {
     const stats = calculateBoxplotStats(boxplotVets[rango]);
     const cleanId = rango.toLowerCase();
     
-    // Animar la mediana
+    // Animar la mediana y la media
     animateCounter(document.getElementById(`box-${cleanId}-median`), stats.median, 600, 1, " a.");
+    animateCounter(document.getElementById(`box-${cleanId}-mean`), stats.mean, 600, 1, " a.");
     
     // Asignar los demás percentiles
     document.getElementById(`box-${cleanId}-max`).textContent = `${stats.max.toFixed(0)} años`;
@@ -397,19 +404,25 @@ function updateDashboard() {
     document.getElementById(`box-${cleanId}-min`).textContent = `${stats.min.toFixed(0)} años`;
   });
 
-  // 5. Filtrar Árbitros y Actualizar Scatter Plot IDP vs Experiencia
-  const refScatterData = { CADETE: [], JUVENIL: [], AMATEUR: [] };
-  
+  // 5. Filtrar Árbitros y Actualizar Scatter Plot IDP vs Experiencia (coloreado por rango FCA)
+  // Paleta: gris → índigo → verde → ámbar → rojo (de menor a mayor rango)
+  const rangoColors = [
+    { bg: "rgba(148,163,184,0.6)", border: "#94a3b8" }, // 0 Cursetista
+    { bg: "rgba(99,102,241,0.6)",  border: "#6366f1" }, // 1 3a Cat / Sit.Especial
+    { bg: "rgba(52,211,153,0.6)",  border: "#34d399" }, // 2 2a Catalana
+    { bg: "rgba(245,158,11,0.6)",  border: "#f59e0b" }, // 3 1a Cat / Élite
+    { bg: "rgba(239,68,68,0.6)",   border: "#ef4444" }, // 4 3a Fed · Nacional
+  ];
+
+  const refScatterData = RANGOS.map(() => []);
+
   REFEREES.forEach(ref => {
-    // Aplicar filtros
     if (activeCategoryIdx !== -1 && ref.cat_idx !== activeCategoryIdx) return;
     if (activeComiteIdx !== -1 && ref.comite_idx !== activeComiteIdx) return;
-
     if (ref.vet === null) return;
 
-    const catName = CATEGORIES[ref.cat_idx];
-    
-    refScatterData[catName].push({
+    const ri = ref.rango_idx ?? 0;
+    refScatterData[ri].push({
       x: ref.vet,
       y: ref.idp,
       partidos: ref.partidos,
@@ -417,76 +430,52 @@ function updateDashboard() {
     });
   });
 
+  const pointRadiusFn = (context) => {
+    const pt = context.raw;
+    return pt ? Math.max(3, Math.min(15, 3 + Math.sqrt(pt.partidos) * 0.5)) : 5;
+  };
+
   if (chartIdpExp) {
-    chartIdpExp.data.datasets[0].data = refScatterData.CADETE;
-    chartIdpExp.data.datasets[1].data = refScatterData.JUVENIL;
-    chartIdpExp.data.datasets[2].data = refScatterData.AMATEUR;
+    RANGOS.forEach((_, i) => {
+      chartIdpExp.data.datasets[i].data = refScatterData[i];
+    });
     chartIdpExp.update();
   } else {
     const ctx = document.getElementById("chart-idp-exp").getContext("2d");
     chartIdpExp = new Chart(ctx, {
       type: "scatter",
       data: {
-        datasets: [
-          {
-            label: "Cadete",
-            data: refScatterData.CADETE,
-            backgroundColor: "rgba(96, 165, 250, 0.6)",
-            borderColor: "#3b82f6",
-            borderWidth: 1,
-            pointRadius: (context) => {
-              const pt = context.raw;
-              return pt ? Math.max(3, Math.min(15, 3 + Math.sqrt(pt.partidos) * 0.5)) : 5;
-            }
-          },
-          {
-            label: "Juvenil",
-            data: refScatterData.JUVENIL,
-            backgroundColor: "rgba(245, 158, 11, 0.6)",
-            borderColor: "#f59e0b",
-            borderWidth: 1,
-            pointRadius: (context) => {
-              const pt = context.raw;
-              return pt ? Math.max(3, Math.min(15, 3 + Math.sqrt(pt.partidos) * 0.5)) : 5;
-            }
-          },
-          {
-            label: "Amateur",
-            data: refScatterData.AMATEUR,
-            backgroundColor: "rgba(239, 68, 68, 0.6)",
-            borderColor: "#ef4444",
-            borderWidth: 1,
-            pointRadius: (context) => {
-              const pt = context.raw;
-              return pt ? Math.max(3, Math.min(15, 3 + Math.sqrt(pt.partidos) * 0.5)) : 5;
-            }
-          }
-        ]
+        datasets: RANGOS.map((label, i) => ({
+          label,
+          data: refScatterData[i],
+          backgroundColor: rangoColors[i].bg,
+          borderColor: rangoColors[i].border,
+          borderWidth: 1,
+          pointRadius: pointRadiusFn
+        }))
       },
       options: {
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-          legend: {
-            labels: { color: "#f8fafc" }
-          },
+          legend: { labels: { color: "#f8fafc" } },
           tooltip: {
             callbacks: {
               label: (context) => {
                 const pt = context.raw;
-                return `${pt.label} (${context.dataset.label}) · Veteranía: ${pt.x} años · IDP: ${pt.y.toFixed(3)} · Partidos: ${pt.partidos}`;
+                return `${pt.label} (${context.dataset.label}) · ${pt.x} anys · IDP: ${fmt(pt.y, 3)} · ${pt.partidos} partits`;
               }
             }
           }
         },
         scales: {
           x: {
-            title: { display: true, text: "Años de Veteranía CTA (Experiencia)", color: "#94a3b8" },
+            title: { display: true, text: "Anys de Veterania (Experiència)", color: "#94a3b8" },
             ticks: { color: "#94a3b8" },
             grid: { color: "rgba(255,255,255,0.05)" }
           },
           y: {
-            title: { display: true, text: "IDP (Desviación de Tarjetas vs Categoría)", color: "#94a3b8" },
+            title: { display: true, text: "IDP (Desviació de Targetes vs Categoria)", color: "#94a3b8" },
             ticks: { color: "#94a3b8" },
             grid: { color: "rgba(255,255,255,0.05)" }
           }

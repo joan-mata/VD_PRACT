@@ -1,74 +1,85 @@
-# Guion del Vídeo Explicativo: PRACT2 - Proyecto de Visualización de Datos (UOC)
+# Guion del Vídeo Explicativo: PRACT2 - Dashboard de Visualización Web (UOC)
 
-Este guion está diseñado para un vídeo de **5 minutos** (dentro del límite estricto de **4 a 6 minutos** del enunciado). Sigue fielmente la estructura de evaluación indicada por la UOC y está adaptado al **dashboard web interactivo**.
-
----
-
-## Estructura del Vídeo y Distribución de Tiempos
-
-```mermaid
-gantt
-    title Distribución del Tiempo del Vídeo (5 minutos totales)
-    dateFormat  s
-    axisFormat %S
-    section Secciones
-    1. Introducción y Proceso (20%)   :active, 0, 60s
-    2. Datos y Preparación (15%)     : 60s, 105s
-    3. Demo del Dashboard (20%)       : 105s, 165s
-    4. Preguntas de Recerca (20%)     : 165s, 225s
-    5. Interactividad y Accesibilidad (15%) : 225s, 270s
-    6. Conclusiones y Reflexión (10%) : 270s, 300s
-```
+Este guion está optimizado para una grabación fluida de **4 a 5 minutos** (máximo 6'). El enfoque consiste en **navegar en vivo por la aplicación web**, haciendo scroll y realizando interacciones simples, mientras narras con un tono natural y profesional los aspectos técnicos y analíticos más relevantes.
 
 ---
 
-## Guion Segundo a Segundo
+## ⏱️ Distribución de Tiempos Estimada
+* **0:00 - 0:45 (45s)**: Portada, Motivación y Objetivos
+* **0:45 - 1:30 (45s)**: Datos, Mapeo Territorial con Python y Privacidad (C1)
+* **1:30 - 2:45 (1m 15s)**: Demo del Acto 1 (Mapa, Filtros Interactivos y Scatter Plot IST-Tarjetas)
+* **2:45 - 3:30 (45s)**: Demo del Acto 2 (Designaciones Tácticas y Distribución de Veteranías)
+* **3:30 - 4:15 (45s)**: Demo del Acto 3 (Punitividad IDP vs Experiencia del Árbitro)
+* **4:15 - 4:45 (30s)**: Conclusiones, Accesibilidad y Cierre
 
-### 1. Proceso de Creación e Introducción [0:00 - 1:00] (20% de la nota)
-* **Visual en pantalla**: Tu dashboard principal cargado en el navegador (`https://joanmata.com/VD/PRACT/index.html`). Transición por la portada con el título: *"Árbitros y Desigualdad: ¿Influye el entorno en el juego?"*.
-* **Voz en off / Cámara**:
-  > *"Hola, mi nombre es Joan Mata. Como árbitro en activo y estudiante de la UOC, he desarrollado este proyecto para analizar si las designaciones arbitrales en el fútbol base catalán responden adecuadamente a la conflictividad y al contexto socioeconómico del territorio, o si existen sesgos en la asignación de colegiados.*
-  >
-  > *El proceso de creación comenzó definiendo las 8 preguntas de investigación en la PRACT1. Para la visualización, he optado por un desarrollo web interactivo a medida utilizando HTML5, CSS y Javascript. He diseñado una interfaz en modo oscuro con una estética limpia, inspirada en la PAC3, que guía al usuario desde los indicadores globales hasta el comportamiento individual del árbitro."*
+---
 
-### 2. Conjunto de Datos y Preparación [1:00 - 1:45] (15% de la nota)
-* **Visual en pantalla**: Código en VS Code de `aggregate_data.py` o el archivo de datos agregados `data.js`.
-* **Voz en off**:
-  > *"Para este estudio, hemos cruzado tres fuentes de datos:*
-  > *1. Las actas oficiales de más de 46.000 partidos de la FCF, extraídas mediante scraping.*
-  > *2. El censo del Comité de Árbitros con veteranía y edad.*
-  > *3. El Índice Socioeconómico Territorial (IST) del Idescat de 2023.*
-  >
-  > *El principal reto técnico fue el cruce geográfico. Mediante un script de Python, mapeamos los campos a nivel de Agrupación Censal o municipio, logrando geolocalizar el 83,8% de los partidos. Además, mediante la API de datos abiertos de la Generalitat de Catalunya, descargamos las coordenadas UTM de cada municipio para pintar los puntos en el mapa. Para asegurar el rendimiento web, precomputamos los datos y métricas en local y los exportamos a un JSON optimizado, evitando cargar archivos pesados en el navegador. Por supuesto, anonimizamos las actas de los colegiados para proteger su privacidad."*
+## 🎙️ Guion Paso a Paso (Narración e Instrucciones de Navegación)
 
-### 3. Presentación en Vivo (Demo) [1:45 - 2:45] (20% de la nota)
-* **Visual en pantalla**: Grabación en vivo interactuando con la web. Pasa el cursor por el mapa de Cataluña en Leaflet, haz clic en un par de municipios y muestra cómo se actualiza instantáneamente el panel de detalles de la derecha (con sus estadios y tarjetas).
-* **Voz en off**:
-  > *"Naveguemos por la aplicación web. El dashboard está estructurado en tres áreas visuales:*
-  > *En el Acto 1, disponemos de un mapa interactivo construido con Leaflet.js sobre una capa oscura. El tamaño de cada marcador indica el volumen de partidos jugados y el color codifica el IST, yendo del rojo para zonas vulnerables al azul para zonas estables.*
-  >
-  > *Al pasar el cursor sobre cualquier municipio, el panel lateral derecho se actualiza en tiempo real mostrando las tarjetas medias, partidos y el listado detallado de estadios locales con su conflictividad específica. En la parte superior, los filtros de Categoría y Comité Territorial recalculan dinámicamente todo el modelo en menos de 2 milisegundos."*
+### 1. Portada y Motivación [0:00 - 0:45]
+* **Acción en pantalla**: Mantén visible la portada (`#cover`) en el navegador. Recarga la página al inicio para que el evaluador vea la animación de entrada de los contadores rápidos.
+* **Narración**:
+  > *"Hola, mi nombre es Joan Mata Parraga. Como árbitro de fútbol en activo y estudiante de la UOC, he diseñado este proyecto para analizar si las designaciones arbitrales en el fútbol base catalán responden al contexto socioeconómico y de conflictividad de los campos, o si existen sesgos de asignación.
+  > 
+  > En esta portada interactiva vemos las cifras macro de la temporada: más de 44.000 partidos mapeados y 2.110 árbitros analizados. El objetivo es responder de forma visual y científica a tres preguntas: ¿provoca la vulnerabilidad socioeconómica una mayor tensión en el juego?, ¿envía el Comité de Árbitros a colegiados más experimentados a estas zonas complejas? y ¿cómo influye la veteranía en la punitividad del árbitro?"*
 
-### 4. Preguntas Clave y Hallazgos [2:45 - 3:45] (20% de la nota)
-* **Visual en pantalla**: Haz scroll hacia abajo y haz zoom en el gráfico de correlación (Scatter Plot IST vs Tarjetas) y en las tarjetas estadísticas de Boxplot.
-* **Voz en off**:
-  > *"El diseño analítico responde directamente a nuestras hipótesis:*
-  > *Primero, ¿existe correlación entre nivel socioeconómico y tarjetas? El gráfico de dispersión con regresión lineal interactiva demuestra que a menor IST (hacia la izquierda del gráfico), la media de tarjetas por partido sube de forma constante, confirmando una mayor conflictividad ambiental.*
-  >
-  > *Segundo, la gestión del riesgo: ¿se asignan árbitros experimentados a zonas complejas? Los Boxplots de veteranía revelan que la mediana de experiencia en partidos en zonas de bajo IST es de 6 años, mientras que en zonas de alto IST desciende a 3 años. El factor organizativo humano actúa como mitigador, destinando a árbitros con mayor control de juego a los campos de mayor tensión."*
+---
 
-### 5. Interactividad y Accesibilidad [3:45 - 4:30] (15% de la nota)
-* **Visual en pantalla**: Haz scroll hasta el gráfico del Acto 3 (IDP vs Experiencia). Pasa el ratón sobre los puntos (árbitros) para ver sus tooltips. Muestra los botones flotantes del footer.
-* **Voz en off**:
-  > *"La interactividad se extiende al comportamiento humano. En el tercer gráfico, representamos la punitividad del árbitro medida por su Índice de Desviación de Punitividad en relación con su veteranía. Vemos una distribución en embudo: los árbitros noveles muestran IDPs muy dispersos (sobre-reacción disciplinaria), mientras que la veteranía converge firmemente hacia el cero.*
-  >
-  > *En cuanto a la accesibilidad y el diseño inclusivo, se ha seguido la pauta WCAG de contraste y tipografía, y se ha evitado la escala semáforo rojo-verde, optando por una paleta rojo-azul apta para usuarios con daltonismo. Además, en el pie de página incluimos botones interactivos que detallan los aspectos éticos y técnicos del proyecto."*
+### 2. Datos y Mapeo Territorial con Python [0:45 - 1:30]
+* **Acción en pantalla**: Haz scroll lento hacia la sección *"Exploración Inicial"*. Pasa el cursor suavemente sobre las tres tarjetas de preguntas clave.
+* **Narración**:
+  > *"Para este estudio, combinamos tres fuentes de datos: actas de más de 46.000 partidos de la Federación Catalana de Fútbol, el censo de árbitros activos del Comité Técnico y el Índice Socioeconómico Territorial (IST) del Idescat de 2023.
+  > 
+  > El principal reto de ingeniería fue el mapeo geográfico. Mediante scripts en Python, normalizamos los nombres de los estadios y los emparejamos a nivel de barrio o municipio. Logramos una excelente tasa de geolocalización del 94,6%, situando cada partido en sus coordenadas reales para evitar el sesgo de promedios genéricos. Además, para garantizar el cumplimiento de las normativas de privacidad y ética, anonimizamos las actas oficiales, sustituyendo el nombre de los colegiados por identificadores codificados."*
 
-### 6. Reflexión Final y Cierre [4:30 - 5:00] (10% de la nota)
-* **Visual en pantalla**: Scroll final al pie de página mostrando el enlace a GitHub y los créditos.
-* **Voz en off**:
-  > *"Como conclusión, esta práctica me ha permitido contrastar datos científicos con mi experiencia en el campo como colegiado, comprobando que las variables socioeconómicas tienen impacto en el comportamiento deportivo y que las designaciones actúan de manera adaptativa.*
-  >
-  > *La principal limitación es el 16% de partidos no mapeados por falta de datos en el acta de origen, un aspecto a mejorar integrando geolocalizaciones automatizadas por geocoding.*
-  >
-  > *El código de la aplicación y la preparación está subido en mi GitHub, y la web está publicada en mi dominio joanmata.com. Muchas gracias por su atención."*
+---
+
+### 3. Demo en Vivo: El Entorno y el Mapa de Calor [1:30 - 2:45]
+* **Acción en pantalla**: Haz scroll hasta el *"Acto 1"*.
+  1. Mueve el mapa Leaflet, haz zoom sobre el Área Metropolitana de Barcelona.
+  2. Pasa el cursor sobre varios círculos del mapa. Haz clic en alguno (como Terrassa, Sabadell o un barrio de Barcelona) para que se actualice el panel de detalles a la derecha mostrando los estadios y su media de tarjetas.
+  3. Cambia el filtro superior de Categoría a *"CADETE"* y observa cómo cambian los puntos y el gráfico de dispersión de abajo.
+* **Narración**:
+  > *"Entrando en la visualización interactiva, en el Acto 1 observamos un mapa geográfico desarrollado sobre Leaflet. Cada círculo representa un territorio. Su tamaño indica el volumen de partidos y su color representa el nivel socioeconómico de la zona, usando una escala accesible para daltonismo: el color rojo resalta las zonas de menor IST, es decir, de mayor vulnerabilidad, y el azul oscuro, las de IST más alto.
+  > 
+  > Al interactuar con el mapa, el panel de detalles de la derecha se actualiza al instante con los datos del territorio y su lista de estadios con las medias de tarjetas.
+  > 
+  > Justo debajo, encontramos el gráfico de dispersión de IST frente a Tarjetas, que calcula automáticamente la recta de regresión lineal. Si filtramos por la categoría Cadete en la barra superior, comprobamos que existe una ligera correlación negativa: a menor nivel socioeconómico, la media de tarjetas por partido tiende a aumentar levemente. Sin embargo, en Amateur o Juvenil esta tendencia se difumina, demostrando que el IST es un factor de tensión, pero no el único determinante."*
+
+---
+
+### 4. Designaciones Tácticas: Mitigación del Riesgo [2:45 - 3:30]
+* **Acción en pantalla**: Haz scroll hacia el *"Acto 2"*. Señala con el cursor las tres tarjetas de distribución (Bajo, Medio y Alto IST).
+* **Narración**:
+  > *"En el Acto 2 evaluamos cómo reacciona la organización a esta realidad. ¿Se envían árbitros más experimentados a los escenarios potencialmente conflictivos?
+  > 
+  > Para responderlo, representamos la veteranía de los árbitros asignados según los niveles de IST de la zona del partido: Bajo, Medio y Alto.
+  > 
+  > Como se puede observar en las tarjetas de distribución, en las zonas de Bajo IST, la mediana de veteranía de los árbitros designados se sitúa en 5,0 años de experiencia, con un promedio de 6,3 años. En cambio, en las zonas con Alto IST la mediana desciende a 4,0 años de experiencia, con una media de 6,1. Esto nos aporta una evidencia estadística de que los comités territoriales ejercen una gestión de riesgo táctica, asignando perfiles con mayor veteranía y madurez a campos ubicados en zonas con mayor exclusión social."*
+
+---
+
+### 5. El Factor Humano: Estilo Punitivo [3:30 - 4:15]
+* **Acción en pantalla**: Haz scroll hacia el *"Acto 3"*. Pasa el cursor sobre los puntos de distintos colores del gráfico de dispersión *"IDP vs Años de Experiencia"*.
+* **Narración**:
+  > *"En el Acto 3 analizamos el factor humano a través del IDP o Índice de Desviación de Punitividad. Este índice mide la cantidad de tarjetas que un árbitro muestra en promedio por encima o por debajo de la media de su categoría. Un IDP positivo representa un estilo estricto, mientras que uno negativo es más permisivo.
+  > 
+  > En el scatter plot, cada punto es un colegiado, coloreado por su categoría oficial. Vemos que la mediana global del IDP es de +0,94 tarjetas. Curiosamente, la dispersión del IDP se distribuye de forma muy similar tanto en árbitros noveles con 1 o 2 años de experiencia como en veteranos de más de 10 años. Esto confirma nuestra hipótesis: el estilo punitivo y de gestión del juego es una característica individual estable del árbitro, independiente de su experiencia o su rango en el Comité."*
+
+---
+
+### 6. Conclusiones y Racional Técnico [4:15 - 4:45]
+* **Acción en pantalla**: Haz scroll hasta el final (`#conclusion`). Haz clic rápido en el botón de *"Ética y Privacidad"* y luego en *"Uso de IA"* para mostrar los tooltips emergentes en vivo.
+* **Narración**:
+  > *"Como conclusiones, este estudio ratifica que el entorno socioeconómico influye ligeramente en la conflictividad del juego en categorías base, que los comités responden asignando árbitros con mayor experiencia a zonas vulnerables y que la punitividad depende más del perfil psicológico del colegiado que de su trayectoria.
+  > 
+  > A nivel técnico, la aplicación web está construida con tecnologías nativas HTML, CSS y Javascript para maximizar el rendimiento. Se diseñó en modo oscuro con una paleta de colores de alto contraste apta para daltónicos. Las métricas éticas aplicadas aseguran la anonimización completa del colectivo arbitral.
+  > 
+  > Todo el código del pipeline de datos y de la web se encuentra publicado en GitHub. Muchas gracias por su atención."*
+
+---
+
+## 💡 Consejos para la Grabación
+1. **Practica el ritmo**: No te apresures en hablar. El guion tiene unas 700 palabras, lo que permite leerlo de forma pausada y clara en 4 minutos y medio.
+2. **Usa el ratón**: Acompaña tus palabras con movimientos del ratón en la pantalla. Cuando hables del mapa, pasa el cursor sobre algún punto; cuando hables de las tarjetas de veteranía, señala los valores de mediana (5,0 vs 4,0); cuando hables del scatter plot de IDP, pasa el cursor sobre algunos árbitros para mostrar la interactividad.
+3. **No te detengas en detalles técnicos de código**: El evaluador valorará más ver cómo dominas y explicas la visualización y los hallazgos en la demo en vivo. Tal como indicas en tu nota, si te saltas algo pequeño, no pasa nada, ya que el profesor podrá explorar la web interactiva por su cuenta gracias al enlace público.
