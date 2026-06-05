@@ -18,7 +18,7 @@ GitHub        : https://github.com/joan-mata/VD_PRACT.git
 
 Local (sin servidor):
   Abrir directamente en el navegador el archivo:
-    web/index_local.html
+    index_local.html
   No necesita servidor HTTP ni Node. Sólo se requiere
   conexión a internet para Leaflet.js y Chart.js (CDN).
 
@@ -26,7 +26,7 @@ Local (sin servidor):
 ARCHIVOS INCLUIDOS
 --------------------------------------------------------
 
-web/
+En la raíz del repositorio:
   index.html          Dashboard principal (requiere HTTP server o live-server)
   index_local.html    Versión standalone con CSS, datos y JS inline
   styles.css          Estilos del dashboard
