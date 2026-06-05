@@ -77,7 +77,7 @@ def main():
     partidos_path = os.path.join(base_dir, "data/clean_partidos.csv")
     arbitros_path = os.path.join(base_dir, "data/clean_arbitros.csv")
     dim_territorio_path = os.path.join(base_dir, "data/dim_territorio.csv")
-    web_dir = os.path.join(base_dir, "web")
+    web_dir = base_dir
     
     # 1. Cargar datasets locales
     print("1. Cargando datasets locales...")
